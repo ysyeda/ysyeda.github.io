@@ -52,7 +52,7 @@ body {
 
 /* line 93, ../sass/style.scss */
 .header {
-  margin: 50px auto 20px auto;
+  margin: 50px auto 0px auto;
   width: 640px;
   font-family: "Lato", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 }
@@ -313,7 +313,7 @@ nav ul .active {
 
 /* line 335, ../sass/style.scss */
 .projects {
-  margin-top: 30px;
+  margin-top: 50px;
   margin-bottom: 50px;
   width: 720px;
   min-height: 300px;

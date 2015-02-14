@@ -39,30 +39,26 @@ a {
 }
 
 html, body {
-                margin: 0;
-                padding:0;
-                position:absolute;/* this is very important*/
-                left:0;
-                top:0;
-                width:100%;
-                height:100%;
+    margin: 0;
+    padding:0;
+    height:100%;
 }
 
 
 
 body {
     background-color: $bg-color;
-    padding:16px;
-    
+//    padding:16px;   
 }
 
 .frame {
+//    margin-bottom: 16px;
     min-height: 100%;
     display: flex;
     flex-direction: column;
     background-color: $bg-color;
-    border: 5px solid $primary-color;
-    margin-bottom: 16px;
+    border-top: 5px solid $primary-color;
+    
 }
 
 .frame > section {
@@ -70,37 +66,22 @@ body {
 }
 
 .header {
+    margin: 50px auto 20px auto;
     width: 640px;
-    margin: 50px auto 0 auto;
     font-family: $font-stack-sans;
 }
 
 .logo {
     display: inline-block;
-//    display: block;
-//    margin: auto;
-//    text-align: center;
-//    
-//    svg {
-//        fill: pink;
-//        @include transition(all, 0.5s, ease-out, 0s);
-//    }
     
     #ms-logo {
          @include transition(all, 0.3s, ease-out, 0s);
     }
     &:hover {
         #ms-logo {
-            
             fill: darken($primary-color, 16%);
         }
     }
-    
-//    &:hover {
-//        svg {
-//            fill: darken($primary-color, 10%);
-//        }
-//    }
 }
 
 nav {
@@ -155,15 +136,15 @@ nav {
 }
 
 .about {
-    color: $primary-color;
     margin-top: 50px;
     font-size: 1.25em;
     line-height: 1.5;
+    color: $primary-color;
 }
 
 .link-text {
+    position: relative;
     font-weight: bold;
-    position: relative; 
     color: $primary-color;
     text-decoration: none;
     transition: all 0.3s ease-in-out 0s;
@@ -198,38 +179,36 @@ nav {
     margin: 50px auto;
     width: 720px;
     text-align: center;
-    ul {
-        
-        .link-social {
-            text-decoration: none;
-            list-style-type: none;
-            display: inline-block;
-            margin: auto 16px;
-            text-transform: lowercase;
-            @include transition(all, 0.3s, ease-out, 0s);
-            &:hover {
-                .text-label {
-                    opacity: 1;
-                    transform: translateY(-10px);
-                }
-                
-            }
-            
-            i {
-                font-size: 1.8em;
-                color: inherit;
-            }
-            
+    
+    .link-social {
+        text-decoration: none;
+        list-style-type: none;
+        display: inline-block;
+        margin: auto 16px;
+        text-transform: lowercase;
+        @include transition(all, 0.3s, ease-out, 0s);
+        &:hover {
             .text-label {
-                font-family: 'Lato', 'Helvetica', sans-serif;
-                opacity: 0;
-                margin-top: 20px;
-                display: block;
-                @include transition(all, 0.3s, ease-out, 0s);
+                opacity: 1;
+                transform: translateY(-10px);
             }
+
         }
-        
+
+        i {
+            font-size: 1.8em;
+            color: inherit;
+        }
+
+        .text-label {
+            font-family: 'Lato', 'Helvetica', sans-serif;
+            opacity: 0;
+            margin-top: 20px;
+            display: block;
+            @include transition(all, 0.3s, ease-out, 0s);
+        }
     }
+        
 }
 
 .social {

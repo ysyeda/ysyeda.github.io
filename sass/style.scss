@@ -27,10 +27,34 @@ $flexregistry: #01A1DF;
 
 }
 
+@mixin box-sizing ($box){
+    -webkit-box-sizing:$box;
+    -moz-box-sizing:$box;
+    -o-box-sizing:$box;
+    box-sizing:$box;
+}
+
+@mixin flexbox() {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+@mixin flex($values) {
+  -webkit-box-flex: $values;
+  -moz-box-flex:  $values;
+  -webkit-flex:  $values;
+  -ms-flex:  $values;
+  flex:  $values;
+}
+
+
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    @include box-sizing(border-box);
 }
 
 a {
@@ -54,7 +78,8 @@ body {
 .frame {
 //    margin-bottom: 16px;
     min-height: 100%;
-    display: flex;
+    @include flexbox();
+    -webkit-flex-direction: column;
     flex-direction: column;
     background-color: $bg-color;
     border-top: 5px solid $primary-color;
@@ -62,7 +87,7 @@ body {
 }
 
 .frame > section {
-    flex:1;
+    @include flex(1);
 }
 
 .header {

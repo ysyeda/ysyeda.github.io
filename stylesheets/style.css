@@ -1,0 +1,376 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic);
+/* line 30, ../sass/style.scss */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* line 36, ../sass/style.scss */
+a {
+  text-decoration: none;
+  color: #4a4a4a;
+}
+
+/* line 41, ../sass/style.scss */
+html, body {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  /* this is very important*/
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 53, ../sass/style.scss */
+body {
+  background-color: #f7f7f7;
+  padding: 16px;
+}
+
+/* line 59, ../sass/style.scss */
+.frame {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #f7f7f7;
+  border: 5px solid #4a4a4a;
+  margin-bottom: 16px;
+}
+
+/* line 68, ../sass/style.scss */
+.frame > section {
+  flex: 1;
+}
+
+/* line 72, ../sass/style.scss */
+.header {
+  width: 640px;
+  margin: 50px auto 0 auto;
+  font-family: "Lato", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+/* line 78, ../sass/style.scss */
+.logo {
+  display: inline-block;
+}
+
+/* line 96, ../sass/style.scss */
+nav {
+  float: right;
+  display: inline-block;
+}
+/* line 99, ../sass/style.scss */
+nav ul {
+  padding-top: 10px;
+}
+/* line 101, ../sass/style.scss */
+nav ul li {
+  text-align: right;
+  cursor: pointer;
+  margin-left: 18px;
+  font-size: 18px;
+  font-color: #4a4a4a;
+  display: inline-block;
+  padding-bottom: 3px;
+}
+/* line 110, ../sass/style.scss */
+nav ul li:hover {
+  border-bottom: 2px dotted #4a4a4a;
+}
+/* line 118, ../sass/style.scss */
+nav ul .active {
+  font-weight: 900;
+}
+
+/* line 125, ../sass/style.scss */
+.photo {
+  width: 120px;
+  height: 120px;
+  display: block;
+  margin: 50px auto 20px auto;
+  -webkit-border-radius: 200px;
+  -moz-border-radius: 200px;
+  border-radius: 200px;
+  background-image: url(../img/Moaaz-1x1.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+/* line 138, ../sass/style.scss */
+.content, .projects {
+  margin: 0 auto;
+  width: 640px;
+  font-family: "Lato", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+/* line 144, ../sass/style.scss */
+.about {
+  color: #4a4a4a;
+  margin-top: 50px;
+  font-size: 1.25em;
+  line-height: 1.5;
+}
+
+/* line 151, ../sass/style.scss */
+.link-text {
+  font-weight: bold;
+  position: relative;
+  color: #4a4a4a;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out 0s;
+}
+/* line 158, ../sass/style.scss */
+.link-text:hover {
+  color: #212121;
+}
+/* line 161, ../sass/style.scss */
+.link-text:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+/* line 168, ../sass/style.scss */
+.link-text:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -3px;
+  left: 0;
+  background-color: #212121;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+/* line 184, ../sass/style.scss */
+.social {
+  margin: 50px auto;
+  width: 720px;
+  text-align: center;
+}
+/* line 190, ../sass/style.scss */
+.social ul .link-social {
+  text-decoration: none;
+  list-style-type: none;
+  display: inline-block;
+  margin: auto 16px;
+  text-transform: lowercase;
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+/* line 198, ../sass/style.scss */
+.social ul .link-social:hover .text-label {
+  opacity: 1;
+  transform: translateY(-10px);
+}
+/* line 205, ../sass/style.scss */
+.social ul .link-social i {
+  font-size: 1.8em;
+  color: inherit;
+}
+/* line 210, ../sass/style.scss */
+.social ul .link-social .text-label {
+  font-family: 'Lato', 'Helvetica', sans-serif;
+  opacity: 0;
+  margin-top: 20px;
+  display: block;
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+
+/* line 223, ../sass/style.scss */
+.social .link-twitter {
+  color: #55acee;
+}
+/* line 226, ../sass/style.scss */
+.social .link-twitter:hover {
+  color: #2795e9;
+}
+/* line 231, ../sass/style.scss */
+.social .link-behance {
+  color: #1769ff;
+}
+/* line 233, ../sass/style.scss */
+.social .link-behance:hover {
+  color: #0050e3;
+}
+/* line 238, ../sass/style.scss */
+.social .link-dribbble {
+  color: #ea4c89;
+}
+/* line 240, ../sass/style.scss */
+.social .link-dribbble:hover {
+  color: #e51e6b;
+}
+/* line 245, ../sass/style.scss */
+.social .link-instagram {
+  color: #3f729b;
+}
+/* line 247, ../sass/style.scss */
+.social .link-instagram:hover {
+  color: #305777;
+}
+/* line 252, ../sass/style.scss */
+.social .link-github {
+  color: #666666;
+}
+/* line 254, ../sass/style.scss */
+.social .link-github:hover {
+  color: #4d4d4d;
+}
+/* line 259, ../sass/style.scss */
+.social .link-linkedin {
+  color: #0976b4;
+}
+/* line 261, ../sass/style.scss */
+.social .link-linkedin:hover {
+  color: #075683;
+}
+/* line 266, ../sass/style.scss */
+.social .link-email {
+  color: #979797;
+}
+/* line 268, ../sass/style.scss */
+.social .link-email:hover {
+  color: #7d7d7d;
+}
+
+/* line 274, ../sass/style.scss */
+.footer {
+  margin: 0 auto 50px auto;
+  font-family: "Lato", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-size: 0.8em;
+  color: #979797;
+  text-align: center;
+}
+/* line 282, ../sass/style.scss */
+.footer p {
+  margin-bottom: 10px;
+}
+/* line 286, ../sass/style.scss */
+.footer .link-attribution {
+  position: relative;
+  color: #979797;
+  text-decoration: none;
+}
+/* line 291, ../sass/style.scss */
+.footer .link-attribution:hover {
+  color: #979797;
+}
+/* line 294, ../sass/style.scss */
+.footer .link-attribution:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+/* line 301, ../sass/style.scss */
+.footer .link-attribution:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: #979797;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+/* line 318, ../sass/style.scss */
+.projects {
+  margin-top: 0px;
+  width: 720px;
+  min-height: 300px;
+  display: block;
+  text-align: center;
+}
+/* line 326, ../sass/style.scss */
+.projects .project {
+  margin: auto;
+  display: inline-block;
+  vertical-align: top;
+}
+/* line 332, ../sass/style.scss */
+.projects .project-details {
+  height: 160px;
+}
+/* line 336, ../sass/style.scss */
+.projects .project-box {
+  border-top: 5px solid transparent;
+  text-align: left;
+  height: 220px;
+  width: 220px;
+  padding: 16px;
+  margin: 7px;
+  background: white;
+  -webkit-transition: all 0.2s ease-out 0s;
+  -moz-transition: all 0.2s ease-out 0s;
+  -o-transition: all 0.2s ease-out 0s;
+  transition: all 0.2s ease-out 0s;
+}
+/* line 347, ../sass/style.scss */
+.projects .project-box h2 {
+  font-size: 1.5em;
+  font-weight: 300;
+  margin-bottom: 16px;
+}
+/* line 353, ../sass/style.scss */
+.projects .project-box .tasks {
+  display: block;
+  margin-bottom: 32px;
+}
+/* line 358, ../sass/style.scss */
+.projects .project-box .view {
+  width: 100%;
+  display: inline;
+  bottom: 10px;
+  right: 2px;
+  text-align: right;
+  font-size: 0.8em;
+  margin-bottom: 3px;
+  border-bottom: 1px dotted #4a4a4a;
+}
+/* line 371, ../sass/style.scss */
+.projects .remembrall {
+  border-top: 5px solid #1dcadd;
+}
+/* line 376, ../sass/style.scss */
+.projects .dribbbleiOS7 {
+  border-top: 5px solid #ff1782;
+}
+/* line 380, ../sass/style.scss */
+.projects .flexregistry {
+  border-top: 5px solid #01a1df;
+}
+/* line 387, ../sass/style.scss */
+.projects a:hover .view {
+  border-bottom: 1px dotted #fff;
+}
+/* line 390, ../sass/style.scss */
+.projects a:hover .remembrall {
+  background: #1dcadd;
+  color: #fff;
+}
+/* line 395, ../sass/style.scss */
+.projects a:hover .dribbbleiOS7 {
+  background: #ff1782;
+  color: #fff;
+}
+/* line 400, ../sass/style.scss */
+.projects a:hover .flexregistry {
+  background: #01a1df;
+  color: #fff;
+}

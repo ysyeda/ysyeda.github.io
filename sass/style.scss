@@ -85,7 +85,17 @@ body {
 //        fill: pink;
 //        @include transition(all, 0.5s, ease-out, 0s);
 //    }
-//    
+    
+    #ms-logo {
+         @include transition(all, 0.3s, ease-out, 0s);
+    }
+    &:hover {
+        #ms-logo {
+            
+            fill: darken($primary-color, 16%);
+        }
+    }
+    
 //    &:hover {
 //        svg {
 //            fill: darken($primary-color, 10%);
@@ -103,13 +113,16 @@ nav {
             cursor: pointer;
             margin-left: 18px;
             font-size: 18px;
-            font-color: $primary-color;
+            color: $primary-color;
             display: inline-block;
             padding-bottom: 3px;
+            border-bottom: 2px dotted transparent;
+            @include transition(all, 0.3s, ease-out, 0s);
             
             &:hover {
 //                margin-left: 17px;
 //                font-weight: bold;
+                color: $text-color;
                 border-bottom: 2px dotted $primary-color;
                 
             }

@@ -545,7 +545,7 @@ nav ul .active {
 
   /* line 555, ../sass/style.scss */
   .social {
-    margin: 50px auto;
+    margin: 20px auto;
     width: 100%;
     text-align: center;
   }
@@ -697,7 +697,7 @@ nav ul .active {
   /* line 696, ../sass/style.scss */
   .projects .project {
     margin: auto;
-    display: inline-block;
+    display: block;
     vertical-align: top;
   }
   /* line 702, ../sass/style.scss */
@@ -711,7 +711,7 @@ nav ul .active {
     height: 220px;
     width: 220px;
     padding: 16px;
-    margin: 7px;
+    margin: 16px;
     background: white;
     -webkit-transition: all 0.2s ease-out 0s;
     -moz-transition: all 0.2s ease-out 0s;

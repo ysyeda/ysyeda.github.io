@@ -553,7 +553,7 @@ nav {
     }
 
     .social {
-        margin: 50px auto;
+        margin: 20px auto;
         width: 100%;
         text-align: center;
 
@@ -695,7 +695,7 @@ nav {
         text-align: center;
         .project {
             margin: auto;
-            display: inline-block;
+            display: block;
             vertical-align: top;
         }
 
@@ -710,7 +710,7 @@ nav {
             height: 220px;
             width: 220px;
             padding: 16px;
-            margin: 7px;
+            margin: 16px;
             background: white;
             @include transition(all, 0.2s, ease-out, 0s);
 

@@ -700,17 +700,17 @@ nav {
         }
 
         .project-details {
-            height: 160px;
+            height: 120px;
         }
 
         .project-box {
             border-top: 5px solid transparent;
     //        border-radius: 4px;
             text-align: left;
-            height: 220px;
-            width: 220px;
+            height: 180px;
+            width: 90%;
             padding: 16px;
-            margin: 16px;
+            margin: 20px auto;
             background: white;
             @include transition(all, 0.2s, ease-out, 0s);
 

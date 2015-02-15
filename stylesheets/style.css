@@ -397,3 +397,377 @@ nav ul .active {
   background: #01a1df;
   color: #fff;
 }
+
+@media (max-width: 720px) {
+  /* line 429, ../sass/style.scss */
+  .frame {
+    padding: 30px;
+    min-height: 100%;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    background-color: #f7f7f7;
+    border-top: 5px solid #4a4a4a;
+  }
+
+  /* line 441, ../sass/style.scss */
+  .frame > section {
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+  }
+
+  /* line 445, ../sass/style.scss */
+  .header {
+    margin: 0px auto 0px auto;
+    width: 100%;
+    font-family: "Lato", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  }
+
+  /* line 451, ../sass/style.scss */
+  .logo {
+    display: inline-block;
+  }
+  /* line 454, ../sass/style.scss */
+  .logo #ms-logo {
+    -webkit-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+  }
+  /* line 458, ../sass/style.scss */
+  .logo:hover #ms-logo {
+    fill: #212121;
+  }
+
+  /* line 464, ../sass/style.scss */
+  nav {
+    float: right;
+    display: inline-block;
+  }
+  /* line 467, ../sass/style.scss */
+  nav ul {
+    padding-top: 10px;
+  }
+  /* line 469, ../sass/style.scss */
+  nav ul li {
+    text-align: right;
+    cursor: pointer;
+    margin-left: 18px;
+    font-size: 18px;
+    color: #4a4a4a;
+    display: inline-block;
+    padding-bottom: 3px;
+    border-bottom: 2px dotted transparent;
+    -webkit-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+  }
+  /* line 480, ../sass/style.scss */
+  nav ul li:hover {
+    color: #212121;
+    border-bottom: 2px dotted #4a4a4a;
+  }
+  /* line 489, ../sass/style.scss */
+  nav ul .active {
+    font-weight: 900;
+  }
+
+  /* line 496, ../sass/style.scss */
+  .photo {
+    width: 120px;
+    height: 120px;
+    display: block;
+    margin: 50px auto 20px auto;
+    -webkit-border-radius: 200px;
+    -moz-border-radius: 200px;
+    border-radius: 200px;
+    background-image: url(../img/Moaaz-1x1.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+
+  /* line 509, ../sass/style.scss */
+  .content, .projects {
+    margin: 0 auto;
+    width: 100%;
+    font-family: "Lato", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  }
+
+  /* line 515, ../sass/style.scss */
+  .about {
+    margin-top: 50px;
+    font-size: 1.25em;
+    line-height: 1.5;
+    color: #4a4a4a;
+  }
+
+  /* line 522, ../sass/style.scss */
+  .link-text {
+    position: relative;
+    font-weight: bold;
+    color: #4a4a4a;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out 0s;
+  }
+  /* line 529, ../sass/style.scss */
+  .link-text:hover {
+    color: #212121;
+  }
+  /* line 532, ../sass/style.scss */
+  .link-text:hover:before {
+    visibility: hidden;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(0);
+  }
+  /* line 539, ../sass/style.scss */
+  .link-text:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -3px;
+    left: 0;
+    background-color: #212121;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+  }
+
+  /* line 555, ../sass/style.scss */
+  .social {
+    margin: 50px auto;
+    width: 100%;
+    text-align: center;
+  }
+  /* line 560, ../sass/style.scss */
+  .social .link-social {
+    text-decoration: none;
+    list-style-type: none;
+    display: inline-block;
+    margin: auto 16px;
+    text-transform: lowercase;
+    -webkit-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+  }
+  /* line 568, ../sass/style.scss */
+  .social .link-social:hover .text-label {
+    opacity: 1;
+    transform: translateY(-10px);
+  }
+  /* line 575, ../sass/style.scss */
+  .social .link-social i {
+    font-size: 1.8em;
+    color: inherit;
+  }
+  /* line 580, ../sass/style.scss */
+  .social .link-social .text-label {
+    font-family: 'Lato', 'Helvetica', sans-serif;
+    opacity: 0;
+    margin-top: 20px;
+    display: block;
+    -webkit-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+  }
+
+  /* line 592, ../sass/style.scss */
+  .social .link-twitter {
+    color: #55acee;
+  }
+  /* line 595, ../sass/style.scss */
+  .social .link-twitter:hover {
+    color: #2795e9;
+  }
+  /* line 600, ../sass/style.scss */
+  .social .link-behance {
+    color: #1769ff;
+  }
+  /* line 602, ../sass/style.scss */
+  .social .link-behance:hover {
+    color: #0050e3;
+  }
+  /* line 607, ../sass/style.scss */
+  .social .link-dribbble {
+    color: #ea4c89;
+  }
+  /* line 609, ../sass/style.scss */
+  .social .link-dribbble:hover {
+    color: #e51e6b;
+  }
+  /* line 614, ../sass/style.scss */
+  .social .link-instagram {
+    color: #3f729b;
+  }
+  /* line 616, ../sass/style.scss */
+  .social .link-instagram:hover {
+    color: #305777;
+  }
+  /* line 621, ../sass/style.scss */
+  .social .link-github {
+    color: #666666;
+  }
+  /* line 623, ../sass/style.scss */
+  .social .link-github:hover {
+    color: #4d4d4d;
+  }
+  /* line 628, ../sass/style.scss */
+  .social .link-linkedin {
+    color: #0976b4;
+  }
+  /* line 630, ../sass/style.scss */
+  .social .link-linkedin:hover {
+    color: #075683;
+  }
+  /* line 635, ../sass/style.scss */
+  .social .link-email {
+    color: #979797;
+  }
+  /* line 637, ../sass/style.scss */
+  .social .link-email:hover {
+    color: #7d7d7d;
+  }
+
+  /* line 643, ../sass/style.scss */
+  .footer {
+    margin: 0 auto 50px auto;
+    font-family: "Lato", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    font-size: 0.8em;
+    color: #979797;
+    text-align: center;
+  }
+  /* line 651, ../sass/style.scss */
+  .footer p {
+    margin-bottom: 10px;
+  }
+  /* line 655, ../sass/style.scss */
+  .footer .link-attribution {
+    position: relative;
+    color: #979797;
+    text-decoration: none;
+  }
+  /* line 660, ../sass/style.scss */
+  .footer .link-attribution:hover {
+    color: #979797;
+  }
+  /* line 663, ../sass/style.scss */
+  .footer .link-attribution:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+  /* line 670, ../sass/style.scss */
+  .footer .link-attribution:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: #979797;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+  }
+
+  /* line 687, ../sass/style.scss */
+  .projects {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 100%;
+    min-height: 300px;
+    display: block;
+    text-align: center;
+  }
+  /* line 695, ../sass/style.scss */
+  .projects .project {
+    margin: auto;
+    display: inline-block;
+    vertical-align: top;
+  }
+  /* line 701, ../sass/style.scss */
+  .projects .project-details {
+    height: 160px;
+  }
+  /* line 705, ../sass/style.scss */
+  .projects .project-box {
+    border-top: 5px solid transparent;
+    text-align: left;
+    height: 220px;
+    width: 220px;
+    padding: 16px;
+    margin: 7px;
+    background: white;
+    -webkit-transition: all 0.2s ease-out 0s;
+    -moz-transition: all 0.2s ease-out 0s;
+    -o-transition: all 0.2s ease-out 0s;
+    transition: all 0.2s ease-out 0s;
+  }
+  /* line 716, ../sass/style.scss */
+  .projects .project-box h2 {
+    font-size: 1.5em;
+    font-weight: 300;
+    margin-bottom: 16px;
+  }
+  /* line 722, ../sass/style.scss */
+  .projects .project-box .tasks {
+    display: block;
+    margin-bottom: 32px;
+  }
+  /* line 727, ../sass/style.scss */
+  .projects .project-box .view {
+    width: 100%;
+    display: inline;
+    bottom: 10px;
+    right: 2px;
+    text-align: right;
+    font-size: 0.8em;
+    margin-bottom: 3px;
+    border-bottom: 1px dotted #4a4a4a;
+  }
+  /* line 740, ../sass/style.scss */
+  .projects .remembrall {
+    border-top: 5px solid #1dcadd;
+  }
+  /* line 745, ../sass/style.scss */
+  .projects .dribbbleiOS7 {
+    border-top: 5px solid #ff1782;
+  }
+  /* line 749, ../sass/style.scss */
+  .projects .flexregistry {
+    border-top: 5px solid #01a1df;
+  }
+  /* line 756, ../sass/style.scss */
+  .projects a:hover .view {
+    border-bottom: 1px dotted #fff;
+  }
+  /* line 759, ../sass/style.scss */
+  .projects a:hover .remembrall {
+    background: #1dcadd;
+    color: #fff;
+  }
+  /* line 764, ../sass/style.scss */
+  .projects a:hover .dribbbleiOS7 {
+    background: #ff1782;
+    color: #fff;
+  }
+  /* line 769, ../sass/style.scss */
+  .projects a:hover .flexregistry {
+    background: #01a1df;
+    color: #fff;
+  }
+}

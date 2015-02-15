@@ -360,6 +360,7 @@ nav {
         padding: 16px;
         margin: 7px;
         background: white;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); 
         @include transition(all, 0.2s, ease-out, 0s);
         
         h2 {
@@ -697,6 +698,7 @@ nav {
             margin: auto;
             display: block;
             vertical-align: top;
+            box-shadow: 0 0 
         }
 
         .project-details {
@@ -712,6 +714,7 @@ nav {
             padding: 16px;
             margin: 20px auto;
             background: white;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); 
             @include transition(all, 0.2s, ease-out, 0s);
 
             h2 {

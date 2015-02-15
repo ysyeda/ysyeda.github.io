@@ -558,10 +558,11 @@ nav {
         text-align: center;
 
         .link-social {
+            min-width: 70px;
             text-decoration: none;
             list-style-type: none;
             display: inline-block;
-            margin: auto 16px;
+            margin: 10px 16px;
             text-transform: lowercase;
             @include transition(all, 0.3s, ease-out, 0s);
             &:hover {

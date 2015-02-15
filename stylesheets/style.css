@@ -551,27 +551,28 @@ nav ul .active {
   }
   /* line 560, ../sass/style.scss */
   .social .link-social {
+    min-width: 70px;
     text-decoration: none;
     list-style-type: none;
     display: inline-block;
-    margin: auto 16px;
+    margin: 10px 16px;
     text-transform: lowercase;
     -webkit-transition: all 0.3s ease-out 0s;
     -moz-transition: all 0.3s ease-out 0s;
     -o-transition: all 0.3s ease-out 0s;
     transition: all 0.3s ease-out 0s;
   }
-  /* line 568, ../sass/style.scss */
+  /* line 569, ../sass/style.scss */
   .social .link-social:hover .text-label {
     opacity: 1;
     transform: translateY(-10px);
   }
-  /* line 575, ../sass/style.scss */
+  /* line 576, ../sass/style.scss */
   .social .link-social i {
     font-size: 1.8em;
     color: inherit;
   }
-  /* line 580, ../sass/style.scss */
+  /* line 581, ../sass/style.scss */
   .social .link-social .text-label {
     font-family: 'Lato', 'Helvetica', sans-serif;
     opacity: 0;
@@ -583,64 +584,64 @@ nav ul .active {
     transition: all 0.3s ease-out 0s;
   }
 
-  /* line 592, ../sass/style.scss */
+  /* line 593, ../sass/style.scss */
   .social .link-twitter {
     color: #55acee;
   }
-  /* line 595, ../sass/style.scss */
+  /* line 596, ../sass/style.scss */
   .social .link-twitter:hover {
     color: #2795e9;
   }
-  /* line 600, ../sass/style.scss */
+  /* line 601, ../sass/style.scss */
   .social .link-behance {
     color: #1769ff;
   }
-  /* line 602, ../sass/style.scss */
+  /* line 603, ../sass/style.scss */
   .social .link-behance:hover {
     color: #0050e3;
   }
-  /* line 607, ../sass/style.scss */
+  /* line 608, ../sass/style.scss */
   .social .link-dribbble {
     color: #ea4c89;
   }
-  /* line 609, ../sass/style.scss */
+  /* line 610, ../sass/style.scss */
   .social .link-dribbble:hover {
     color: #e51e6b;
   }
-  /* line 614, ../sass/style.scss */
+  /* line 615, ../sass/style.scss */
   .social .link-instagram {
     color: #3f729b;
   }
-  /* line 616, ../sass/style.scss */
+  /* line 617, ../sass/style.scss */
   .social .link-instagram:hover {
     color: #305777;
   }
-  /* line 621, ../sass/style.scss */
+  /* line 622, ../sass/style.scss */
   .social .link-github {
     color: #666666;
   }
-  /* line 623, ../sass/style.scss */
+  /* line 624, ../sass/style.scss */
   .social .link-github:hover {
     color: #4d4d4d;
   }
-  /* line 628, ../sass/style.scss */
+  /* line 629, ../sass/style.scss */
   .social .link-linkedin {
     color: #0976b4;
   }
-  /* line 630, ../sass/style.scss */
+  /* line 631, ../sass/style.scss */
   .social .link-linkedin:hover {
     color: #075683;
   }
-  /* line 635, ../sass/style.scss */
+  /* line 636, ../sass/style.scss */
   .social .link-email {
     color: #979797;
   }
-  /* line 637, ../sass/style.scss */
+  /* line 638, ../sass/style.scss */
   .social .link-email:hover {
     color: #7d7d7d;
   }
 
-  /* line 643, ../sass/style.scss */
+  /* line 644, ../sass/style.scss */
   .footer {
     margin: 0 auto 50px auto;
     font-family: "Lato", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
@@ -648,27 +649,27 @@ nav ul .active {
     color: #979797;
     text-align: center;
   }
-  /* line 651, ../sass/style.scss */
+  /* line 652, ../sass/style.scss */
   .footer p {
     margin-bottom: 10px;
   }
-  /* line 655, ../sass/style.scss */
+  /* line 656, ../sass/style.scss */
   .footer .link-attribution {
     position: relative;
     color: #979797;
     text-decoration: none;
   }
-  /* line 660, ../sass/style.scss */
+  /* line 661, ../sass/style.scss */
   .footer .link-attribution:hover {
     color: #979797;
   }
-  /* line 663, ../sass/style.scss */
+  /* line 664, ../sass/style.scss */
   .footer .link-attribution:hover:before {
     visibility: visible;
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
   }
-  /* line 670, ../sass/style.scss */
+  /* line 671, ../sass/style.scss */
   .footer .link-attribution:before {
     content: "";
     position: absolute;
@@ -684,7 +685,7 @@ nav ul .active {
     transition: all 0.3s ease-in-out 0s;
   }
 
-  /* line 687, ../sass/style.scss */
+  /* line 688, ../sass/style.scss */
   .projects {
     margin-top: 50px;
     margin-bottom: 50px;
@@ -693,17 +694,17 @@ nav ul .active {
     display: block;
     text-align: center;
   }
-  /* line 695, ../sass/style.scss */
+  /* line 696, ../sass/style.scss */
   .projects .project {
     margin: auto;
     display: inline-block;
     vertical-align: top;
   }
-  /* line 701, ../sass/style.scss */
+  /* line 702, ../sass/style.scss */
   .projects .project-details {
     height: 160px;
   }
-  /* line 705, ../sass/style.scss */
+  /* line 706, ../sass/style.scss */
   .projects .project-box {
     border-top: 5px solid transparent;
     text-align: left;
@@ -717,18 +718,18 @@ nav ul .active {
     -o-transition: all 0.2s ease-out 0s;
     transition: all 0.2s ease-out 0s;
   }
-  /* line 716, ../sass/style.scss */
+  /* line 717, ../sass/style.scss */
   .projects .project-box h2 {
     font-size: 1.5em;
     font-weight: 300;
     margin-bottom: 16px;
   }
-  /* line 722, ../sass/style.scss */
+  /* line 723, ../sass/style.scss */
   .projects .project-box .tasks {
     display: block;
     margin-bottom: 32px;
   }
-  /* line 727, ../sass/style.scss */
+  /* line 728, ../sass/style.scss */
   .projects .project-box .view {
     width: 100%;
     display: inline;
@@ -739,33 +740,33 @@ nav ul .active {
     margin-bottom: 3px;
     border-bottom: 1px dotted #4a4a4a;
   }
-  /* line 740, ../sass/style.scss */
+  /* line 741, ../sass/style.scss */
   .projects .remembrall {
     border-top: 5px solid #1dcadd;
   }
-  /* line 745, ../sass/style.scss */
+  /* line 746, ../sass/style.scss */
   .projects .dribbbleiOS7 {
     border-top: 5px solid #ff1782;
   }
-  /* line 749, ../sass/style.scss */
+  /* line 750, ../sass/style.scss */
   .projects .flexregistry {
     border-top: 5px solid #01a1df;
   }
-  /* line 756, ../sass/style.scss */
+  /* line 757, ../sass/style.scss */
   .projects a:hover .view {
     border-bottom: 1px dotted #fff;
   }
-  /* line 759, ../sass/style.scss */
+  /* line 760, ../sass/style.scss */
   .projects a:hover .remembrall {
     background: #1dcadd;
     color: #fff;
   }
-  /* line 764, ../sass/style.scss */
+  /* line 765, ../sass/style.scss */
   .projects a:hover .dribbbleiOS7 {
     background: #ff1782;
     color: #fff;
   }
-  /* line 769, ../sass/style.scss */
+  /* line 770, ../sass/style.scss */
   .projects a:hover .flexregistry {
     background: #01a1df;
     color: #fff;

@@ -30,24 +30,8 @@ body {
 /* line 78, ../sass/style.scss */
 .frame {
   min-height: 100%;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex-direction: column;
-  flex-direction: column;
   background-color: #f7f7f7;
   border-top: 5px solid #4a4a4a;
-}
-
-/* line 89, ../sass/style.scss */
-.frame > section {
-  -webkit-box-flex: 1;
-  -moz-box-flex: 1;
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
 }
 
 /* line 93, ../sass/style.scss */
@@ -316,7 +300,7 @@ nav ul .active {
   margin-top: 50px;
   margin-bottom: 50px;
   width: 720px;
-  min-height: 300px;
+  min-height: 360px;
   display: block;
   text-align: center;
 }

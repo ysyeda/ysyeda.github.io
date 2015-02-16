@@ -78,16 +78,16 @@ body {
 .frame {
 //    margin-bottom: 16px;
     min-height: 100%;
-    @include flexbox();
-    -webkit-flex-direction: column;
-    flex-direction: column;
+//    @include flexbox();
+//    -webkit-flex-direction: column;
+//    flex-direction: column;
     background-color: $bg-color;
     border-top: 5px solid $primary-color;
     
 }
 
 .frame > section {
-    @include flex(1);
+//    @include flex(1);
 }
 
 .header {
@@ -338,7 +338,7 @@ nav {
     margin-bottom: 50px;
 //    margin-bottom: 10%;
     width: 720px;
-    min-height: 300px;
+    min-height: 360px;
     display: block;
     text-align: center;
     .project {

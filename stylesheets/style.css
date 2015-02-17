@@ -640,21 +640,22 @@ nav ul .active {
   }
   /* line 657, ../sass/style.scss */
   .footer .link-attribution {
+    display: none;
     position: relative;
     color: #979797;
     text-decoration: none;
   }
-  /* line 662, ../sass/style.scss */
+  /* line 663, ../sass/style.scss */
   .footer .link-attribution:hover {
     color: #979797;
   }
-  /* line 665, ../sass/style.scss */
+  /* line 666, ../sass/style.scss */
   .footer .link-attribution:hover:before {
     visibility: visible;
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
   }
-  /* line 672, ../sass/style.scss */
+  /* line 673, ../sass/style.scss */
   .footer .link-attribution:before {
     content: "";
     position: absolute;
@@ -670,7 +671,7 @@ nav ul .active {
     transition: all 0.3s ease-in-out 0s;
   }
 
-  /* line 689, ../sass/style.scss */
+  /* line 690, ../sass/style.scss */
   .projects {
     margin-top: 50px;
     margin-bottom: 50px;
@@ -679,18 +680,18 @@ nav ul .active {
     display: block;
     text-align: center;
   }
-  /* line 697, ../sass/style.scss */
+  /* line 698, ../sass/style.scss */
   .projects .project {
     margin: auto;
     display: block;
     vertical-align: top;
     box-shadow: 0 0;
   }
-  /* line 704, ../sass/style.scss */
+  /* line 705, ../sass/style.scss */
   .projects .project-details {
     height: 120px;
   }
-  /* line 708, ../sass/style.scss */
+  /* line 709, ../sass/style.scss */
   .projects .project-box {
     border-top: 5px solid transparent;
     text-align: left;
@@ -705,18 +706,18 @@ nav ul .active {
     -o-transition: all 0.2s ease-out 0s;
     transition: all 0.2s ease-out 0s;
   }
-  /* line 720, ../sass/style.scss */
+  /* line 721, ../sass/style.scss */
   .projects .project-box h2 {
     font-size: 1.5em;
     font-weight: 300;
     margin-bottom: 16px;
   }
-  /* line 726, ../sass/style.scss */
+  /* line 727, ../sass/style.scss */
   .projects .project-box .tasks {
     display: block;
     margin-bottom: 32px;
   }
-  /* line 731, ../sass/style.scss */
+  /* line 732, ../sass/style.scss */
   .projects .project-box .view {
     width: 100%;
     display: inline;
@@ -727,33 +728,33 @@ nav ul .active {
     margin-bottom: 3px;
     border-bottom: 1px dotted #4a4a4a;
   }
-  /* line 744, ../sass/style.scss */
+  /* line 745, ../sass/style.scss */
   .projects .remembrall {
     border-top: 5px solid #1dcadd;
   }
-  /* line 749, ../sass/style.scss */
+  /* line 750, ../sass/style.scss */
   .projects .dribbbleiOS7 {
     border-top: 5px solid #ff1782;
   }
-  /* line 753, ../sass/style.scss */
+  /* line 754, ../sass/style.scss */
   .projects .flexregistry {
     border-top: 5px solid #01a1df;
   }
-  /* line 760, ../sass/style.scss */
+  /* line 761, ../sass/style.scss */
   .projects a:hover .view {
     border-bottom: 1px dotted #fff;
   }
-  /* line 763, ../sass/style.scss */
+  /* line 764, ../sass/style.scss */
   .projects a:hover .remembrall {
     background: #1dcadd;
     color: #fff;
   }
-  /* line 768, ../sass/style.scss */
+  /* line 769, ../sass/style.scss */
   .projects a:hover .dribbbleiOS7 {
     background: #ff1782;
     color: #fff;
   }
-  /* line 773, ../sass/style.scss */
+  /* line 774, ../sass/style.scss */
   .projects a:hover .flexregistry {
     background: #01a1df;
     color: #fff;

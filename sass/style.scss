@@ -178,9 +178,10 @@ nav {
         color:$text-color;
 
         &:before {
-            visibility: visible;
-            -webkit-transform: scaleX(1);
-            transform: scaleX(1);
+            background-color: $text-color;
+//            visibility: visible;
+//            -webkit-transform: scaleX(1);
+//            transform: scaleX(1);
         }
     }
 
@@ -188,13 +189,13 @@ nav {
         content: "";
         position: absolute;
         width: 100%;
-        height: 2px;
+        height: 1px;
         bottom: -3px;
         left: 0;
-        background-color: $text-color;
-        visibility: hidden;
-        -webkit-transform: scaleX(0);
-        transform: scaleX(0);
+        background-color: $primary-color;
+        visibility: visible;
+//        -webkit-transform: scaleX(1);
+//        transform: scaleX(1);
         -webkit-transition: all 0.3s ease-in-out 0s;
         transition: all 0.3s ease-in-out 0s;
     }
@@ -301,6 +302,7 @@ nav {
     }
     
     .link-attribution {
+        display: none;
         position: relative; 
         color: $secondary-color;
         text-decoration: none;
@@ -531,9 +533,10 @@ nav {
             color:$text-color;
 
             &:before {
-                visibility: hidden;
-                -webkit-transform: scaleX(1);
-                transform: scaleX(0);
+                background-color: $text-color;
+    //            visibility: visible;
+    //            -webkit-transform: scaleX(1);
+    //            transform: scaleX(1);
             }
         }
 
@@ -541,13 +544,13 @@ nav {
             content: "";
             position: absolute;
             width: 100%;
-            height: 2px;
+            height: 1px;
             bottom: -3px;
             left: 0;
-            background-color: $text-color;
+            background-color: $primary-color;
             visibility: hidden;
-            -webkit-transform: scaleX(0);
-            transform: scaleX(0);
+    //        -webkit-transform: scaleX(1);
+    //        transform: scaleX(1);
             -webkit-transition: all 0.3s ease-in-out 0s;
             transition: all 0.3s ease-in-out 0s;
         }

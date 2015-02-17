@@ -258,25 +258,26 @@ nav ul .active {
 /* line 300, ../sass/style.scss */
 .footer p {
   margin-bottom: 16px;
+  line-height: 1.6;
 }
-/* line 304, ../sass/style.scss */
+/* line 305, ../sass/style.scss */
 .footer .link-attribution {
   display: none;
   position: relative;
   color: #979797;
   text-decoration: none;
 }
-/* line 310, ../sass/style.scss */
+/* line 311, ../sass/style.scss */
 .footer .link-attribution:hover {
   color: #979797;
 }
-/* line 313, ../sass/style.scss */
+/* line 314, ../sass/style.scss */
 .footer .link-attribution:hover:before {
   visibility: visible;
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
 }
-/* line 320, ../sass/style.scss */
+/* line 321, ../sass/style.scss */
 .footer .link-attribution:before {
   content: "";
   position: absolute;
@@ -292,7 +293,7 @@ nav ul .active {
   transition: all 0.3s ease-in-out 0s;
 }
 
-/* line 337, ../sass/style.scss */
+/* line 338, ../sass/style.scss */
 .projects {
   margin-top: 50px;
   margin-bottom: 50px;
@@ -301,17 +302,17 @@ nav ul .active {
   display: block;
   text-align: center;
 }
-/* line 346, ../sass/style.scss */
+/* line 347, ../sass/style.scss */
 .projects .project {
   margin: auto;
   display: inline-block;
   vertical-align: top;
 }
-/* line 352, ../sass/style.scss */
+/* line 353, ../sass/style.scss */
 .projects .project-details {
   height: 160px;
 }
-/* line 356, ../sass/style.scss */
+/* line 357, ../sass/style.scss */
 .projects .project-box {
   border-top: 5px solid transparent;
   text-align: left;
@@ -326,18 +327,18 @@ nav ul .active {
   -o-transition: all 0.2s ease-out 0s;
   transition: all 0.2s ease-out 0s;
 }
-/* line 368, ../sass/style.scss */
+/* line 369, ../sass/style.scss */
 .projects .project-box h2 {
   font-size: 1.5em;
   font-weight: 300;
   margin-bottom: 16px;
 }
-/* line 374, ../sass/style.scss */
+/* line 375, ../sass/style.scss */
 .projects .project-box .tasks {
   display: block;
   margin-bottom: 32px;
 }
-/* line 379, ../sass/style.scss */
+/* line 380, ../sass/style.scss */
 .projects .project-box .view {
   width: 100%;
   display: inline;
@@ -348,40 +349,40 @@ nav ul .active {
   margin-bottom: 3px;
   border-bottom: 1px dotted #4a4a4a;
 }
-/* line 392, ../sass/style.scss */
+/* line 393, ../sass/style.scss */
 .projects .remembrall {
   border-top: 5px solid #1dcadd;
 }
-/* line 397, ../sass/style.scss */
+/* line 398, ../sass/style.scss */
 .projects .dribbbleiOS7 {
   border-top: 5px solid #ff1782;
 }
-/* line 401, ../sass/style.scss */
+/* line 402, ../sass/style.scss */
 .projects .flexregistry {
   border-top: 5px solid #01a1df;
 }
-/* line 408, ../sass/style.scss */
+/* line 409, ../sass/style.scss */
 .projects a:hover .view {
   border-bottom: 1px dotted #fff;
 }
-/* line 411, ../sass/style.scss */
+/* line 412, ../sass/style.scss */
 .projects a:hover .remembrall {
   background: #1dcadd;
   color: #fff;
 }
-/* line 416, ../sass/style.scss */
+/* line 417, ../sass/style.scss */
 .projects a:hover .dribbbleiOS7 {
   background: #ff1782;
   color: #fff;
 }
-/* line 421, ../sass/style.scss */
+/* line 422, ../sass/style.scss */
 .projects a:hover .flexregistry {
   background: #01a1df;
   color: #fff;
 }
 
 @media (max-width: 720px) {
-  /* line 432, ../sass/style.scss */
+  /* line 433, ../sass/style.scss */
   .frame {
     padding: 30px;
     min-height: 100%;
@@ -396,7 +397,7 @@ nav ul .active {
     border-top: 5px solid #4a4a4a;
   }
 
-  /* line 444, ../sass/style.scss */
+  /* line 445, ../sass/style.scss */
   .frame > section {
     -webkit-box-flex: 1;
     -moz-box-flex: 1;
@@ -405,39 +406,39 @@ nav ul .active {
     flex: 1;
   }
 
-  /* line 448, ../sass/style.scss */
+  /* line 449, ../sass/style.scss */
   .header {
     margin: 0px auto 0px auto;
     width: 100%;
     font-family: "Lato", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   }
 
-  /* line 454, ../sass/style.scss */
+  /* line 455, ../sass/style.scss */
   .logo {
     display: inline-block;
   }
-  /* line 457, ../sass/style.scss */
+  /* line 458, ../sass/style.scss */
   .logo #ms-logo {
     -webkit-transition: all 0.3s ease-out 0s;
     -moz-transition: all 0.3s ease-out 0s;
     -o-transition: all 0.3s ease-out 0s;
     transition: all 0.3s ease-out 0s;
   }
-  /* line 461, ../sass/style.scss */
+  /* line 462, ../sass/style.scss */
   .logo:hover #ms-logo {
     fill: #212121;
   }
 
-  /* line 467, ../sass/style.scss */
+  /* line 468, ../sass/style.scss */
   nav {
     float: right;
     display: inline-block;
   }
-  /* line 470, ../sass/style.scss */
+  /* line 471, ../sass/style.scss */
   nav ul {
     padding-top: 10px;
   }
-  /* line 472, ../sass/style.scss */
+  /* line 473, ../sass/style.scss */
   nav ul li {
     text-align: right;
     cursor: pointer;
@@ -452,17 +453,17 @@ nav ul .active {
     -o-transition: all 0.3s ease-out 0s;
     transition: all 0.3s ease-out 0s;
   }
-  /* line 483, ../sass/style.scss */
+  /* line 484, ../sass/style.scss */
   nav ul li:hover {
     color: #212121;
     border-bottom: 2px dotted #4a4a4a;
   }
-  /* line 492, ../sass/style.scss */
+  /* line 493, ../sass/style.scss */
   nav ul .active {
     font-weight: 900;
   }
 
-  /* line 499, ../sass/style.scss */
+  /* line 500, ../sass/style.scss */
   .photo {
     width: 120px;
     height: 120px;
@@ -476,14 +477,14 @@ nav ul .active {
     background-position: center;
   }
 
-  /* line 512, ../sass/style.scss */
+  /* line 513, ../sass/style.scss */
   .content, .projects {
     margin: 0 auto;
     width: 100%;
     font-family: "Lato", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   }
 
-  /* line 518, ../sass/style.scss */
+  /* line 519, ../sass/style.scss */
   .about {
     margin-top: 50px;
     font-size: 1.25em;
@@ -491,7 +492,7 @@ nav ul .active {
     color: #4a4a4a;
   }
 
-  /* line 525, ../sass/style.scss */
+  /* line 526, ../sass/style.scss */
   .link-text {
     position: relative;
     font-weight: bold;
@@ -499,15 +500,15 @@ nav ul .active {
     text-decoration: none;
     transition: all 0.3s ease-in-out 0s;
   }
-  /* line 532, ../sass/style.scss */
+  /* line 533, ../sass/style.scss */
   .link-text:hover {
     color: #212121;
   }
-  /* line 535, ../sass/style.scss */
+  /* line 536, ../sass/style.scss */
   .link-text:hover:before {
     background-color: #212121;
   }
-  /* line 543, ../sass/style.scss */
+  /* line 544, ../sass/style.scss */
   .link-text:before {
     content: "";
     position: absolute;
@@ -521,13 +522,13 @@ nav ul .active {
     transition: all 0.3s ease-in-out 0s;
   }
 
-  /* line 559, ../sass/style.scss */
+  /* line 560, ../sass/style.scss */
   .social {
     margin: 20px auto;
     width: 100%;
     text-align: center;
   }
-  /* line 564, ../sass/style.scss */
+  /* line 565, ../sass/style.scss */
   .social .link-social {
     min-width: 70px;
     text-decoration: none;
@@ -540,17 +541,17 @@ nav ul .active {
     -o-transition: all 0.3s ease-out 0s;
     transition: all 0.3s ease-out 0s;
   }
-  /* line 573, ../sass/style.scss */
+  /* line 574, ../sass/style.scss */
   .social .link-social:hover .text-label {
     opacity: 1;
     transform: translateY(-10px);
   }
-  /* line 580, ../sass/style.scss */
+  /* line 581, ../sass/style.scss */
   .social .link-social i {
     font-size: 1.8em;
     color: inherit;
   }
-  /* line 585, ../sass/style.scss */
+  /* line 586, ../sass/style.scss */
   .social .link-social .text-label {
     font-family: 'Lato', 'Helvetica', sans-serif;
     opacity: 0;
@@ -562,64 +563,64 @@ nav ul .active {
     transition: all 0.3s ease-out 0s;
   }
 
-  /* line 597, ../sass/style.scss */
+  /* line 598, ../sass/style.scss */
   .social .link-twitter {
     color: #55acee;
   }
-  /* line 600, ../sass/style.scss */
+  /* line 601, ../sass/style.scss */
   .social .link-twitter:hover {
     color: #2795e9;
   }
-  /* line 605, ../sass/style.scss */
+  /* line 606, ../sass/style.scss */
   .social .link-behance {
     color: #1769ff;
   }
-  /* line 607, ../sass/style.scss */
+  /* line 608, ../sass/style.scss */
   .social .link-behance:hover {
     color: #0050e3;
   }
-  /* line 612, ../sass/style.scss */
+  /* line 613, ../sass/style.scss */
   .social .link-dribbble {
     color: #ea4c89;
   }
-  /* line 614, ../sass/style.scss */
+  /* line 615, ../sass/style.scss */
   .social .link-dribbble:hover {
     color: #e51e6b;
   }
-  /* line 619, ../sass/style.scss */
+  /* line 620, ../sass/style.scss */
   .social .link-instagram {
     color: #3f729b;
   }
-  /* line 621, ../sass/style.scss */
+  /* line 622, ../sass/style.scss */
   .social .link-instagram:hover {
     color: #305777;
   }
-  /* line 626, ../sass/style.scss */
+  /* line 627, ../sass/style.scss */
   .social .link-github {
     color: #666666;
   }
-  /* line 628, ../sass/style.scss */
+  /* line 629, ../sass/style.scss */
   .social .link-github:hover {
     color: #4d4d4d;
   }
-  /* line 633, ../sass/style.scss */
+  /* line 634, ../sass/style.scss */
   .social .link-linkedin {
     color: #0976b4;
   }
-  /* line 635, ../sass/style.scss */
+  /* line 636, ../sass/style.scss */
   .social .link-linkedin:hover {
     color: #075683;
   }
-  /* line 640, ../sass/style.scss */
+  /* line 641, ../sass/style.scss */
   .social .link-email {
     color: #979797;
   }
-  /* line 642, ../sass/style.scss */
+  /* line 643, ../sass/style.scss */
   .social .link-email:hover {
     color: #7d7d7d;
   }
 
-  /* line 648, ../sass/style.scss */
+  /* line 649, ../sass/style.scss */
   .footer {
     margin: 0 auto 50px auto;
     font-family: "Lato", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
@@ -627,28 +628,29 @@ nav ul .active {
     color: #979797;
     text-align: center;
   }
-  /* line 656, ../sass/style.scss */
+  /* line 657, ../sass/style.scss */
   .footer p {
-    margin-bottom: 10px;
+    margin-bottom: 16px;
+    line-height: 1.6;
   }
-  /* line 660, ../sass/style.scss */
+  /* line 662, ../sass/style.scss */
   .footer .link-attribution {
     display: none;
     position: relative;
     color: #979797;
     text-decoration: none;
   }
-  /* line 666, ../sass/style.scss */
+  /* line 668, ../sass/style.scss */
   .footer .link-attribution:hover {
     color: #979797;
   }
-  /* line 669, ../sass/style.scss */
+  /* line 671, ../sass/style.scss */
   .footer .link-attribution:hover:before {
     visibility: visible;
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
   }
-  /* line 676, ../sass/style.scss */
+  /* line 678, ../sass/style.scss */
   .footer .link-attribution:before {
     content: "";
     position: absolute;
@@ -664,7 +666,7 @@ nav ul .active {
     transition: all 0.3s ease-in-out 0s;
   }
 
-  /* line 693, ../sass/style.scss */
+  /* line 695, ../sass/style.scss */
   .projects {
     margin-top: 50px;
     margin-bottom: 50px;
@@ -673,18 +675,18 @@ nav ul .active {
     display: block;
     text-align: center;
   }
-  /* line 701, ../sass/style.scss */
+  /* line 703, ../sass/style.scss */
   .projects .project {
     margin: auto;
     display: block;
     vertical-align: top;
     box-shadow: 0 0;
   }
-  /* line 708, ../sass/style.scss */
+  /* line 710, ../sass/style.scss */
   .projects .project-details {
     height: 120px;
   }
-  /* line 712, ../sass/style.scss */
+  /* line 714, ../sass/style.scss */
   .projects .project-box {
     border-top: 5px solid transparent;
     text-align: left;
@@ -699,18 +701,18 @@ nav ul .active {
     -o-transition: all 0.2s ease-out 0s;
     transition: all 0.2s ease-out 0s;
   }
-  /* line 724, ../sass/style.scss */
+  /* line 726, ../sass/style.scss */
   .projects .project-box h2 {
     font-size: 1.5em;
     font-weight: 300;
     margin-bottom: 16px;
   }
-  /* line 730, ../sass/style.scss */
+  /* line 732, ../sass/style.scss */
   .projects .project-box .tasks {
     display: block;
     margin-bottom: 32px;
   }
-  /* line 735, ../sass/style.scss */
+  /* line 737, ../sass/style.scss */
   .projects .project-box .view {
     width: 100%;
     display: inline;
@@ -721,33 +723,33 @@ nav ul .active {
     margin-bottom: 3px;
     border-bottom: 1px dotted #4a4a4a;
   }
-  /* line 748, ../sass/style.scss */
+  /* line 750, ../sass/style.scss */
   .projects .remembrall {
     border-top: 5px solid #1dcadd;
   }
-  /* line 753, ../sass/style.scss */
+  /* line 755, ../sass/style.scss */
   .projects .dribbbleiOS7 {
     border-top: 5px solid #ff1782;
   }
-  /* line 757, ../sass/style.scss */
+  /* line 759, ../sass/style.scss */
   .projects .flexregistry {
     border-top: 5px solid #01a1df;
   }
-  /* line 764, ../sass/style.scss */
+  /* line 766, ../sass/style.scss */
   .projects a:hover .view {
     border-bottom: 1px dotted #fff;
   }
-  /* line 767, ../sass/style.scss */
+  /* line 769, ../sass/style.scss */
   .projects a:hover .remembrall {
     background: #1dcadd;
     color: #fff;
   }
-  /* line 772, ../sass/style.scss */
+  /* line 774, ../sass/style.scss */
   .projects a:hover .dribbbleiOS7 {
     background: #ff1782;
     color: #fff;
   }
-  /* line 777, ../sass/style.scss */
+  /* line 779, ../sass/style.scss */
   .projects a:hover .flexregistry {
     background: #01a1df;
     color: #fff;

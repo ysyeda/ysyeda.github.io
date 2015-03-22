@@ -12,7 +12,7 @@
 /* line 60, ../sass/style.scss */
 a {
   text-decoration: none;
-  color: #4a4a4a;
+  color: #4A4A4A;
 }
 
 /* line 65, ../sass/style.scss */
@@ -24,14 +24,14 @@ html, body {
 
 /* line 73, ../sass/style.scss */
 body {
-  background-color: #f7f7f7;
+  background-color: #FDFDFD;
 }
 
 /* line 78, ../sass/style.scss */
 .frame {
   min-height: 100%;
-  background-color: #f7f7f7;
-  border-top: 5px solid #4a4a4a;
+  background-color: #FDFDFD;
+  border-top: 5px solid #4A4A4A;
 }
 
 /* line 93, ../sass/style.scss */
@@ -72,7 +72,7 @@ nav ul li {
   cursor: pointer;
   margin-left: 18px;
   font-size: 18px;
-  color: #4a4a4a;
+  color: #4A4A4A;
   display: inline-block;
   padding-bottom: 3px;
   border-bottom: 2px dotted transparent;
@@ -84,7 +84,7 @@ nav ul li {
 /* line 128, ../sass/style.scss */
 nav ul li:hover {
   color: #212121;
-  border-bottom: 2px dotted #4a4a4a;
+  border-bottom: 2px dotted #4A4A4A;
 }
 /* line 137, ../sass/style.scss */
 nav ul .active {
@@ -117,14 +117,14 @@ nav ul .active {
   margin-top: 50px;
   font-size: 1.25em;
   line-height: 1.5;
-  color: #4a4a4a;
+  color: #4A4A4A;
 }
 
 /* line 170, ../sass/style.scss */
 .link-text {
   position: relative;
   font-weight: bold;
-  color: #4a4a4a;
+  color: #4A4A4A;
   text-decoration: none;
   transition: all 0.3s ease-in-out 0s;
 }
@@ -144,7 +144,7 @@ nav ul .active {
   height: 1px;
   bottom: -3px;
   left: 0;
-  background-color: #4a4a4a;
+  background-color: #4A4A4A;
   visibility: visible;
   -webkit-transition: all 0.3s ease-in-out 0s;
   transition: all 0.3s ease-in-out 0s;
@@ -224,7 +224,7 @@ nav ul .active {
 }
 /* line 270, ../sass/style.scss */
 .social .link-github {
-  color: #666666;
+  color: #666;
 }
 /* line 272, ../sass/style.scss */
 .social .link-github:hover {
@@ -347,19 +347,19 @@ nav ul .active {
   text-align: right;
   font-size: 0.8em;
   margin-bottom: 3px;
-  border-bottom: 1px dotted #4a4a4a;
+  border-bottom: 1px dotted #4A4A4A;
 }
 /* line 393, ../sass/style.scss */
 .projects .remembrall {
-  border-top: 5px solid #1dcadd;
+  border-top: 5px solid #1DCADD;
 }
 /* line 398, ../sass/style.scss */
 .projects .dribbbleiOS7 {
-  border-top: 5px solid #ff1782;
+  border-top: 5px solid #FF1782;
 }
 /* line 402, ../sass/style.scss */
 .projects .flexregistry {
-  border-top: 5px solid #01a1df;
+  border-top: 5px solid #01A1DF;
 }
 /* line 409, ../sass/style.scss */
 .projects a:hover .view {
@@ -367,17 +367,17 @@ nav ul .active {
 }
 /* line 412, ../sass/style.scss */
 .projects a:hover .remembrall {
-  background: #1dcadd;
+  background: #1DCADD;
   color: #fff;
 }
 /* line 417, ../sass/style.scss */
 .projects a:hover .dribbbleiOS7 {
-  background: #ff1782;
+  background: #FF1782;
   color: #fff;
 }
 /* line 422, ../sass/style.scss */
 .projects a:hover .flexregistry {
-  background: #01a1df;
+  background: #01A1DF;
   color: #fff;
 }
 
@@ -393,8 +393,8 @@ nav ul .active {
     display: flex;
     -webkit-flex-direction: column;
     flex-direction: column;
-    background-color: #f7f7f7;
-    border-top: 5px solid #4a4a4a;
+    background-color: #FDFDFD;
+    border-top: 5px solid #4A4A4A;
   }
 
   /* line 445, ../sass/style.scss */
@@ -444,7 +444,7 @@ nav ul .active {
     cursor: pointer;
     margin-left: 18px;
     font-size: 18px;
-    color: #4a4a4a;
+    color: #4A4A4A;
     display: inline-block;
     padding-bottom: 3px;
     border-bottom: 2px dotted transparent;
@@ -456,7 +456,7 @@ nav ul .active {
   /* line 484, ../sass/style.scss */
   nav ul li:hover {
     color: #212121;
-    border-bottom: 2px dotted #4a4a4a;
+    border-bottom: 2px dotted #4A4A4A;
   }
   /* line 493, ../sass/style.scss */
   nav ul .active {
@@ -489,14 +489,14 @@ nav ul .active {
     margin-top: 50px;
     font-size: 1.25em;
     line-height: 1.5;
-    color: #4a4a4a;
+    color: #4A4A4A;
   }
 
   /* line 526, ../sass/style.scss */
   .link-text {
     position: relative;
     font-weight: bold;
-    color: #4a4a4a;
+    color: #4A4A4A;
     text-decoration: none;
     transition: all 0.3s ease-in-out 0s;
   }
@@ -516,7 +516,7 @@ nav ul .active {
     height: 1px;
     bottom: -3px;
     left: 0;
-    background-color: #4a4a4a;
+    background-color: #4A4A4A;
     visibility: hidden;
     -webkit-transition: all 0.3s ease-in-out 0s;
     transition: all 0.3s ease-in-out 0s;
@@ -597,7 +597,7 @@ nav ul .active {
   }
   /* line 627, ../sass/style.scss */
   .social .link-github {
-    color: #666666;
+    color: #666;
   }
   /* line 629, ../sass/style.scss */
   .social .link-github:hover {
@@ -721,19 +721,19 @@ nav ul .active {
     text-align: right;
     font-size: 0.8em;
     margin-bottom: 3px;
-    border-bottom: 1px dotted #4a4a4a;
+    border-bottom: 1px dotted #4A4A4A;
   }
   /* line 750, ../sass/style.scss */
   .projects .remembrall {
-    border-top: 5px solid #1dcadd;
+    border-top: 5px solid #1DCADD;
   }
   /* line 755, ../sass/style.scss */
   .projects .dribbbleiOS7 {
-    border-top: 5px solid #ff1782;
+    border-top: 5px solid #FF1782;
   }
   /* line 759, ../sass/style.scss */
   .projects .flexregistry {
-    border-top: 5px solid #01a1df;
+    border-top: 5px solid #01A1DF;
   }
   /* line 766, ../sass/style.scss */
   .projects a:hover .view {
@@ -741,17 +741,17 @@ nav ul .active {
   }
   /* line 769, ../sass/style.scss */
   .projects a:hover .remembrall {
-    background: #1dcadd;
+    background: #1DCADD;
     color: #fff;
   }
   /* line 774, ../sass/style.scss */
   .projects a:hover .dribbbleiOS7 {
-    background: #ff1782;
+    background: #FF1782;
     color: #fff;
   }
   /* line 779, ../sass/style.scss */
   .projects a:hover .flexregistry {
-    background: #01a1df;
+    background: #01A1DF;
     color: #fff;
   }
 }

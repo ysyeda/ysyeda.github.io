@@ -13,11 +13,13 @@ $dribbble:#ea4c89;
 $instagram:#3f729b;
 $github:#666;
 $linkedin:#0976b4;
-
 $remembrall-dark: #2B4144;
 $remembrall-light: #1DCADD;
 $dribbble-ios7: #FF1782;
 $flexregistry: #01A1DF;
+
+// Bezier Curves 
+$mini-spring: cubic-bezier(0,.16,.25,1.4);
 
 // Mixins
 @mixin transition ($property, $duration, $timing, $delay){
@@ -116,30 +118,64 @@ nav {
     ul {
         padding-top: 10px;
         li {
-            text-align: right;
+            box-sizing: border-box;
+            text-align: center;
             cursor: pointer;
             margin-left: 18px;
+            margin-right: 18px;
             font-size: 18px;
             color: $primary-color;
             display: inline-block;
-            padding-bottom: 3px;
-            border-bottom: 2px dotted transparent;
-            @include transition(all, 0.3s, ease-out, 0s);
+//            padding-bottom: 3px;
+//            border-bottom: 2px dotted transparent;
+//            @include transition(all, 0.3s, ease-out, 0s);
             
-            &:hover {
-//                margin-left: 17px;
-//                font-weight: bold;
-                color: $text-color;
-                border-bottom: 2px dotted $primary-color;
-                
-            }
+//            &:hover {
+////                margin-left: 17px;
+////                font-weight: bold;
+//                color: $text-color;
+//                border-bottom: 2px dotted $primary-color;
+//                
+//            }
         }
         
         .active {
             font-weight: 900;
         }
         
+        .nav-link {
+            position: relative;
+            color: #000;
+            text-decoration: none;
+
+            &:hover {
+            color:#000;
+
+                &:before {
+                  visibility: visible;
+                  -webkit-transform: scaleX(1);
+                  transform: scaleX(1);
+                }
+            }
+
+            &:before {
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 1px;
+                bottom: -7px;
+                left: 0;
+                background-color: #000;
+                visibility: hidden;
+                -webkit-transform: scaleX(0);
+                transform: scaleX(0);
+                -webkit-transition: all 0.3s ease-in-out 0s;
+                transition: all 0.3s $mini-spring 0s;
+                }
+            }
+        
     }
+    
 }
 
 .photo {
@@ -153,6 +189,14 @@ nav {
     background-image: url(../img/Moaaz-1x1.jpg);
     background-size: cover;
     background-position: center;
+    
+    opacity:0;  /* make things invisible upon start */
+	/* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+	animation:fadeIn ease-in-out 1;
+	/* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+	animation-fill-mode:forwards;
+	animation-duration:.6s;
+    animation-delay: 0.2s;
 }
 
 .content {
@@ -166,6 +210,14 @@ nav {
     font-size: 1.25em;
     line-height: 1.5;
     color: $primary-color;
+    
+    opacity:0;  /* make things invisible upon start */
+	/* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+	animation:fadeIn ease-in-out 1;
+	/* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+	animation-fill-mode:forwards;
+	animation-duration:.6s;
+    animation-delay: 0.36s;
 }
 
 .link-text {
@@ -182,7 +234,7 @@ nav {
             background-color: $text-color;
 //            visibility: visible;
 //            -webkit-transform: scaleX(1);
-//            transform: scaleX(1);
+            transform: scaleX(1);
         }
     }
 
@@ -196,7 +248,7 @@ nav {
         background-color: $primary-color;
         visibility: visible;
 //        -webkit-transform: scaleX(1);
-//        transform: scaleX(1);
+        transform: scaleX(1);
         -webkit-transition: all 0.3s ease-in-out 0s;
         transition: all 0.3s ease-in-out 0s;
     }
@@ -206,6 +258,14 @@ nav {
     margin: 50px auto;
     width: 720px;
     text-align: center;
+    
+    opacity:0;  /* make things invisible upon start */
+	/* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+	animation:fadeIn ease-in-out 1;
+	/* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+	animation-fill-mode:forwards;
+	animation-duration:.6s;
+    animation-delay: 0.42s;
     
     .link-social {
         text-decoration: none;
@@ -506,7 +566,7 @@ nav {
         -webkit-border-radius: 200px;
         -moz-border-radius: 200px;
         border-radius: 200px;
-        background-image: url(../img/Moaaz-1x1.jpg);
+        background-image: url(../img/Moaaz-1x1.png);
         background-size: cover;
         background-position: center;
     }
@@ -784,4 +844,23 @@ nav {
             }
         }
     }
+}
+
+@keyframes fadeIn { 
+    from { 
+        opacity:0; transform: translateY(10px) 
+    }
+    to { 
+        opacity:1; transform: translateY(0)
+    } 
+}
+
+.fade-in {
+	opacity:0;  /* make things invisible upon start */
+	/* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+	animation:fadeIn ease-in-out 1;
+	/* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+	animation-fill-mode:forwards;
+	animation-duration:.85s;
+    animation-delay: 0.2s;
 }

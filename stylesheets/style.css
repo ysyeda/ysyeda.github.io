@@ -165,32 +165,16 @@ nav ul .nav-link:before {
   color: #4A4A4A;
   text-decoration: none;
   transition: all 0.3s ease-in-out 0s;
+  padding-bottom: 2px;
+  border-bottom: 1px solid #4A4A4A;
 }
-/* line 230, ../sass/style.scss */
+/* line 232, ../sass/style.scss */
 .link-text:hover {
   color: #212121;
-}
-/* line 233, ../sass/style.scss */
-.link-text:hover:before {
-  background-color: #212121;
-  transform: scaleX(1);
-}
-/* line 241, ../sass/style.scss */
-.link-text:before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 1px;
-  bottom: -3px;
-  left: 0;
-  background-color: #4A4A4A;
-  visibility: visible;
-  transform: scaleX(1);
-  -webkit-transition: all 0.3s ease-in-out 0s;
-  transition: all 0.3s ease-in-out 0s;
+  border-color: #212121;
 }
 
-/* line 257, ../sass/style.scss */
+/* line 264, ../sass/style.scss */
 .social {
   margin: 50px auto;
   width: 720px;
@@ -204,7 +188,7 @@ nav ul .nav-link:before {
   animation-duration: .6s;
   animation-delay: 0.42s;
 }
-/* line 270, ../sass/style.scss */
+/* line 277, ../sass/style.scss */
 .social .link-social {
   text-decoration: none;
   list-style-type: none;
@@ -216,17 +200,17 @@ nav ul .nav-link:before {
   -o-transition: all 0.3s ease-out 0s;
   transition: all 0.3s ease-out 0s;
 }
-/* line 278, ../sass/style.scss */
+/* line 285, ../sass/style.scss */
 .social .link-social:hover .text-label {
   opacity: 1;
   transform: translateY(-10px);
 }
-/* line 285, ../sass/style.scss */
+/* line 292, ../sass/style.scss */
 .social .link-social i {
   font-size: 1.8em;
   color: inherit;
 }
-/* line 290, ../sass/style.scss */
+/* line 297, ../sass/style.scss */
 .social .link-social .text-label {
   font-family: 'Lato', 'Helvetica', sans-serif;
   opacity: 0;
@@ -238,64 +222,64 @@ nav ul .nav-link:before {
   transition: all 0.3s ease-out 0s;
 }
 
-/* line 302, ../sass/style.scss */
+/* line 309, ../sass/style.scss */
 .social .link-twitter {
   color: #55acee;
 }
-/* line 305, ../sass/style.scss */
+/* line 312, ../sass/style.scss */
 .social .link-twitter:hover {
   color: #2795e9;
 }
-/* line 310, ../sass/style.scss */
+/* line 317, ../sass/style.scss */
 .social .link-behance {
   color: #1769ff;
 }
-/* line 312, ../sass/style.scss */
+/* line 319, ../sass/style.scss */
 .social .link-behance:hover {
   color: #0050e3;
 }
-/* line 317, ../sass/style.scss */
+/* line 324, ../sass/style.scss */
 .social .link-dribbble {
   color: #ea4c89;
 }
-/* line 319, ../sass/style.scss */
+/* line 326, ../sass/style.scss */
 .social .link-dribbble:hover {
   color: #e51e6b;
 }
-/* line 324, ../sass/style.scss */
+/* line 331, ../sass/style.scss */
 .social .link-instagram {
   color: #3f729b;
 }
-/* line 326, ../sass/style.scss */
+/* line 333, ../sass/style.scss */
 .social .link-instagram:hover {
   color: #305777;
 }
-/* line 331, ../sass/style.scss */
+/* line 338, ../sass/style.scss */
 .social .link-github {
   color: #666;
 }
-/* line 333, ../sass/style.scss */
+/* line 340, ../sass/style.scss */
 .social .link-github:hover {
   color: #4d4d4d;
 }
-/* line 338, ../sass/style.scss */
+/* line 345, ../sass/style.scss */
 .social .link-linkedin {
   color: #0976b4;
 }
-/* line 340, ../sass/style.scss */
+/* line 347, ../sass/style.scss */
 .social .link-linkedin:hover {
   color: #075683;
 }
-/* line 345, ../sass/style.scss */
+/* line 352, ../sass/style.scss */
 .social .link-email {
   color: #979797;
 }
-/* line 347, ../sass/style.scss */
+/* line 354, ../sass/style.scss */
 .social .link-email:hover {
   color: #7d7d7d;
 }
 
-/* line 353, ../sass/style.scss */
+/* line 360, ../sass/style.scss */
 .footer {
   margin: 0 auto 50px auto;
   font-family: "Lato", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
@@ -303,29 +287,29 @@ nav ul .nav-link:before {
   color: #979797;
   text-align: center;
 }
-/* line 361, ../sass/style.scss */
+/* line 368, ../sass/style.scss */
 .footer p {
   margin-bottom: 16px;
   line-height: 1.6;
 }
-/* line 366, ../sass/style.scss */
+/* line 373, ../sass/style.scss */
 .footer .link-attribution {
   display: none;
   position: relative;
   color: #979797;
   text-decoration: none;
 }
-/* line 372, ../sass/style.scss */
+/* line 379, ../sass/style.scss */
 .footer .link-attribution:hover {
   color: #979797;
 }
-/* line 375, ../sass/style.scss */
+/* line 382, ../sass/style.scss */
 .footer .link-attribution:hover:before {
   visibility: visible;
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
 }
-/* line 382, ../sass/style.scss */
+/* line 389, ../sass/style.scss */
 .footer .link-attribution:before {
   content: "";
   position: absolute;
@@ -341,7 +325,7 @@ nav ul .nav-link:before {
   transition: all 0.3s ease-in-out 0s;
 }
 
-/* line 399, ../sass/style.scss */
+/* line 406, ../sass/style.scss */
 .projects {
   margin-top: 50px;
   margin-bottom: 50px;
@@ -356,17 +340,17 @@ nav ul .nav-link:before {
   animation-duration: .6s;
   animation-delay: 0.2s;
 }
-/* line 416, ../sass/style.scss */
+/* line 423, ../sass/style.scss */
 .projects .project {
   margin: auto;
   display: inline-block;
   vertical-align: top;
 }
-/* line 422, ../sass/style.scss */
+/* line 429, ../sass/style.scss */
 .projects .project-details {
   height: 160px;
 }
-/* line 426, ../sass/style.scss */
+/* line 433, ../sass/style.scss */
 .projects .project-box {
   border-top: 5px solid transparent;
   text-align: left;
@@ -381,18 +365,18 @@ nav ul .nav-link:before {
   -o-transition: all 0.2s ease-out 0s;
   transition: all 0.2s ease-out 0s;
 }
-/* line 438, ../sass/style.scss */
+/* line 445, ../sass/style.scss */
 .projects .project-box h2 {
   font-size: 1.5em;
   font-weight: 300;
   margin-bottom: 16px;
 }
-/* line 444, ../sass/style.scss */
+/* line 451, ../sass/style.scss */
 .projects .project-box .tasks {
   display: block;
   margin-bottom: 32px;
 }
-/* line 449, ../sass/style.scss */
+/* line 456, ../sass/style.scss */
 .projects .project-box .view {
   width: 100%;
   display: inline;
@@ -403,40 +387,40 @@ nav ul .nav-link:before {
   margin-bottom: 3px;
   border-bottom: 1px dotted #4A4A4A;
 }
-/* line 462, ../sass/style.scss */
+/* line 469, ../sass/style.scss */
 .projects .remembrall {
   border-top: 5px solid #1DCADD;
 }
-/* line 467, ../sass/style.scss */
+/* line 474, ../sass/style.scss */
 .projects .dribbbleiOS7 {
   border-top: 5px solid #FF1782;
 }
-/* line 471, ../sass/style.scss */
+/* line 478, ../sass/style.scss */
 .projects .flexregistry {
   border-top: 5px solid #01A1DF;
 }
-/* line 478, ../sass/style.scss */
+/* line 485, ../sass/style.scss */
 .projects a:hover .view {
   border-bottom: 1px dotted #fff;
 }
-/* line 481, ../sass/style.scss */
+/* line 488, ../sass/style.scss */
 .projects a:hover .remembrall {
   background: #1DCADD;
   color: #fff;
 }
-/* line 486, ../sass/style.scss */
+/* line 493, ../sass/style.scss */
 .projects a:hover .dribbbleiOS7 {
   background: #FF1782;
   color: #fff;
 }
-/* line 491, ../sass/style.scss */
+/* line 498, ../sass/style.scss */
 .projects a:hover .flexregistry {
   background: #01A1DF;
   color: #fff;
 }
 
 @media (max-width: 720px) {
-  /* line 502, ../sass/style.scss */
+  /* line 509, ../sass/style.scss */
   .frame {
     padding: 30px;
     min-height: 100%;
@@ -451,7 +435,7 @@ nav ul .nav-link:before {
     border-top: 5px solid #4A4A4A;
   }
 
-  /* line 514, ../sass/style.scss */
+  /* line 521, ../sass/style.scss */
   .frame > section {
     -webkit-box-flex: 1;
     -moz-box-flex: 1;
@@ -460,85 +444,47 @@ nav ul .nav-link:before {
     flex: 1;
   }
 
-  /* line 518, ../sass/style.scss */
+  /* line 525, ../sass/style.scss */
   .header {
     margin: 0px auto 0px auto;
     width: 100%;
     font-family: "Lato", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   }
 
-  /* line 524, ../sass/style.scss */
+  /* line 531, ../sass/style.scss */
   .logo {
     display: inline-block;
   }
-  /* line 527, ../sass/style.scss */
+  /* line 534, ../sass/style.scss */
   .logo #ms-logo {
     -webkit-transition: all 0.3s ease-out 0s;
     -moz-transition: all 0.3s ease-out 0s;
     -o-transition: all 0.3s ease-out 0s;
     transition: all 0.3s ease-out 0s;
   }
-  /* line 531, ../sass/style.scss */
+  /* line 538, ../sass/style.scss */
   .logo:hover #ms-logo {
     fill: #212121;
   }
 
-  /* line 537, ../sass/style.scss */
+  /* line 544, ../sass/style.scss */
   nav {
     float: right;
     display: inline-block;
   }
-  /* line 540, ../sass/style.scss */
+  /* line 547, ../sass/style.scss */
   nav ul {
     padding-top: 10px;
   }
-  /* line 542, ../sass/style.scss */
-  nav ul li {
-    text-align: right;
-    cursor: pointer;
-    margin-left: 18px;
-    font-size: 18px;
-    color: #4A4A4A;
-    display: inline-block;
-    padding-bottom: 3px;
-    border-bottom: 2px dotted transparent;
-    -webkit-transition: all 0.3s ease-out 0s;
-    -moz-transition: all 0.3s ease-out 0s;
-    -o-transition: all 0.3s ease-out 0s;
-    transition: all 0.3s ease-out 0s;
-  }
-  /* line 553, ../sass/style.scss */
-  nav ul li:hover {
-    color: #212121;
-    border-bottom: 2px dotted #4A4A4A;
-  }
-  /* line 562, ../sass/style.scss */
-  nav ul .active {
-    font-weight: 900;
-  }
 
-  /* line 569, ../sass/style.scss */
-  .photo {
-    width: 120px;
-    height: 120px;
-    display: block;
-    margin: 50px auto 20px auto;
-    -webkit-border-radius: 200px;
-    -moz-border-radius: 200px;
-    border-radius: 200px;
-    background-image: url(../img/Moaaz-1x1.png);
-    background-size: cover;
-    background-position: -2px center;
-  }
-
-  /* line 582, ../sass/style.scss */
+  /* line 552, ../sass/style.scss */
   .content, .projects {
     margin: 0 auto;
     width: 100%;
     font-family: "Lato", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   }
 
-  /* line 588, ../sass/style.scss */
+  /* line 558, ../sass/style.scss */
   .about {
     margin-top: 50px;
     font-size: 1.25em;
@@ -546,135 +492,14 @@ nav ul .nav-link:before {
     color: #4A4A4A;
   }
 
-  /* line 595, ../sass/style.scss */
-  .link-text {
-    position: relative;
-    font-weight: bold;
-    color: #4A4A4A;
-    text-decoration: none;
-    transition: all 0.3s ease-in-out 0s;
-  }
-  /* line 602, ../sass/style.scss */
-  .link-text:hover {
-    color: #212121;
-  }
-  /* line 605, ../sass/style.scss */
-  .link-text:hover:before {
-    background-color: #212121;
-  }
-  /* line 613, ../sass/style.scss */
-  .link-text:before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 1px;
-    bottom: -3px;
-    left: 0;
-    background-color: #4A4A4A;
-    visibility: hidden;
-    -webkit-transition: all 0.3s ease-in-out 0s;
-    transition: all 0.3s ease-in-out 0s;
-  }
-
-  /* line 629, ../sass/style.scss */
+  /* line 565, ../sass/style.scss */
   .social {
     margin: 20px auto;
     width: 100%;
     text-align: center;
   }
-  /* line 634, ../sass/style.scss */
-  .social .link-social {
-    min-width: 70px;
-    text-decoration: none;
-    list-style-type: none;
-    display: inline-block;
-    margin: 10px 16px;
-    text-transform: lowercase;
-    -webkit-transition: all 0.3s ease-out 0s;
-    -moz-transition: all 0.3s ease-out 0s;
-    -o-transition: all 0.3s ease-out 0s;
-    transition: all 0.3s ease-out 0s;
-  }
-  /* line 643, ../sass/style.scss */
-  .social .link-social:hover .text-label {
-    opacity: 1;
-    transform: translateY(-10px);
-  }
-  /* line 650, ../sass/style.scss */
-  .social .link-social i {
-    font-size: 1.8em;
-    color: inherit;
-  }
-  /* line 655, ../sass/style.scss */
-  .social .link-social .text-label {
-    font-family: 'Lato', 'Helvetica', sans-serif;
-    opacity: 0;
-    margin-top: 20px;
-    display: block;
-    -webkit-transition: all 0.3s ease-out 0s;
-    -moz-transition: all 0.3s ease-out 0s;
-    -o-transition: all 0.3s ease-out 0s;
-    transition: all 0.3s ease-out 0s;
-  }
 
-  /* line 667, ../sass/style.scss */
-  .social .link-twitter {
-    color: #55acee;
-  }
-  /* line 670, ../sass/style.scss */
-  .social .link-twitter:hover {
-    color: #2795e9;
-  }
-  /* line 675, ../sass/style.scss */
-  .social .link-behance {
-    color: #1769ff;
-  }
-  /* line 677, ../sass/style.scss */
-  .social .link-behance:hover {
-    color: #0050e3;
-  }
-  /* line 682, ../sass/style.scss */
-  .social .link-dribbble {
-    color: #ea4c89;
-  }
-  /* line 684, ../sass/style.scss */
-  .social .link-dribbble:hover {
-    color: #e51e6b;
-  }
-  /* line 689, ../sass/style.scss */
-  .social .link-instagram {
-    color: #3f729b;
-  }
-  /* line 691, ../sass/style.scss */
-  .social .link-instagram:hover {
-    color: #305777;
-  }
-  /* line 696, ../sass/style.scss */
-  .social .link-github {
-    color: #666;
-  }
-  /* line 698, ../sass/style.scss */
-  .social .link-github:hover {
-    color: #4d4d4d;
-  }
-  /* line 703, ../sass/style.scss */
-  .social .link-linkedin {
-    color: #0976b4;
-  }
-  /* line 705, ../sass/style.scss */
-  .social .link-linkedin:hover {
-    color: #075683;
-  }
-  /* line 710, ../sass/style.scss */
-  .social .link-email {
-    color: #979797;
-  }
-  /* line 712, ../sass/style.scss */
-  .social .link-email:hover {
-    color: #7d7d7d;
-  }
-
-  /* line 718, ../sass/style.scss */
+  /* line 573, ../sass/style.scss */
   .footer {
     margin: 0 auto 50px auto;
     font-family: "Lato", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
@@ -682,29 +507,29 @@ nav ul .nav-link:before {
     color: #979797;
     text-align: center;
   }
-  /* line 726, ../sass/style.scss */
+  /* line 581, ../sass/style.scss */
   .footer p {
     margin-bottom: 16px;
     line-height: 1.6;
   }
-  /* line 731, ../sass/style.scss */
+  /* line 586, ../sass/style.scss */
   .footer .link-attribution {
     display: none;
     position: relative;
     color: #979797;
     text-decoration: none;
   }
-  /* line 737, ../sass/style.scss */
+  /* line 592, ../sass/style.scss */
   .footer .link-attribution:hover {
     color: #979797;
   }
-  /* line 740, ../sass/style.scss */
+  /* line 595, ../sass/style.scss */
   .footer .link-attribution:hover:before {
     visibility: visible;
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
   }
-  /* line 747, ../sass/style.scss */
+  /* line 602, ../sass/style.scss */
   .footer .link-attribution:before {
     content: "";
     position: absolute;
@@ -720,7 +545,7 @@ nav ul .nav-link:before {
     transition: all 0.3s ease-in-out 0s;
   }
 
-  /* line 764, ../sass/style.scss */
+  /* line 619, ../sass/style.scss */
   .projects {
     margin-top: 50px;
     margin-bottom: 50px;
@@ -729,84 +554,23 @@ nav ul .nav-link:before {
     display: block;
     text-align: center;
   }
-  /* line 772, ../sass/style.scss */
+  /* line 626, ../sass/style.scss */
   .projects .project {
     margin: auto;
     display: block;
     vertical-align: top;
     box-shadow: 0 0;
   }
-  /* line 779, ../sass/style.scss */
+  /* line 633, ../sass/style.scss */
   .projects .project-details {
     height: 120px;
   }
-  /* line 783, ../sass/style.scss */
+  /* line 637, ../sass/style.scss */
   .projects .project-box {
-    border-top: 5px solid transparent;
-    text-align: left;
     height: 180px;
     width: 90%;
     padding: 16px;
     margin: 20px auto;
-    background: white;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-    -webkit-transition: all 0.2s ease-out 0s;
-    -moz-transition: all 0.2s ease-out 0s;
-    -o-transition: all 0.2s ease-out 0s;
-    transition: all 0.2s ease-out 0s;
-  }
-  /* line 795, ../sass/style.scss */
-  .projects .project-box h2 {
-    font-size: 1.5em;
-    font-weight: 300;
-    margin-bottom: 16px;
-  }
-  /* line 801, ../sass/style.scss */
-  .projects .project-box .tasks {
-    display: block;
-    margin-bottom: 32px;
-  }
-  /* line 806, ../sass/style.scss */
-  .projects .project-box .view {
-    width: 100%;
-    display: inline;
-    bottom: 10px;
-    right: 2px;
-    text-align: right;
-    font-size: 0.8em;
-    margin-bottom: 3px;
-    border-bottom: 1px dotted #4A4A4A;
-  }
-  /* line 819, ../sass/style.scss */
-  .projects .remembrall {
-    border-top: 5px solid #1DCADD;
-  }
-  /* line 824, ../sass/style.scss */
-  .projects .dribbbleiOS7 {
-    border-top: 5px solid #FF1782;
-  }
-  /* line 828, ../sass/style.scss */
-  .projects .flexregistry {
-    border-top: 5px solid #01A1DF;
-  }
-  /* line 835, ../sass/style.scss */
-  .projects a:hover .view {
-    border-bottom: 1px dotted #fff;
-  }
-  /* line 838, ../sass/style.scss */
-  .projects a:hover .remembrall {
-    background: #1DCADD;
-    color: #fff;
-  }
-  /* line 843, ../sass/style.scss */
-  .projects a:hover .dribbbleiOS7 {
-    background: #FF1782;
-    color: #fff;
-  }
-  /* line 848, ../sass/style.scss */
-  .projects a:hover .flexregistry {
-    background: #01A1DF;
-    color: #fff;
   }
 }
 @keyframes fadeIn {
@@ -819,7 +583,7 @@ nav ul .nav-link:before {
     transform: translateY(0);
   }
 }
-/* line 866, ../sass/style.scss */
+/* line 656, ../sass/style.scss */
 .fade-in {
   opacity: 0;
   /* make things invisible upon start */

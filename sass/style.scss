@@ -226,32 +226,39 @@ nav {
     color: $primary-color;
     text-decoration: none;
     transition: all 0.3s ease-in-out 0s;
+    padding-bottom: 2px;
+    border-bottom: 1px solid $primary-color;
 
     &:hover {
         color:$text-color;
-
-        &:before {
-            background-color: $text-color;
-//            visibility: visible;
-//            -webkit-transform: scaleX(1);
-            transform: scaleX(1);
-        }
+        border-color: $text-color;
     }
 
-    &:before {
-        content: "";
-        position: absolute;
-        width: 100%;
-        height: 1px;
-        bottom: -3px;
-        left: 0;
-        background-color: $primary-color;
-        visibility: visible;
-//        -webkit-transform: scaleX(1);
-        transform: scaleX(1);
-        -webkit-transition: all 0.3s ease-in-out 0s;
-        transition: all 0.3s ease-in-out 0s;
-    }
+//    &:hover {
+//        color:$text-color;
+//
+//        &:before {
+//            background-color: $text-color;
+////            visibility: visible;
+////            -webkit-transform: scaleX(1);
+//            transform: scaleX(1);
+//        }
+//    }
+//
+//    &:before {
+//        content: "";
+//        position: absolute;
+//        width: 100%;
+//        height: 1px;
+//        bottom: -3px;
+//        left: 0;
+//        background-color: $primary-color;
+//        visibility: visible;
+////        -webkit-transform: scaleX(1);
+//        transform: scaleX(1);
+//        -webkit-transition: all 0.3s ease-in-out 0s;
+//        transition: all 0.3s ease-in-out 0s;
+//    }
 }
 
 .social {
@@ -539,46 +546,9 @@ nav {
         display: inline-block;
         ul {
             padding-top: 10px;
-            li {
-                text-align: right;
-                cursor: pointer;
-                margin-left: 18px;
-                font-size: 18px;
-                color: $primary-color;
-                display: inline-block;
-                padding-bottom: 3px;
-                border-bottom: 2px dotted transparent;
-                @include transition(all, 0.3s, ease-out, 0s);
-
-                &:hover {
-    //                margin-left: 17px;
-    //                font-weight: bold;
-                    color: $text-color;
-                    border-bottom: 2px dotted $primary-color;
-
-                }
-            }
-
-            .active {
-                font-weight: 900;
-            }
-
         }
     }
-
-    .photo {
-        width: 120px;
-        height: 120px;
-        display:block;
-        margin: 50px auto 20px auto;
-        -webkit-border-radius: 200px;
-        -moz-border-radius: 200px;
-        border-radius: 200px;
-        background-image: url(../img/Moaaz-1x1.png);
-        background-size: cover;
-        background-position: -2px center;
-    }
-
+    
     .content {
         margin: 0 auto;
         width: 100%;
@@ -592,127 +562,12 @@ nav {
         color: $primary-color;
     }
 
-    .link-text {
-        position: relative;
-        font-weight: bold;
-        color: $primary-color;
-        text-decoration: none;
-        transition: all 0.3s ease-in-out 0s;
-
-        &:hover {
-            color:$text-color;
-
-            &:before {
-                background-color: $text-color;
-    //            visibility: visible;
-    //            -webkit-transform: scaleX(1);
-    //            transform: scaleX(1);
-            }
-        }
-
-        &:before {
-            content: "";
-            position: absolute;
-            width: 100%;
-            height: 1px;
-            bottom: -3px;
-            left: 0;
-            background-color: $primary-color;
-            visibility: hidden;
-    //        -webkit-transform: scaleX(1);
-    //        transform: scaleX(1);
-            -webkit-transition: all 0.3s ease-in-out 0s;
-            transition: all 0.3s ease-in-out 0s;
-        }
-    }
-
     .social {
         margin: 20px auto;
         width: 100%;
         text-align: center;
 
-        .link-social {
-            min-width: 70px;
-            text-decoration: none;
-            list-style-type: none;
-            display: inline-block;
-            margin: 10px 16px;
-            text-transform: lowercase;
-            @include transition(all, 0.3s, ease-out, 0s);
-            &:hover {
-                .text-label {
-                    opacity: 1;
-                    transform: translateY(-10px);
-                }
 
-            }
-
-            i {
-                font-size: 1.8em;
-                color: inherit;
-            }
-
-            .text-label {
-                font-family: 'Lato', 'Helvetica', sans-serif;
-                opacity: 0;
-                margin-top: 20px;
-                display: block;
-                @include transition(all, 0.3s, ease-out, 0s);
-            }
-        }
-
-    }
-
-    .social {
-        .link-twitter {
-            color: $twitter;
-
-            &:hover {
-                color: darken($twitter, 10%);
-            }
-        }
-
-        .link-behance {
-            color: $behance;
-            &:hover {
-                color: darken($behance, 10%);
-            }
-        }
-
-        .link-dribbble {
-            color: $dribbble;
-            &:hover {
-                color: darken($dribbble, 10%);
-            }
-        }
-
-        .link-instagram {
-            color: $instagram;
-            &:hover {
-                color: darken($instagram, 10%);
-            }
-        }
-
-        .link-github {
-            color: $github;
-            &:hover {
-                color: darken($github, 10%);
-            }
-        }
-
-        .link-linkedin {
-            color: $linkedin;
-            &:hover {
-                color: darken($linkedin, 10%);
-            }
-        }
-
-        .link-email {
-            color: $secondary-color;
-            &:hover {
-                color: darken($secondary-color, 10%);
-            }
-        }
     }
 
     .footer {
@@ -764,7 +619,6 @@ nav {
     .projects {
         margin-top: 50px;
         margin-bottom: 50px;
-    //    margin-bottom: 10%;
         width: 100%;
         min-height: 300px;
         display: block;
@@ -781,75 +635,11 @@ nav {
         }
 
         .project-box {
-            border-top: 5px solid transparent;
-    //        border-radius: 4px;
-            text-align: left;
             height: 180px;
             width: 90%;
             padding: 16px;
             margin: 20px auto;
-            background: white;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); 
-            @include transition(all, 0.2s, ease-out, 0s);
-
-            h2 {
-                font-size: 1.5em;
-                font-weight: 300;
-                margin-bottom: 16px;
-            }
-
-            .tasks {
-                display: block;
-                margin-bottom: 32px;
-            }
-
-            .view {
-                width: 100%;
-                display: inline;
-                bottom: 10px;
-                right: 2px;
-                text-align: right;
-                font-size: 0.8em;
-                margin-bottom: 3px;
-                border-bottom: 1px dotted $primary-color;
-
-            }
-        }
-
-        .remembrall {
-            border-top: 5px solid $remembrall-light;
-
-        }
-
-        .dribbbleiOS7 {
-            border-top: 5px solid $dribbble-ios7;
-        }
-
-        .flexregistry {
-            border-top: 5px solid $flexregistry;
-        }
-
-        a {
-
-            &:hover {
-                .view {
-                    border-bottom: 1px dotted #fff;
-                }
-                .remembrall {
-                    background: $remembrall-light;
-                    color: #fff;
-                    }
-
-                .dribbbleiOS7 {
-                    background: $dribbble-ios7;
-                    color: #fff;
-                }
-
-                .flexregistry {
-                    background:  $flexregistry;
-                    color: #fff;
-                }
-            }
+            
         }
     }
 }

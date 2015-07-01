@@ -349,18 +349,24 @@ nav ul .nav-link:before {
   min-height: 320px;
   display: block;
   text-align: center;
+  opacity: 0;
+  animation: fadeIn ease-in-out 1;
+  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  animation-fill-mode: forwards;
+  animation-duration: .6s;
+  animation-delay: 0.2s;
 }
-/* line 408, ../sass/style.scss */
+/* line 416, ../sass/style.scss */
 .projects .project {
   margin: auto;
   display: inline-block;
   vertical-align: top;
 }
-/* line 414, ../sass/style.scss */
+/* line 422, ../sass/style.scss */
 .projects .project-details {
   height: 160px;
 }
-/* line 418, ../sass/style.scss */
+/* line 426, ../sass/style.scss */
 .projects .project-box {
   border-top: 5px solid transparent;
   text-align: left;
@@ -375,18 +381,18 @@ nav ul .nav-link:before {
   -o-transition: all 0.2s ease-out 0s;
   transition: all 0.2s ease-out 0s;
 }
-/* line 430, ../sass/style.scss */
+/* line 438, ../sass/style.scss */
 .projects .project-box h2 {
   font-size: 1.5em;
   font-weight: 300;
   margin-bottom: 16px;
 }
-/* line 436, ../sass/style.scss */
+/* line 444, ../sass/style.scss */
 .projects .project-box .tasks {
   display: block;
   margin-bottom: 32px;
 }
-/* line 441, ../sass/style.scss */
+/* line 449, ../sass/style.scss */
 .projects .project-box .view {
   width: 100%;
   display: inline;
@@ -397,40 +403,40 @@ nav ul .nav-link:before {
   margin-bottom: 3px;
   border-bottom: 1px dotted #4A4A4A;
 }
-/* line 454, ../sass/style.scss */
+/* line 462, ../sass/style.scss */
 .projects .remembrall {
   border-top: 5px solid #1DCADD;
 }
-/* line 459, ../sass/style.scss */
+/* line 467, ../sass/style.scss */
 .projects .dribbbleiOS7 {
   border-top: 5px solid #FF1782;
 }
-/* line 463, ../sass/style.scss */
+/* line 471, ../sass/style.scss */
 .projects .flexregistry {
   border-top: 5px solid #01A1DF;
 }
-/* line 470, ../sass/style.scss */
+/* line 478, ../sass/style.scss */
 .projects a:hover .view {
   border-bottom: 1px dotted #fff;
 }
-/* line 473, ../sass/style.scss */
+/* line 481, ../sass/style.scss */
 .projects a:hover .remembrall {
   background: #1DCADD;
   color: #fff;
 }
-/* line 478, ../sass/style.scss */
+/* line 486, ../sass/style.scss */
 .projects a:hover .dribbbleiOS7 {
   background: #FF1782;
   color: #fff;
 }
-/* line 483, ../sass/style.scss */
+/* line 491, ../sass/style.scss */
 .projects a:hover .flexregistry {
   background: #01A1DF;
   color: #fff;
 }
 
 @media (max-width: 720px) {
-  /* line 494, ../sass/style.scss */
+  /* line 502, ../sass/style.scss */
   .frame {
     padding: 30px;
     min-height: 100%;
@@ -445,7 +451,7 @@ nav ul .nav-link:before {
     border-top: 5px solid #4A4A4A;
   }
 
-  /* line 506, ../sass/style.scss */
+  /* line 514, ../sass/style.scss */
   .frame > section {
     -webkit-box-flex: 1;
     -moz-box-flex: 1;
@@ -454,39 +460,39 @@ nav ul .nav-link:before {
     flex: 1;
   }
 
-  /* line 510, ../sass/style.scss */
+  /* line 518, ../sass/style.scss */
   .header {
     margin: 0px auto 0px auto;
     width: 100%;
     font-family: "Lato", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   }
 
-  /* line 516, ../sass/style.scss */
+  /* line 524, ../sass/style.scss */
   .logo {
     display: inline-block;
   }
-  /* line 519, ../sass/style.scss */
+  /* line 527, ../sass/style.scss */
   .logo #ms-logo {
     -webkit-transition: all 0.3s ease-out 0s;
     -moz-transition: all 0.3s ease-out 0s;
     -o-transition: all 0.3s ease-out 0s;
     transition: all 0.3s ease-out 0s;
   }
-  /* line 523, ../sass/style.scss */
+  /* line 531, ../sass/style.scss */
   .logo:hover #ms-logo {
     fill: #212121;
   }
 
-  /* line 529, ../sass/style.scss */
+  /* line 537, ../sass/style.scss */
   nav {
     float: right;
     display: inline-block;
   }
-  /* line 532, ../sass/style.scss */
+  /* line 540, ../sass/style.scss */
   nav ul {
     padding-top: 10px;
   }
-  /* line 534, ../sass/style.scss */
+  /* line 542, ../sass/style.scss */
   nav ul li {
     text-align: right;
     cursor: pointer;
@@ -501,17 +507,17 @@ nav ul .nav-link:before {
     -o-transition: all 0.3s ease-out 0s;
     transition: all 0.3s ease-out 0s;
   }
-  /* line 545, ../sass/style.scss */
+  /* line 553, ../sass/style.scss */
   nav ul li:hover {
     color: #212121;
     border-bottom: 2px dotted #4A4A4A;
   }
-  /* line 554, ../sass/style.scss */
+  /* line 562, ../sass/style.scss */
   nav ul .active {
     font-weight: 900;
   }
 
-  /* line 561, ../sass/style.scss */
+  /* line 569, ../sass/style.scss */
   .photo {
     width: 120px;
     height: 120px;
@@ -525,14 +531,14 @@ nav ul .nav-link:before {
     background-position: -2px center;
   }
 
-  /* line 574, ../sass/style.scss */
+  /* line 582, ../sass/style.scss */
   .content, .projects {
     margin: 0 auto;
     width: 100%;
     font-family: "Lato", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   }
 
-  /* line 580, ../sass/style.scss */
+  /* line 588, ../sass/style.scss */
   .about {
     margin-top: 50px;
     font-size: 1.25em;
@@ -540,7 +546,7 @@ nav ul .nav-link:before {
     color: #4A4A4A;
   }
 
-  /* line 587, ../sass/style.scss */
+  /* line 595, ../sass/style.scss */
   .link-text {
     position: relative;
     font-weight: bold;
@@ -548,15 +554,15 @@ nav ul .nav-link:before {
     text-decoration: none;
     transition: all 0.3s ease-in-out 0s;
   }
-  /* line 594, ../sass/style.scss */
+  /* line 602, ../sass/style.scss */
   .link-text:hover {
     color: #212121;
   }
-  /* line 597, ../sass/style.scss */
+  /* line 605, ../sass/style.scss */
   .link-text:hover:before {
     background-color: #212121;
   }
-  /* line 605, ../sass/style.scss */
+  /* line 613, ../sass/style.scss */
   .link-text:before {
     content: "";
     position: absolute;
@@ -570,13 +576,13 @@ nav ul .nav-link:before {
     transition: all 0.3s ease-in-out 0s;
   }
 
-  /* line 621, ../sass/style.scss */
+  /* line 629, ../sass/style.scss */
   .social {
     margin: 20px auto;
     width: 100%;
     text-align: center;
   }
-  /* line 626, ../sass/style.scss */
+  /* line 634, ../sass/style.scss */
   .social .link-social {
     min-width: 70px;
     text-decoration: none;
@@ -589,17 +595,17 @@ nav ul .nav-link:before {
     -o-transition: all 0.3s ease-out 0s;
     transition: all 0.3s ease-out 0s;
   }
-  /* line 635, ../sass/style.scss */
+  /* line 643, ../sass/style.scss */
   .social .link-social:hover .text-label {
     opacity: 1;
     transform: translateY(-10px);
   }
-  /* line 642, ../sass/style.scss */
+  /* line 650, ../sass/style.scss */
   .social .link-social i {
     font-size: 1.8em;
     color: inherit;
   }
-  /* line 647, ../sass/style.scss */
+  /* line 655, ../sass/style.scss */
   .social .link-social .text-label {
     font-family: 'Lato', 'Helvetica', sans-serif;
     opacity: 0;
@@ -611,64 +617,64 @@ nav ul .nav-link:before {
     transition: all 0.3s ease-out 0s;
   }
 
-  /* line 659, ../sass/style.scss */
+  /* line 667, ../sass/style.scss */
   .social .link-twitter {
     color: #55acee;
   }
-  /* line 662, ../sass/style.scss */
+  /* line 670, ../sass/style.scss */
   .social .link-twitter:hover {
     color: #2795e9;
   }
-  /* line 667, ../sass/style.scss */
+  /* line 675, ../sass/style.scss */
   .social .link-behance {
     color: #1769ff;
   }
-  /* line 669, ../sass/style.scss */
+  /* line 677, ../sass/style.scss */
   .social .link-behance:hover {
     color: #0050e3;
   }
-  /* line 674, ../sass/style.scss */
+  /* line 682, ../sass/style.scss */
   .social .link-dribbble {
     color: #ea4c89;
   }
-  /* line 676, ../sass/style.scss */
+  /* line 684, ../sass/style.scss */
   .social .link-dribbble:hover {
     color: #e51e6b;
   }
-  /* line 681, ../sass/style.scss */
+  /* line 689, ../sass/style.scss */
   .social .link-instagram {
     color: #3f729b;
   }
-  /* line 683, ../sass/style.scss */
+  /* line 691, ../sass/style.scss */
   .social .link-instagram:hover {
     color: #305777;
   }
-  /* line 688, ../sass/style.scss */
+  /* line 696, ../sass/style.scss */
   .social .link-github {
     color: #666;
   }
-  /* line 690, ../sass/style.scss */
+  /* line 698, ../sass/style.scss */
   .social .link-github:hover {
     color: #4d4d4d;
   }
-  /* line 695, ../sass/style.scss */
+  /* line 703, ../sass/style.scss */
   .social .link-linkedin {
     color: #0976b4;
   }
-  /* line 697, ../sass/style.scss */
+  /* line 705, ../sass/style.scss */
   .social .link-linkedin:hover {
     color: #075683;
   }
-  /* line 702, ../sass/style.scss */
+  /* line 710, ../sass/style.scss */
   .social .link-email {
     color: #979797;
   }
-  /* line 704, ../sass/style.scss */
+  /* line 712, ../sass/style.scss */
   .social .link-email:hover {
     color: #7d7d7d;
   }
 
-  /* line 710, ../sass/style.scss */
+  /* line 718, ../sass/style.scss */
   .footer {
     margin: 0 auto 50px auto;
     font-family: "Lato", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
@@ -676,29 +682,29 @@ nav ul .nav-link:before {
     color: #979797;
     text-align: center;
   }
-  /* line 718, ../sass/style.scss */
+  /* line 726, ../sass/style.scss */
   .footer p {
     margin-bottom: 16px;
     line-height: 1.6;
   }
-  /* line 723, ../sass/style.scss */
+  /* line 731, ../sass/style.scss */
   .footer .link-attribution {
     display: none;
     position: relative;
     color: #979797;
     text-decoration: none;
   }
-  /* line 729, ../sass/style.scss */
+  /* line 737, ../sass/style.scss */
   .footer .link-attribution:hover {
     color: #979797;
   }
-  /* line 732, ../sass/style.scss */
+  /* line 740, ../sass/style.scss */
   .footer .link-attribution:hover:before {
     visibility: visible;
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
   }
-  /* line 739, ../sass/style.scss */
+  /* line 747, ../sass/style.scss */
   .footer .link-attribution:before {
     content: "";
     position: absolute;
@@ -714,7 +720,7 @@ nav ul .nav-link:before {
     transition: all 0.3s ease-in-out 0s;
   }
 
-  /* line 756, ../sass/style.scss */
+  /* line 764, ../sass/style.scss */
   .projects {
     margin-top: 50px;
     margin-bottom: 50px;
@@ -723,18 +729,18 @@ nav ul .nav-link:before {
     display: block;
     text-align: center;
   }
-  /* line 764, ../sass/style.scss */
+  /* line 772, ../sass/style.scss */
   .projects .project {
     margin: auto;
     display: block;
     vertical-align: top;
     box-shadow: 0 0;
   }
-  /* line 771, ../sass/style.scss */
+  /* line 779, ../sass/style.scss */
   .projects .project-details {
     height: 120px;
   }
-  /* line 775, ../sass/style.scss */
+  /* line 783, ../sass/style.scss */
   .projects .project-box {
     border-top: 5px solid transparent;
     text-align: left;
@@ -749,18 +755,18 @@ nav ul .nav-link:before {
     -o-transition: all 0.2s ease-out 0s;
     transition: all 0.2s ease-out 0s;
   }
-  /* line 787, ../sass/style.scss */
+  /* line 795, ../sass/style.scss */
   .projects .project-box h2 {
     font-size: 1.5em;
     font-weight: 300;
     margin-bottom: 16px;
   }
-  /* line 793, ../sass/style.scss */
+  /* line 801, ../sass/style.scss */
   .projects .project-box .tasks {
     display: block;
     margin-bottom: 32px;
   }
-  /* line 798, ../sass/style.scss */
+  /* line 806, ../sass/style.scss */
   .projects .project-box .view {
     width: 100%;
     display: inline;
@@ -771,33 +777,33 @@ nav ul .nav-link:before {
     margin-bottom: 3px;
     border-bottom: 1px dotted #4A4A4A;
   }
-  /* line 811, ../sass/style.scss */
+  /* line 819, ../sass/style.scss */
   .projects .remembrall {
     border-top: 5px solid #1DCADD;
   }
-  /* line 816, ../sass/style.scss */
+  /* line 824, ../sass/style.scss */
   .projects .dribbbleiOS7 {
     border-top: 5px solid #FF1782;
   }
-  /* line 820, ../sass/style.scss */
+  /* line 828, ../sass/style.scss */
   .projects .flexregistry {
     border-top: 5px solid #01A1DF;
   }
-  /* line 827, ../sass/style.scss */
+  /* line 835, ../sass/style.scss */
   .projects a:hover .view {
     border-bottom: 1px dotted #fff;
   }
-  /* line 830, ../sass/style.scss */
+  /* line 838, ../sass/style.scss */
   .projects a:hover .remembrall {
     background: #1DCADD;
     color: #fff;
   }
-  /* line 835, ../sass/style.scss */
+  /* line 843, ../sass/style.scss */
   .projects a:hover .dribbbleiOS7 {
     background: #FF1782;
     color: #fff;
   }
-  /* line 840, ../sass/style.scss */
+  /* line 848, ../sass/style.scss */
   .projects a:hover .flexregistry {
     background: #01A1DF;
     color: #fff;
@@ -813,7 +819,7 @@ nav ul .nav-link:before {
     transform: translateY(0);
   }
 }
-/* line 858, ../sass/style.scss */
+/* line 866, ../sass/style.scss */
 .fade-in {
   opacity: 0;
   /* make things invisible upon start */

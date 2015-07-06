@@ -289,6 +289,7 @@ nav ul .nav-link:before {
 /* line 352, ../sass/style.scss */
 .footer {
   margin: 0 auto 50px auto;
+  padding-bottom: 20px;
   font-family: "Lato", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   font-size: 0.8em;
   color: #979797;

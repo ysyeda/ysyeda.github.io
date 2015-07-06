@@ -3,8 +3,6 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   -o-box-sizing: border-box;
   box-sizing: border-box;
 }
@@ -48,8 +46,6 @@ body {
 /* line 97, ../sass/style.scss */
 .logo #ms-logo {
   -webkit-transition: all 0.3s ease-out 0s;
-  -moz-transition: all 0.3s ease-out 0s;
-  -o-transition: all 0.3s ease-out 0s;
   transition: all 0.3s ease-out 0s;
 }
 /* line 101, ../sass/style.scss */
@@ -95,7 +91,8 @@ nav ul .nav-link:hover {
 nav ul .nav-link:hover:before {
   visibility: visible;
   -webkit-transform: scaleX(1);
-  transform: scaleX(1);
+  -ms-transform: scaleX(1);
+      transform: scaleX(1);
 }
 /* line 153, ../sass/style.scss */
 nav ul .nav-link:before {
@@ -108,7 +105,8 @@ nav ul .nav-link:before {
   background-color: #000;
   visibility: hidden;
   -webkit-transform: scaleX(0);
-  transform: scaleX(0);
+  -ms-transform: scaleX(0);
+      transform: scaleX(0);
   -webkit-transition: all 0.3s ease-in-out 0s;
   transition: all 0.3s cubic-bezier(0, 0.16, 0.25, 1.4) 0s;
 }
@@ -119,8 +117,6 @@ nav ul .nav-link:before {
   height: 120px;
   display: block;
   margin: 50px auto 20px auto;
-  -webkit-border-radius: 200px;
-  -moz-border-radius: 200px;
   border-radius: 200px;
   background-image: url(../img/Moaaz-1x1.png);
   background-size: cover;
@@ -128,11 +124,15 @@ nav ul .nav-link:before {
   opacity: 0;
   /* make things invisible upon start */
   /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
-  animation: fadeIn ease-in-out 1;
+  -webkit-animation: fadeIn ease-in-out 1;
+          animation: fadeIn ease-in-out 1;
   /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
-  animation-fill-mode: forwards;
-  animation-duration: .6s;
-  animation-delay: 0.2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-duration: .6s;
+          animation-duration: .6s;
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
 }
 
 /* line 194, ../sass/style.scss */
@@ -151,11 +151,15 @@ nav ul .nav-link:before {
   opacity: 0;
   /* make things invisible upon start */
   /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
-  animation: fadeIn ease-in-out 1;
+  -webkit-animation: fadeIn ease-in-out 1;
+          animation: fadeIn ease-in-out 1;
   /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
-  animation-fill-mode: forwards;
-  animation-duration: .6s;
-  animation-delay: 0.36s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-duration: .6s;
+          animation-duration: .6s;
+  -webkit-animation-delay: 0.36s;
+          animation-delay: 0.36s;
 }
 
 /* line 215, ../sass/style.scss */
@@ -164,7 +168,8 @@ nav ul .nav-link:before {
   font-weight: bold;
   color: #4A4A4A;
   text-decoration: none;
-  transition: all 0.3s ease-in-out 0s;
+  -webkit-transition: all 0.3s ease-in-out 0s;
+          transition: all 0.3s ease-in-out 0s;
   padding-bottom: 2px;
   border-bottom: 1px solid #4A4A4A;
 }
@@ -182,11 +187,15 @@ nav ul .nav-link:before {
   opacity: 0;
   /* make things invisible upon start */
   /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
-  animation: fadeIn ease-in-out 1;
+  -webkit-animation: fadeIn ease-in-out 1;
+          animation: fadeIn ease-in-out 1;
   /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
-  animation-fill-mode: forwards;
-  animation-duration: .6s;
-  animation-delay: 0.42s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-duration: .6s;
+          animation-duration: .6s;
+  -webkit-animation-delay: 0.42s;
+          animation-delay: 0.42s;
 }
 /* line 269, ../sass/style.scss */
 .social .link-social {
@@ -196,14 +205,14 @@ nav ul .nav-link:before {
   margin: auto 16px;
   text-transform: lowercase;
   -webkit-transition: all 0.3s ease-out 0s;
-  -moz-transition: all 0.3s ease-out 0s;
-  -o-transition: all 0.3s ease-out 0s;
   transition: all 0.3s ease-out 0s;
 }
 /* line 277, ../sass/style.scss */
 .social .link-social:hover .text-label {
   opacity: 1;
-  transform: translateY(-10px);
+  -webkit-transform: translateY(-10px);
+      -ms-transform: translateY(-10px);
+          transform: translateY(-10px);
 }
 /* line 284, ../sass/style.scss */
 .social .link-social i {
@@ -217,8 +226,6 @@ nav ul .nav-link:before {
   margin-top: 20px;
   display: block;
   -webkit-transition: all 0.3s ease-out 0s;
-  -moz-transition: all 0.3s ease-out 0s;
-  -o-transition: all 0.3s ease-out 0s;
   transition: all 0.3s ease-out 0s;
 }
 
@@ -307,7 +314,8 @@ nav ul .nav-link:before {
 .footer .link-attribution:hover:before {
   visibility: visible;
   -webkit-transform: scaleX(1);
-  transform: scaleX(1);
+  -ms-transform: scaleX(1);
+      transform: scaleX(1);
 }
 /* line 381, ../sass/style.scss */
 .footer .link-attribution:before {
@@ -320,7 +328,8 @@ nav ul .nav-link:before {
   background-color: #979797;
   visibility: hidden;
   -webkit-transform: scaleX(0);
-  transform: scaleX(0);
+  -ms-transform: scaleX(0);
+      transform: scaleX(0);
   -webkit-transition: all 0.3s ease-in-out 0s;
   transition: all 0.3s ease-in-out 0s;
 }
@@ -334,11 +343,15 @@ nav ul .nav-link:before {
   display: block;
   text-align: center;
   opacity: 0;
-  animation: fadeIn ease-in-out 1;
+  -webkit-animation: fadeIn ease-in-out 1;
+          animation: fadeIn ease-in-out 1;
   /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
-  animation-fill-mode: forwards;
-  animation-duration: .6s;
-  animation-delay: 0.2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-duration: .6s;
+          animation-duration: .6s;
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
 }
 /* line 415, ../sass/style.scss */
 .projects .project {
@@ -361,8 +374,6 @@ nav ul .nav-link:before {
   background: white;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   -webkit-transition: all 0.2s ease-out 0s;
-  -moz-transition: all 0.2s ease-out 0s;
-  -o-transition: all 0.2s ease-out 0s;
   transition: all 0.2s ease-out 0s;
 }
 /* line 437, ../sass/style.scss */
@@ -478,14 +489,28 @@ nav ul .nav-link:before {
     margin: 20px auto;
   }
 }
-@keyframes fadeIn {
+@-webkit-keyframes fadeIn {
   from {
     opacity: 0;
-    transform: translateY(10px);
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
   }
   to {
     opacity: 1;
-    transform: translateY(0);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 /* line 565, ../sass/style.scss */
@@ -493,9 +518,13 @@ nav ul .nav-link:before {
   opacity: 0;
   /* make things invisible upon start */
   /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
-  animation: fadeIn ease-in-out 1;
+  -webkit-animation: fadeIn ease-in-out 1;
+          animation: fadeIn ease-in-out 1;
   /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
-  animation-fill-mode: forwards;
-  animation-duration: .85s;
-  animation-delay: 0.2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-duration: .85s;
+          animation-duration: .85s;
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
 }

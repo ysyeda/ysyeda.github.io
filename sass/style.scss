@@ -1,7 +1,11 @@
-@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic);
+//@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic);
+
+//@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800);
+
+@import url(http://fonts.googleapis.com/css?family=Fira+Sans:300,400,500,700,300italic,400italic,500italic,700italic);
 
 // Variables
-$font-stack-sans: 'Lato', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+$font-stack-sans: 'Fira Sans', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
 //$bg-color: #FDFDFD;
 $bg-color: #FFF;
 $primary-color: #4A4A4A;
@@ -132,7 +136,7 @@ nav {
         }
         
         .active {
-            font-weight: 900;
+            font-weight: 700;
         }
         
         .nav-link {
@@ -199,8 +203,12 @@ nav {
 
 .about {
     margin-top: 50px;
-    font-size: 1.25em;
-    line-height: 1.5;
+//    font-size: 1.25em;
+//    line-height: 1.5;
+//    font-size: 1.12em;
+//    line-height: 1.75;
+    font-size: 1.18em;
+    line-height: 1.8;
     color: $primary-color;
     
     opacity:0;  /* make things invisible upon start */
@@ -214,12 +222,12 @@ nav {
 
 .link-text {
     position: relative;
-    font-weight: bold;
+    font-weight: 500;
     color: $primary-color;
     text-decoration: none;
     transition: all 0.3s ease-in-out 0s;
-    padding-bottom: 2px;
-    border-bottom: 1px solid $primary-color;
+    padding-bottom: 0px;
+    border-bottom: 2px solid $primary-color;
 
     &:hover {
         color:$text-color;
@@ -287,7 +295,7 @@ nav {
         }
 
         .text-label {
-            font-family: 'Lato', 'Helvetica', sans-serif;
+            font-family: $font-stack-sans;
             opacity: 0;
             margin-top: 20px;
             display: block;

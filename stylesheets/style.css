@@ -1,122 +1,91 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800);
-/* line 61, ../sass/style.scss */
 * {
   margin: 0;
   padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   -o-box-sizing: border-box;
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
-/* line 67, ../sass/style.scss */
 a {
   text-decoration: none;
-  color: #4A4A4A;
-}
+  color: #4A4A4A; }
 
-/* line 72, ../sass/style.scss */
 html, body {
   margin: 0;
   padding: 0;
-  height: 100%;
-}
+  height: 100%; }
 
-/* line 80, ../sass/style.scss */
 body {
-  background-color: #FFF;
-}
+  background-color: #FFF; }
 
-/* line 85, ../sass/style.scss */
 .frame {
   min-height: 100%;
   background-color: #FFF;
-  border-top: 5px solid #4A4A4A;
-}
+  border-top: 5px solid #4A4A4A; }
 
-/* line 92, ../sass/style.scss */
 .header {
   margin: 50px auto 0px auto;
   width: 640px;
-  font-family: "Open Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-}
+  font-family: "Open Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif; }
 
-/* line 98, ../sass/style.scss */
 .logo {
-  display: inline-block;
-}
-/* line 101, ../sass/style.scss */
-.logo #ms-logo {
-  -webkit-transition: all 0.3s ease-out 0s;
-  transition: all 0.3s ease-out 0s;
-}
-/* line 105, ../sass/style.scss */
-.logo:hover #ms-logo {
-  fill: #212121;
-}
+  display: inline-block; }
+  .logo #ms-logo {
+    -webkit-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s; }
+  .logo:hover #ms-logo {
+    fill: #212121; }
 
-/* line 111, ../sass/style.scss */
 nav {
   float: right;
-  display: inline-block;
-}
-/* line 114, ../sass/style.scss */
-nav ul {
-  padding-top: 10px;
-}
-/* line 116, ../sass/style.scss */
-nav ul li {
-  box-sizing: border-box;
-  text-align: center;
-  cursor: pointer;
-  margin-left: 18px;
-  margin-right: 18px;
-  font-size: 18px;
-  color: #4A4A4A;
-  display: inline-block;
-}
-/* line 138, ../sass/style.scss */
-nav ul .active {
-  font-weight: 700;
-}
-/* line 142, ../sass/style.scss */
-nav ul .nav-link {
-  position: relative;
-  color: #000;
-  text-decoration: none;
-}
-/* line 147, ../sass/style.scss */
-nav ul .nav-link:hover {
-  color: #000;
-}
-/* line 150, ../sass/style.scss */
-nav ul .nav-link:hover:before {
-  visibility: visible;
-  -webkit-transform: scaleX(1);
-  -ms-transform: scaleX(1);
-      transform: scaleX(1);
-}
-/* line 157, ../sass/style.scss */
-nav ul .nav-link:before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 1px;
-  bottom: -7px;
-  left: 0;
-  background-color: #000;
-  visibility: hidden;
-  -webkit-transform: scaleX(0);
-  -ms-transform: scaleX(0);
-      transform: scaleX(0);
-  -webkit-transition: all 0.3s ease-in-out 0s;
-  transition: all 0.3s cubic-bezier(0, 0.16, 0.25, 1.4) 0s;
-}
+  display: inline-block; }
+  nav ul {
+    padding-top: 10px; }
+    nav ul li {
+      box-sizing: border-box;
+      text-align: center;
+      cursor: pointer;
+      margin-left: 18px;
+      margin-right: 18px;
+      font-size: 18px;
+      color: #4A4A4A;
+      display: inline-block; }
+    nav ul .active {
+      font-weight: 700; }
+    nav ul .nav-link {
+      position: relative;
+      color: #000;
+      text-decoration: none; }
+      nav ul .nav-link:hover {
+        color: #000; }
+        nav ul .nav-link:hover:before {
+          visibility: visible;
+          -webkit-transform: scaleX(1);
+          transform: scaleX(1); }
+      nav ul .nav-link:before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        bottom: -7px;
+        left: 0;
+        background-color: #000;
+        visibility: hidden;
+        -webkit-transform: scaleX(0);
+        transform: scaleX(0);
+        -webkit-transition: all 0.3s ease-in-out 0s;
+        transition: all 0.3s cubic-bezier(0, 0.16, 0.25, 1.4) 0s; }
 
-/* line 177, ../sass/style.scss */
 .photo {
   width: 120px;
   height: 120px;
   display: block;
   margin: 50px auto 20px auto;
+  -webkit-border-radius: 200px;
+  -moz-border-radius: 200px;
   border-radius: 200px;
   background-image: url(../img/Moaaz-1x1.png);
   background-size: cover;
@@ -124,25 +93,17 @@ nav ul .nav-link:before {
   opacity: 0;
   /* make things invisible upon start */
   /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
-  -webkit-animation: fadeIn ease-in-out 1;
-          animation: fadeIn ease-in-out 1;
+  animation: fadeIn ease-in-out 1;
   /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  -webkit-animation-duration: .6s;
-          animation-duration: .6s;
-  -webkit-animation-delay: 0.2s;
-          animation-delay: 0.2s;
-}
+  animation-fill-mode: forwards;
+  animation-duration: .6s;
+  animation-delay: 0.2s; }
 
-/* line 198, ../sass/style.scss */
 .content, .projects {
   margin: 0 auto;
   width: 640px;
-  font-family: "Open Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-}
+  font-family: "Open Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif; }
 
-/* line 204, ../sass/style.scss */
 .about {
   margin-top: 50px;
   font-size: 1.125em;
@@ -151,35 +112,24 @@ nav ul .nav-link:before {
   opacity: 0;
   /* make things invisible upon start */
   /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
-  -webkit-animation: fadeIn ease-in-out 1;
-          animation: fadeIn ease-in-out 1;
+  animation: fadeIn ease-in-out 1;
   /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  -webkit-animation-duration: .6s;
-          animation-duration: .6s;
-  -webkit-animation-delay: 0.36s;
-          animation-delay: 0.36s;
-}
+  animation-fill-mode: forwards;
+  animation-duration: .6s;
+  animation-delay: 0.36s; }
 
-/* line 222, ../sass/style.scss */
 .link-text {
   position: relative;
   font-weight: 600;
   color: #4A4A4A;
   text-decoration: none;
-  -webkit-transition: all 0.3s ease-in-out 0s;
-          transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
   padding-bottom: 2px;
-  border-bottom: 1px solid #4A4A4A;
-}
-/* line 231, ../sass/style.scss */
-.link-text:hover {
-  color: #212121;
-  border-color: #212121;
-}
+  border-bottom: 1px solid #4A4A4A; }
+  .link-text:hover {
+    color: #212121;
+    border-color: #212121; }
 
-/* line 263, ../sass/style.scss */
 .social {
   margin: 50px auto;
   width: 720px;
@@ -187,165 +137,106 @@ nav ul .nav-link:before {
   opacity: 0;
   /* make things invisible upon start */
   /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
-  -webkit-animation: fadeIn ease-in-out 1;
-          animation: fadeIn ease-in-out 1;
+  animation: fadeIn ease-in-out 1;
   /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  -webkit-animation-duration: .6s;
-          animation-duration: .6s;
-  -webkit-animation-delay: 0.42s;
-          animation-delay: 0.42s;
-}
-/* line 276, ../sass/style.scss */
-.social .link-social {
-  text-decoration: none;
-  list-style-type: none;
-  display: inline-block;
-  margin: auto 16px;
-  text-transform: lowercase;
-  -webkit-transition: all 0.3s ease-out 0s;
-  transition: all 0.3s ease-out 0s;
-}
-/* line 284, ../sass/style.scss */
-.social .link-social:hover .text-label {
-  opacity: 1;
-  -webkit-transform: translateY(-10px);
-      -ms-transform: translateY(-10px);
-          transform: translateY(-10px);
-}
-/* line 291, ../sass/style.scss */
-.social .link-social i {
-  font-size: 1.8em;
-  color: inherit;
-}
-/* line 296, ../sass/style.scss */
-.social .link-social .text-label {
-  font-family: "Open Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-  opacity: 0;
-  margin-top: 20px;
-  display: block;
-  -webkit-transition: all 0.3s ease-out 0s;
-  transition: all 0.3s ease-out 0s;
-}
+  animation-fill-mode: forwards;
+  animation-duration: .6s;
+  animation-delay: 0.42s; }
+  .social .link-social {
+    text-decoration: none;
+    list-style-type: none;
+    display: inline-block;
+    margin: auto 16px;
+    text-transform: lowercase;
+    -webkit-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s; }
+    .social .link-social:hover .text-label {
+      opacity: 1;
+      transform: translateY(-10px); }
+    .social .link-social i {
+      font-size: 1.8em;
+      color: inherit; }
+    .social .link-social .text-label {
+      font-family: "Open Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+      opacity: 0;
+      margin-top: 20px;
+      display: block;
+      -webkit-transition: all 0.3s ease-out 0s;
+      -moz-transition: all 0.3s ease-out 0s;
+      -o-transition: all 0.3s ease-out 0s;
+      transition: all 0.3s ease-out 0s; }
 
-/* line 308, ../sass/style.scss */
 .social .link-twitter {
-  color: #55acee;
-}
-/* line 311, ../sass/style.scss */
-.social .link-twitter:hover {
-  color: #2795e9;
-}
-/* line 316, ../sass/style.scss */
+  color: #55acee; }
+  .social .link-twitter:hover {
+    color: #2795e9; }
 .social .link-behance {
-  color: #1769ff;
-}
-/* line 318, ../sass/style.scss */
-.social .link-behance:hover {
-  color: #0050e3;
-}
-/* line 323, ../sass/style.scss */
+  color: #1769ff; }
+  .social .link-behance:hover {
+    color: #0050e3; }
 .social .link-dribbble {
-  color: #ea4c89;
-}
-/* line 325, ../sass/style.scss */
-.social .link-dribbble:hover {
-  color: #e51e6b;
-}
-/* line 330, ../sass/style.scss */
+  color: #ea4c89; }
+  .social .link-dribbble:hover {
+    color: #e51e6b; }
 .social .link-instagram {
-  color: #3f729b;
-}
-/* line 332, ../sass/style.scss */
-.social .link-instagram:hover {
-  color: #305777;
-}
-/* line 337, ../sass/style.scss */
+  color: #3f729b; }
+  .social .link-instagram:hover {
+    color: #305777; }
 .social .link-github {
-  color: #666;
-}
-/* line 339, ../sass/style.scss */
-.social .link-github:hover {
-  color: #4d4d4d;
-}
-/* line 344, ../sass/style.scss */
+  color: #666; }
+  .social .link-github:hover {
+    color: #4d4d4d; }
 .social .link-linkedin {
-  color: #0976b4;
-}
-/* line 346, ../sass/style.scss */
-.social .link-linkedin:hover {
-  color: #075683;
-}
-/* line 351, ../sass/style.scss */
+  color: #0976b4; }
+  .social .link-linkedin:hover {
+    color: #075683; }
 .social .link-email {
-  color: #979797;
-}
-/* line 353, ../sass/style.scss */
-.social .link-email:hover {
-  color: #7d7d7d;
-}
+  color: #979797; }
+  .social .link-email:hover {
+    color: #7d7d7d; }
 
-/* line 359, ../sass/style.scss */
 .footer {
   margin: 0 auto 50px auto;
   padding-bottom: 20px;
   font-family: "Open Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   font-size: 0.8em;
   color: #979797;
-  text-align: center;
-}
-/* line 367, ../sass/style.scss */
-.footer .footer-link {
-  color: #979797;
-  -webkit-transition: all 0.3s ease-in-out 0s;
-          transition: all 0.3s ease-in-out 0s;
-}
-/* line 370, ../sass/style.scss */
-.footer .footer-link:hover {
-  color: #4A4A4A;
-}
-/* line 375, ../sass/style.scss */
-.footer p {
-  margin-bottom: 16px;
-  line-height: 1.6;
-}
-/* line 380, ../sass/style.scss */
-.footer .link-attribution {
-  display: none;
-  position: relative;
-  color: #979797;
-  text-decoration: none;
-}
-/* line 386, ../sass/style.scss */
-.footer .link-attribution:hover {
-  color: #979797;
-}
-/* line 389, ../sass/style.scss */
-.footer .link-attribution:hover:before {
-  visibility: visible;
-  -webkit-transform: scaleX(1);
-  -ms-transform: scaleX(1);
-      transform: scaleX(1);
-}
-/* line 396, ../sass/style.scss */
-.footer .link-attribution:before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 1px;
-  bottom: 0;
-  left: 0;
-  background-color: #979797;
-  visibility: hidden;
-  -webkit-transform: scaleX(0);
-  -ms-transform: scaleX(0);
+  text-align: center; }
+  .footer .footer-link {
+    color: #979797;
+    transition: all 0.3s ease-in-out 0s; }
+    .footer .footer-link:hover {
+      color: #4A4A4A; }
+  .footer p {
+    margin-bottom: 16px;
+    line-height: 1.6; }
+  .footer .link-attribution {
+    display: none;
+    position: relative;
+    color: #979797;
+    text-decoration: none; }
+    .footer .link-attribution:hover {
+      color: #979797; }
+      .footer .link-attribution:hover:before {
+        visibility: visible;
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1); }
+    .footer .link-attribution:before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 1px;
+      bottom: 0;
+      left: 0;
+      background-color: #979797;
+      visibility: hidden;
+      -webkit-transform: scaleX(0);
       transform: scaleX(0);
-  -webkit-transition: all 0.3s ease-in-out 0s;
-  transition: all 0.3s ease-in-out 0s;
-}
+      -webkit-transition: all 0.3s ease-in-out 0s;
+      transition: all 0.3s ease-in-out 0s; }
 
-/* line 413, ../sass/style.scss */
 .projects {
   margin-top: 50px;
   margin-bottom: 50px;
@@ -354,188 +245,117 @@ nav ul .nav-link:before {
   display: block;
   text-align: center;
   opacity: 0;
-  -webkit-animation: fadeIn ease-in-out 1;
-          animation: fadeIn ease-in-out 1;
+  animation: fadeIn ease-in-out 1;
   /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  -webkit-animation-duration: .6s;
-          animation-duration: .6s;
-  -webkit-animation-delay: 0.2s;
-          animation-delay: 0.2s;
-}
-/* line 430, ../sass/style.scss */
-.projects .project {
-  margin: auto;
-  display: inline-block;
-  vertical-align: top;
-}
-/* line 436, ../sass/style.scss */
-.projects .project-details {
-  height: 160px;
-}
-/* line 440, ../sass/style.scss */
-.projects .project-box {
-  border-top: 5px solid transparent;
-  text-align: left;
-  height: 220px;
-  width: 220px;
-  padding: 16px;
-  margin: 7px;
-  background: white;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-  -webkit-transition: all 0.2s ease-out 0s;
-  transition: all 0.2s ease-out 0s;
-}
-/* line 452, ../sass/style.scss */
-.projects .project-box h2 {
-  font-size: 1.5em;
-  font-weight: 300;
-  margin-bottom: 16px;
-}
-/* line 458, ../sass/style.scss */
-.projects .project-box .tasks {
-  display: block;
-  margin-bottom: 32px;
-}
-/* line 463, ../sass/style.scss */
-.projects .project-box .view {
-  width: 100%;
-  display: inline;
-  bottom: 10px;
-  right: 2px;
-  text-align: right;
-  font-size: 0.8em;
-  margin-bottom: 3px;
-  border-bottom: 1px dotted #4A4A4A;
-}
-/* line 476, ../sass/style.scss */
-.projects .remembrall {
-  border-top: 5px solid #1DCADD;
-}
-/* line 481, ../sass/style.scss */
-.projects .dribbbleiOS7 {
-  border-top: 5px solid #FF1782;
-}
-/* line 485, ../sass/style.scss */
-.projects .flexregistry {
-  border-top: 5px solid #01A1DF;
-}
-/* line 492, ../sass/style.scss */
-.projects a:hover .view {
-  border-bottom: 1px dotted #fff;
-}
-/* line 495, ../sass/style.scss */
-.projects a:hover .remembrall {
-  background: #1DCADD;
-  color: #fff;
-}
-/* line 500, ../sass/style.scss */
-.projects a:hover .dribbbleiOS7 {
-  background: #FF1782;
-  color: #fff;
-}
-/* line 505, ../sass/style.scss */
-.projects a:hover .flexregistry {
-  background: #01A1DF;
-  color: #fff;
-}
+  animation-fill-mode: forwards;
+  animation-duration: .6s;
+  animation-delay: 0.2s; }
+  .projects .project {
+    margin: auto;
+    display: inline-block;
+    vertical-align: top; }
+  .projects .project-details {
+    height: 160px; }
+  .projects .project-box {
+    border-top: 5px solid transparent;
+    text-align: left;
+    height: 220px;
+    width: 220px;
+    padding: 16px;
+    margin: 7px;
+    background: white;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    -webkit-transition: all 0.2s ease-out 0s;
+    -moz-transition: all 0.2s ease-out 0s;
+    -o-transition: all 0.2s ease-out 0s;
+    transition: all 0.2s ease-out 0s; }
+    .projects .project-box h2 {
+      font-size: 1.5em;
+      font-weight: 300;
+      margin-bottom: 16px; }
+    .projects .project-box .tasks {
+      display: block;
+      margin-bottom: 32px; }
+    .projects .project-box .view {
+      width: 100%;
+      display: inline;
+      bottom: 10px;
+      right: 2px;
+      text-align: right;
+      font-size: 0.8em;
+      margin-bottom: 3px;
+      border-bottom: 1px dotted #4A4A4A; }
+  .projects .remembrall {
+    border-top: 5px solid #1DCADD; }
+  .projects .dribbbleiOS7 {
+    border-top: 5px solid #FF1782; }
+  .projects .flexregistry {
+    border-top: 5px solid #01A1DF; }
+  .projects a:hover .view {
+    border-bottom: 1px dotted #fff; }
+  .projects a:hover .remembrall {
+    background: #1DCADD;
+    color: #fff; }
+  .projects a:hover .dribbbleiOS7 {
+    background: #FF1782;
+    color: #fff; }
+  .projects a:hover .flexregistry {
+    background: #01A1DF;
+    color: #fff; }
 
 @media (max-width: 720px) {
-  /* line 516, ../sass/style.scss */
   .frame {
-    padding: 30px;
-  }
+    padding: 30px; }
 
-  /* line 520, ../sass/style.scss */
   .header {
     margin: 0px auto 0px auto;
-    width: 100%;
-  }
+    width: 100%; }
 
-  /* line 525, ../sass/style.scss */
   .content, .projects {
     margin: 0 auto;
-    width: 100%;
-  }
+    width: 100%; }
 
-  /* line 530, ../sass/style.scss */
   .social {
     margin: 20px auto;
-    width: 100%;
-  }
-  /* line 534, ../sass/style.scss */
-  .social .link-social {
-    min-width: 70px;
-    margin: 10px 16px;
-  }
-  /* line 538, ../sass/style.scss */
-  .social .link-social .text-label {
-    margin-top: 20px;
-  }
+    width: 100%; }
+    .social .link-social {
+      min-width: 70px;
+      margin: 10px 16px; }
+      .social .link-social .text-label {
+        margin-top: 20px; }
 
-  /* line 545, ../sass/style.scss */
   .projects {
     margin-top: 50px;
     margin-bottom: 50px;
     width: 100%;
     min-height: 300px;
     display: block;
-    text-align: center;
-  }
-  /* line 552, ../sass/style.scss */
-  .projects .project {
-    margin: auto;
-    display: block;
-  }
-  /* line 557, ../sass/style.scss */
-  .projects .project-details {
-    height: 120px;
-  }
-  /* line 561, ../sass/style.scss */
-  .projects .project-box {
-    height: 180px;
-    width: 90%;
-    padding: 16px;
-    margin: 20px auto;
-  }
-}
-@-webkit-keyframes fadeIn {
-  from {
-    opacity: 0;
-    -webkit-transform: translateY(10px);
-            transform: translateY(10px);
-  }
-  to {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-}
+    text-align: center; }
+    .projects .project {
+      margin: auto;
+      display: block; }
+    .projects .project-details {
+      height: 120px; }
+    .projects .project-box {
+      height: 180px;
+      width: 90%;
+      padding: 16px;
+      margin: 20px auto; } }
 @keyframes fadeIn {
   from {
     opacity: 0;
-    -webkit-transform: translateY(10px);
-            transform: translateY(10px);
-  }
+    transform: translateY(10px); }
   to {
     opacity: 1;
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-}
-/* line 580, ../sass/style.scss */
+    transform: translateY(0); } }
 .fade-in {
   opacity: 0;
   /* make things invisible upon start */
   /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
-  -webkit-animation: fadeIn ease-in-out 1;
-          animation: fadeIn ease-in-out 1;
+  animation: fadeIn ease-in-out 1;
   /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  -webkit-animation-duration: .85s;
-          animation-duration: .85s;
-  -webkit-animation-delay: 0.2s;
-          animation-delay: 0.2s;
-}
+  animation-fill-mode: forwards;
+  animation-duration: .85s;
+  animation-delay: 0.2s; }
+
+/*# sourceMappingURL=style.css.map */

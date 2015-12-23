@@ -1,12 +1,13 @@
 //@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic);
-// @import url(https://fonts.googleapis.com/css?family=Muli:400,300,300italic,400italic);
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800);
+// @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800);
 @import url(https://fonts.googleapis.com/css?family=Work+Sans:400,100,200,300,500,600,700,800,900);
-// @import url(http://fonts.googleapis.com/css?family=Fira+Sans:300,400,500,700,300italic,400italic,500italic,700italic);
 
-// Variables
+/** Variables **/
+
+// Font Stacks
 $font-stack-sans: 'Work sans', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
-//$bg-color: #FDFDFD;
+
+// Colors
 $bg-color: #FFF;
 $primary-color: #4A4A4A;
 $text-color: darken($primary-color, 16%);
@@ -22,12 +23,13 @@ $remembrall-light: #1DCADD;
 $dribbble-ios7: #FF1782;
 $flexregistry: #01A1DF;
 
+// Metrics
 $width: 640px;
 
 // Bezier Curves
 $mini-spring: cubic-bezier(0,.16,.25,1.4);
 
-// Mixins
+/** Mixins **/
 @mixin transition ($property, $duration, $timing, $delay){
     -webkit-transition:$property $duration $timing $delay;
     -moz-transition:$property $duration $timing $delay;

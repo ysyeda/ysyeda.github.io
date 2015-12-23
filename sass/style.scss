@@ -1,11 +1,11 @@
 //@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic);
-
+// @import url(https://fonts.googleapis.com/css?family=Muli:400,300,300italic,400italic);
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800);
-
+@import url(https://fonts.googleapis.com/css?family=Work+Sans:400,100,200,300,500,600,700,800,900);
 // @import url(http://fonts.googleapis.com/css?family=Fira+Sans:300,400,500,700,300italic,400italic,500italic,700italic);
 
 // Variables
-$font-stack-sans: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+$font-stack-sans: 'Work sans', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
 //$bg-color: #FDFDFD;
 $bg-color: #FFF;
 $primary-color: #4A4A4A;
@@ -21,6 +21,8 @@ $remembrall-dark: #2B4144;
 $remembrall-light: #1DCADD;
 $dribbble-ios7: #FF1782;
 $flexregistry: #01A1DF;
+
+$width: 640px;
 
 // Bezier Curves
 $mini-spring: cubic-bezier(0,.16,.25,1.4);
@@ -91,7 +93,7 @@ body {
 
 .header {
     margin: 50px auto 0px auto;
-    width: 640px;
+    width: $width;
     font-family: $font-stack-sans;
 }
 
@@ -122,21 +124,10 @@ nav {
             font-size: 18px;
             color: $primary-color;
             display: inline-block;
-//            padding-bottom: 3px;
-//            border-bottom: 2px dotted transparent;
-//            @include transition(all, 0.3s, ease-out, 0s);
-
-//            &:hover {
-////                margin-left: 17px;
-////                font-weight: bold;
-//                color: $text-color;
-//                border-bottom: 2px dotted $primary-color;
-//
-//            }
         }
 
         .active {
-            font-weight: 700;
+            font-weight: 600;
         }
 
         .nav-link {
@@ -187,17 +178,17 @@ nav {
     background-position: -2px center;
 
     opacity:0;  /* make things invisible upon start */
-	/* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
-	animation:fadeIn ease-in-out 1;
-	/* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
-	animation-fill-mode:forwards;
-	animation-duration:.6s;
+	  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+	  animation:fadeIn ease-in-out 1;
+	  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+    animation-fill-mode:forwards;
+    animation-duration:.6s;
     animation-delay: 0.2s;
 }
 
 .content {
     margin: 0 auto;
-    width: 640px;
+    width: $width;
     font-family: $font-stack-sans;
 }
 
@@ -206,16 +197,16 @@ nav {
 //    font-size: 1.25em;
 //    line-height: 1.5;
     font-size: 1.125em;
-    line-height: 1.75;
+    // line-height: 1.75;
 //    font-size: 1.18em;
-//    line-height: 1.8;
+   line-height: 1.8;
     color: $primary-color;
     opacity:0;  /* make things invisible upon start */
-	/* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
-	animation:fadeIn ease-in-out 1;
-	/* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
-	animation-fill-mode:forwards;
-	animation-duration:.6s;
+	  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+	  animation:fadeIn ease-in-out 1;
+	  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+	  animation-fill-mode:forwards;
+	  animation-duration:.6s;
     animation-delay: 0.36s;
 }
 
@@ -225,39 +216,13 @@ nav {
     color: $primary-color;
     text-decoration: none;
     transition: all 0.3s ease-in-out 0s;
-    padding-bottom: 2px;
+    padding-bottom: 3px;
     border-bottom: 1px solid $primary-color;
 
     &:hover {
         color:$text-color;
         border-color: $text-color;
     }
-
-//    &:hover {
-//        color:$text-color;
-//
-//        &:before {
-//            background-color: $text-color;
-////            visibility: visible;
-////            -webkit-transform: scaleX(1);
-//            transform: scaleX(1);
-//        }
-//    }
-//
-//    &:before {
-//        content: "";
-//        position: absolute;
-//        width: 100%;
-//        height: 1px;
-//        bottom: -3px;
-//        left: 0;
-//        background-color: $primary-color;
-//        visibility: visible;
-////        -webkit-transform: scaleX(1);
-//        transform: scaleX(1);
-//        -webkit-transition: all 0.3s ease-in-out 0s;
-//        transition: all 0.3s ease-in-out 0s;
-//    }
 }
 
 .social {
@@ -266,11 +231,11 @@ nav {
     text-align: center;
 
     opacity:0;  /* make things invisible upon start */
-	/* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
-	animation:fadeIn ease-in-out 1;
-	/* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
-	animation-fill-mode:forwards;
-	animation-duration:.6s;
+  	/* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+  	animation:fadeIn ease-in-out 1;
+  	/* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  	animation-fill-mode:forwards;
+  	animation-duration:.6s;
     animation-delay: 0.42s;
 
     .link-social {

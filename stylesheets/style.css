@@ -1,4 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800);
+@import url(https://fonts.googleapis.com/css?family=Work+Sans:400,100,200,300,500,600,700,800,900);
 * {
   margin: 0;
   padding: 0;
@@ -27,7 +28,7 @@ body {
 .header {
   margin: 50px auto 0px auto;
   width: 640px;
-  font-family: "Open Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif; }
+  font-family: "Work sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif; }
 
 .logo {
   display: inline-block; }
@@ -54,7 +55,7 @@ nav {
       color: #4A4A4A;
       display: inline-block; }
     nav ul .active {
-      font-weight: 700; }
+      font-weight: 600; }
     nav ul .nav-link {
       position: relative;
       color: #000;
@@ -102,12 +103,12 @@ nav {
 .content, .projects {
   margin: 0 auto;
   width: 640px;
-  font-family: "Open Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif; }
+  font-family: "Work sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif; }
 
 .about {
   margin-top: 50px;
   font-size: 1.125em;
-  line-height: 1.75;
+  line-height: 1.8;
   color: #4A4A4A;
   opacity: 0;
   /* make things invisible upon start */
@@ -124,7 +125,7 @@ nav {
   color: #4A4A4A;
   text-decoration: none;
   transition: all 0.3s ease-in-out 0s;
-  padding-bottom: 2px;
+  padding-bottom: 3px;
   border-bottom: 1px solid #4A4A4A; }
   .link-text:hover {
     color: #212121;
@@ -159,7 +160,7 @@ nav {
       font-size: 1.8em;
       color: inherit; }
     .social .link-social .text-label {
-      font-family: "Open Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+      font-family: "Work sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
       opacity: 0;
       margin-top: 20px;
       display: block;
@@ -200,7 +201,7 @@ nav {
 .footer {
   margin: 0 auto 50px auto;
   padding-bottom: 20px;
-  font-family: "Open Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-family: "Work sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   font-size: 0.8em;
   color: #979797;
   text-align: center; }

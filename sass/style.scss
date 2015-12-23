@@ -11,6 +11,8 @@ $font-stack-sans: 'Work sans', 'Helvetica Neue', 'Helvetica', 'Arial', sans-seri
 $bg-color: #FFF;
 $primary-color: #4A4A4A;
 $text-color: darken($primary-color, 16%);
+$special-color: #D84315;
+$special-color-dark: darken(#BF360C, 10%);
 $secondary-color: lighten($primary-color, 30%);
 $twitter:#55acee;
 $behance:#1769ff;
@@ -79,11 +81,8 @@ html, body {
     height:100%;
 }
 
-
-
 body {
     background-color: $bg-color;
-//    padding:16px;
 }
 
 .frame {
@@ -214,16 +213,16 @@ nav {
 
 .link-text {
     position: relative;
-    font-weight: 600;
-    color: $primary-color;
+    // font-weight: 600;
+    color: $special-color;
     text-decoration: none;
-    transition: all 0.3s ease-in-out 0s;
+    transition: all 0.16s ease-in-out 0s;
     padding-bottom: 3px;
-    border-bottom: 1px solid $primary-color;
+    border-bottom: 1px solid $special-color;
 
     &:hover {
-        color:$text-color;
-        border-color: $text-color;
+        color:$special-color-dark;
+        border-color: $special-color-dark;
     }
 }
 

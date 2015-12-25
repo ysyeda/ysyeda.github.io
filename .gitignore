@@ -1,5 +1,3 @@
-.sass-cache/
-resume-dev/
-sass/resume.scss
-stylesheets/resume.css
-*.map
+_site
+.sass-cache
+.jekyll-metadata

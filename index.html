@@ -1,88 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <title>Moaaz Sidat</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+---
+layout: default
+---
 
-        <link href="stylesheets/style.css" rel="stylesheet" type="text/css">
-        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<div class="home">
 
-        <script>
-          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  <h1 class="page-heading">Posts</h1>
 
-          ga('create', 'UA-59763625-1', 'auto');
-          ga('send', 'pageview');
-        </script>
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
-    </head>
-    <body>
-        <div class="frame">
-        <section class="header">
-               <a class="logo" href="http://moaazsidat.github.io/">
-                 <svg width="57px" height="52px" viewBox="0 0 57 52" version="1.1" fill="pink">
-                   <title>Fill 1</title>
-                   <defs></defs>
-                   <g id="Page-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
-                     <g id="ms-logo" sketch:type="MSArtboardGroup" transform="translate(-392.000000, -63.000000)" fill="#4A4A4A">
-                       <g id="Group" sketch:type="MSLayerGroup" transform="translate(392.000000, 63.000000)">
-                         <g id="Imported-Layers" sketch:type="MSShapeGroup">
-                           <path d="M29.0020714,0.410230769 L21.0726429,14.1802308 L36.9315,14.1802308 L29.0020714,0.410230769 Z M32.0077143,41.0078462 L30.7835,38.8852308 L19.43,19.1648462 L0.720857143,51.6562308 L7.12985714,51.6562308 L19.43,30.2971538 L31.7301429,51.6562308 L38.1391429,51.6562308 L32.0077143,41.0078462 Z M30.1620714,33.0823077 L32.8238571,37.7034615 L33.3665714,38.6463846 L38.1743571,30.2950769 L50.4745,51.6562308 L56.8835,51.6562308 L38.1743571,19.1648462 L30.1620714,33.0823077 Z M24.2377857,43.3672308 L23.6163571,44.4493077 L19.4672857,51.6562308 L25.8762857,51.6562308 L27.4422857,48.9333846 L24.2377857,43.3672308 Z" id="Fill-1"></path>
-                        </g>
-                      </g>
-                    </g>
-                  </g>
-                </svg>
-              </a>
-            <nav>
-                <ul>
-                    <a href="http://moaazsidat.github.io/"><li class="nav-link active">about</li></a>
-<!--                    <li>writings</li>-->
-                    <a href="http://moaazsidat.github.io/projects"><li class="nav-link">projects</li></a>
-                </ul>
-            </nav>
-        </section>
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+      </li>
+    {% endfor %}
+  </ul>
 
-        <section class="content">
-            <div class="photo"></div>
-            <div class="about">
-            <p>Hello! I’m Moaaz Sidat, a designer & developer living in Waterloo, ON. I’m currently studying computer science at the <a href="http://uwaterloo.ca/" target="_blank" class="link-text">University of Waterloo</a> with a heightened interest towards Human Computer Interaction.</p><br>
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
-<p>I've most recently worked as a Software Engineer at <a href="http://hootsuite.com" target="_blank" class="link-text">Hootsuite</a> and previously as a Product Designer at <a href="http://mappedin.com" target="_blank" class="link-text">MappedIn</a>.</p><br>
-
-<p>I love obsessing over typographic details, enjoy talking and thinking about product design, front-end engineering & prototyping. I enjoy building products and crafting experiences surrounding them.</p><br>
-
-<p>I spend some of my time trying to learn something new. These days my focus lies mostly towards <a class="link-text" href="https://developer.apple.com/library/mac/navigation/" target="_blank">OSX Development</a> and <a href="https://www.youtube.com/user/mtmograph/videos" target="_blank" class="link-text">Motion Design</a>. I’m a cat-lover and an occasional photographer. I enjoy hand-lettering & illustrations, and will sometimes explore those two worlds of design purely for fun.</p><br>
-
-<!--
-<p>I’m currently looking for small scale front-end development or interface design projects.
-    <a class="link-text" href="mailto:moaazsidat@gmail..com?Subject=Hello!">Let’s chat if you have something in mind.</a></p>
--->
-
-<p>I’m currently looking for engineering & design roles for Summer 2016.<br>
-    <a class="link-text" href="mailto:moaazsidat@gmail..com?Subject=Hello!">Let’s chat if you have something in mind.</a></p>
-                <br>
-
-                </div>
-        </section>
-<section class="social">
-    <ul>
-        <a class="link-social link-twitter" href="http://twitter.com/moaazsidat" target="_blank"><i class="fa fa-twitter"></i><span class="text-label">Twitter</span></a>
-        <a class="link-social link-github" href="http://github.com/moaazsidat" target="_blank"><i class="fa fa-github-alt"></i><span class="text-label">Github</span></a>
-        <a class="link-social link-dribbble" href="http://dribbble.com/moaazsidat" target="_blank"><i class="fa fa-dribbble"></i><span class="text-label">Dribbble</span></a>
-        <a class="link-social link-instagram" href="http://instagram.com/moaazsidat" target="_blank"><i class="fa fa-instagram"></i><span class="text-label">Instagram</span></a>
-        <a class="link-social link-behance" href="http://behance.net/moaazsidat" target="_blank"><i class="fa fa-behance"></i><span class="text-label">Behance</span></a>
-        <a class="link-social link-linkedin" href="http://linkedin.com/in/moaazsidat" target="_blank"><i class="fa fa-linkedin"></i><span class="text-label">Linkedin</span></a>
-        <a class="link-social link-email" href="mailto:moaazsidat@gmail..com?Subject=Hello!"><i class="fa fa-envelope"></i><span class="text-label">Say Hello!</span></a>
-    </ul>
-</section>
-        <section class="footer">
-            <p>Created with <i class="fa fa-heart"></i> in <a class="footer-link" href="https://www.google.ca/maps/place/Waterloo,+ON">Waterloo</a><br>&copy 2016 Moaaz Sidat</p>
-
-        </section>
-            </div>
-    </body>
-</html>
+</div>

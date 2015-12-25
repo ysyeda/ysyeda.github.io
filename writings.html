@@ -4,12 +4,14 @@ title: writings
 permalink: /writings/
 ---
 
-{% for post in site.posts %}
-<div class="post">
-  <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
-    <h2>{{ post.title }}</h1>
-    <div class="date">{{ post.date | date_to_long_string }}</div>
-    <p>{{post.content | truncate: 160}}</p>
-  </a>
+<div class="posts">
+  {% for post in site.posts %}
+    <div class="post">
+      <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
+        <h2>{{ post.title }}</h2>
+        <div class="date">{{ post.date | date_to_long_string }}</div>
+        <p>{{post.content | truncate: 160}}</p>
+      </a>
+    </div>
+  {% endfor %}
 </div>
-{% endfor %}

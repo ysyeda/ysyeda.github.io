@@ -6,7 +6,11 @@
     <ul>
       {% for my_page in site.pages %}
         {% if my_page.title %}
-        <a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}"><li class="nav-link">{{ my_page.title }}</li></a>
+          {% if my_page.url == page.url %}
+            <a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}"><li class="nav-link active">{{ my_page.title }}</li></a>
+          {% else %}
+            <a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}"><li class="nav-link">{{ my_page.title }}</li></a>
+          {% endif %}
         {% endif %}
       {% endfor %}
     </ul>

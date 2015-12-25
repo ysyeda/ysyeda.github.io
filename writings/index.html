@@ -2,10 +2,6 @@
 layout: default
 ---
 
-{% if paginator.page != 1 %}
-    <span class="pagenum"> Page {{ paginator.page }} </span>
-{% endif %}
-
 <h1>Writings</h1>
 
 {% for post in paginator.posts %}

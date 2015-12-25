@@ -1,0 +1,34 @@
+/**
+* Mixins
+*/
+
+@mixin transition ($property, $duration, $timing, $delay){
+    -webkit-transition:$property $duration $timing $delay;
+    -moz-transition:$property $duration $timing $delay;
+    -o-transition:$property $duration $timing $delay;
+    transition:$property $duration $timing $delay;
+
+}
+
+@mixin box-sizing ($box){
+    -webkit-box-sizing:$box;
+    -moz-box-sizing:$box;
+    -o-box-sizing:$box;
+    box-sizing:$box;
+}
+
+@mixin flexbox() {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+@mixin flex($values) {
+  -webkit-box-flex: $values;
+  -moz-box-flex:  $values;
+  -webkit-flex:  $values;
+  -ms-flex:  $values;
+  flex: $values;
+}

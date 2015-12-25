@@ -9,491 +9,501 @@ $width: 640px;
 $mini-spring: cubic-bezier(0,.16,.25,1.4);
 
 * {
-    margin: 0;
-    padding: 0;
-    @include box-sizing(border-box);
+  margin: 0;
+  padding: 0;
+  @include box-sizing(border-box);
 }
 
 a {
-    text-decoration: none;
-    color: $primary-color;
+  text-decoration: none;
+  color: $primary-color;
 }
 
 html, body {
-    margin: 0;
-    padding:0;
-    height:100%;
+  margin: 0;
+  padding:0;
+  height:100%;
 }
 
 body {
-    background-color: $bg-color;
+  background-color: $bg-color;
 }
 
 .frame {
-    min-height: 100%;
-    background-color: $bg-color;
-    border-top: 5px solid $primary-color;
+  min-height: 100%;
+  background-color: $bg-color;
+  border-top: 5px solid $primary-color;
 }
 
 .header {
-    margin: 50px auto 0px auto;
-    width: $width;
-    font-family: $font-stack-sans;
+  margin: 50px auto 0px auto;
+  width: $width;
+  font-family: $font-stack-sans;
 }
 
 .logo {
-    display: inline-block;
+  display: inline-block;
 
+  #ms-logo {
+    @include transition(all, 0.3s, ease-out, 0s);
+  }
+  &:hover {
     #ms-logo {
-         @include transition(all, 0.3s, ease-out, 0s);
+      fill: darken($primary-color, 16%);
     }
-    &:hover {
-        #ms-logo {
-            fill: darken($primary-color, 16%);
-        }
-    }
+  }
+}
+
+.logo-img {
+  width: 57px;
+  height: 52px;
+
+  &.small {
+    width: 42px;
+    height: 42px;
+  }
 }
 
 nav {
-    float: right;
-    display: inline-block;
-    ul {
-        padding-top: 10px;
-        li {
-            box-sizing: border-box;
-            text-align: center;
-            cursor: pointer;
-            margin-left: 18px;
-            margin-right: 18px;
-            font-size: 18px;
-            color: $primary-color;
-            display: inline-block;
-        }
-
-        .active {
-            font-weight: 600;
-        }
-
-        .nav-link {
-            position: relative;
-            color: #000;
-            text-decoration: none;
-
-            &:hover {
-            color:#000;
-
-                &:before {
-                  visibility: visible;
-                  -webkit-transform: scaleX(1);
-                  transform: scaleX(1);
-                }
-            }
-
-            &:before {
-                content: "";
-                position: absolute;
-                width: 100%;
-                height: 1px;
-                bottom: -7px;
-                left: 0;
-                background-color: #000;
-                visibility: hidden;
-                -webkit-transform: scaleX(0);
-                transform: scaleX(0);
-                -webkit-transition: all 0.3s ease-in-out 0s;
-                transition: all 0.3s $mini-spring 0s;
-                }
-            }
-
+  float: right;
+  display: inline-block;
+  ul {
+    padding-top: 10px;
+    li {
+      box-sizing: border-box;
+      text-align: center;
+      cursor: pointer;
+      margin-left: 18px;
+      margin-right: 18px;
+      font-size: 18px;
+      color: $primary-color;
+      display: inline-block;
     }
+
+    .active {
+      font-weight: 600;
+    }
+
+    .nav-link {
+      position: relative;
+      color: #000;
+      text-decoration: none;
+
+      &:hover {
+        color:#000;
+
+        &:before {
+          visibility: visible;
+          -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+        }
+      }
+
+      &:before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        bottom: -7px;
+        left: 0;
+        background-color: #000;
+        visibility: hidden;
+        -webkit-transform: scaleX(0);
+        transform: scaleX(0);
+        -webkit-transition: all 0.3s ease-in-out 0s;
+        transition: all 0.3s $mini-spring 0s;
+      }
+    }
+
+  }
 
 }
 
 .photo {
-    width: 120px;
-    height: 120px;
-    display:block;
-    margin: 50px auto 20px auto;
-    -webkit-border-radius: 200px;
-    -moz-border-radius: 200px;
-    border-radius: 200px;
-    background-image: url(../img/Moaaz-1x1.png);
-    background-size: cover;
-    background-position: -2px center;
+  width: 120px;
+  height: 120px;
+  display:block;
+  margin: 50px auto 20px auto;
+  -webkit-border-radius: 200px;
+  -moz-border-radius: 200px;
+  border-radius: 200px;
+  background-image: url(../img/Moaaz-1x1.png);
+  background-size: cover;
+  background-position: -2px center;
 
-    opacity:0;  /* make things invisible upon start */
-	  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
-	  animation:fadeIn ease-in-out 1;
-	  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
-    animation-fill-mode:forwards;
-    animation-duration:.6s;
-    animation-delay: 0.2s;
+  opacity:0;  /* make things invisible upon start */
+  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+  animation:fadeIn ease-in-out 1;
+  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  animation-fill-mode:forwards;
+  animation-duration:.6s;
+  animation-delay: 0.2s;
 }
 
 .content {
-    margin: 0 auto;
-    width: $width;
-    font-family: $font-stack-sans;
+  margin: 0 auto;
+  width: $width;
+  font-family: $font-stack-sans;
 }
 
 .about {
-    margin-top: 50px;
-//    font-size: 1.25em;
-//    line-height: 1.5;
-    font-size: 1.125em;
-    // line-height: 1.75;
-//    font-size: 1.18em;
-   line-height: 1.8;
-    color: $primary-color;
-    opacity:0;  /* make things invisible upon start */
-	  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
-	  animation:fadeIn ease-in-out 1;
-	  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
-	  animation-fill-mode:forwards;
-	  animation-duration:.6s;
-    animation-delay: 0.36s;
+  margin-top: 50px;
+  //    font-size: 1.25em;
+  //    line-height: 1.5;
+  font-size: 1.125em;
+  // line-height: 1.75;
+  //    font-size: 1.18em;
+  line-height: 1.8;
+  color: $primary-color;
+  opacity:0;  /* make things invisible upon start */
+  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+  animation:fadeIn ease-in-out 1;
+  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  animation-fill-mode:forwards;
+  animation-duration:.6s;
+  animation-delay: 0.36s;
 }
 
 .link-text {
-    position: relative;
-    // font-weight: 600;
-    color: $special-color;
+  position: relative;
+  // font-weight: 600;
+  color: $special-color;
+  text-decoration: none;
+  transition: all 0.16s ease-in-out 0s;
+  padding-bottom: 3px;
+  border-bottom: 1px solid $special-color;
+
+  &:hover {
+    color:$special-color-dark;
+    border-color: $special-color-dark;
+  }
+}
+
+.social {
+  margin: 50px auto;
+  width: 720px;
+  text-align: center;
+
+  opacity:0;  /* make things invisible upon start */
+  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+  animation:fadeIn ease-in-out 1;
+  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  animation-fill-mode:forwards;
+  animation-duration:.6s;
+  animation-delay: 0.42s;
+
+  .link-social {
     text-decoration: none;
-    transition: all 0.16s ease-in-out 0s;
-    padding-bottom: 3px;
-    border-bottom: 1px solid $special-color;
+    list-style-type: none;
+    display: inline-block;
+    margin: auto 16px;
+    text-transform: lowercase;
+    @include transition(all, 0.3s, ease-out, 0s);
+    &:hover {
+      .text-label {
+        opacity: 1;
+        transform: translateY(-10px);
+      }
+
+    }
+
+    i {
+      font-size: 1.8em;
+      color: inherit;
+    }
+
+    .text-label {
+      font-family: $font-stack-sans;
+      opacity: 0;
+      margin-top: 20px;
+      display: block;
+      @include transition(all, 0.3s, ease-out, 0s);
+    }
+  }
+
+}
+
+.social {
+  .link-twitter {
+    color: $twitter;
 
     &:hover {
-        color:$special-color-dark;
-        border-color: $special-color-dark;
+      color: darken($twitter, 10%);
     }
-}
+  }
 
-.social {
-    margin: 50px auto;
-    width: 720px;
-    text-align: center;
-
-    opacity:0;  /* make things invisible upon start */
-  	/* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
-  	animation:fadeIn ease-in-out 1;
-  	/* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
-  	animation-fill-mode:forwards;
-  	animation-duration:.6s;
-    animation-delay: 0.42s;
-
-    .link-social {
-        text-decoration: none;
-        list-style-type: none;
-        display: inline-block;
-        margin: auto 16px;
-        text-transform: lowercase;
-        @include transition(all, 0.3s, ease-out, 0s);
-        &:hover {
-            .text-label {
-                opacity: 1;
-                transform: translateY(-10px);
-            }
-
-        }
-
-        i {
-            font-size: 1.8em;
-            color: inherit;
-        }
-
-        .text-label {
-            font-family: $font-stack-sans;
-            opacity: 0;
-            margin-top: 20px;
-            display: block;
-            @include transition(all, 0.3s, ease-out, 0s);
-        }
+  .link-behance {
+    color: $behance;
+    &:hover {
+      color: darken($behance, 10%);
     }
+  }
 
-}
-
-.social {
-    .link-twitter {
-        color: $twitter;
-
-        &:hover {
-            color: darken($twitter, 10%);
-        }
+  .link-dribbble {
+    color: $dribbble;
+    &:hover {
+      color: darken($dribbble, 10%);
     }
+  }
 
-    .link-behance {
-        color: $behance;
-        &:hover {
-            color: darken($behance, 10%);
-        }
+  .link-instagram {
+    color: $instagram;
+    &:hover {
+      color: darken($instagram, 10%);
     }
+  }
 
-    .link-dribbble {
-        color: $dribbble;
-        &:hover {
-            color: darken($dribbble, 10%);
-        }
+  .link-github {
+    color: $github;
+    &:hover {
+      color: darken($github, 10%);
     }
+  }
 
-    .link-instagram {
-        color: $instagram;
-        &:hover {
-            color: darken($instagram, 10%);
-        }
+  .link-linkedin {
+    color: $linkedin;
+    &:hover {
+      color: darken($linkedin, 10%);
     }
+  }
 
-    .link-github {
-        color: $github;
-        &:hover {
-            color: darken($github, 10%);
-        }
+  .link-email {
+    color: $secondary-color;
+    &:hover {
+      color: darken($secondary-color, 10%);
     }
-
-    .link-linkedin {
-        color: $linkedin;
-        &:hover {
-            color: darken($linkedin, 10%);
-        }
-    }
-
-    .link-email {
-        color: $secondary-color;
-        &:hover {
-            color: darken($secondary-color, 10%);
-        }
-    }
+  }
 }
 
 .footer {
-    margin: 0 auto 50px auto;
-    padding-bottom: 20px;
-    font-family: $font-stack-sans;
-    font-size:0.8em;
+  margin: 0 auto 50px auto;
+  padding-bottom: 20px;
+  font-family: $font-stack-sans;
+  font-size:0.8em;
+  color: $secondary-color;
+  text-align:center;
+
+  .footer-link {
     color: $secondary-color;
-    text-align:center;
+    transition: all 0.3s ease-in-out 0s;
+    &:hover {
+      color: $primary-color;
+    }
+  }
 
-    .footer-link {
-        color: $secondary-color;
-        transition: all 0.3s ease-in-out 0s;
-        &:hover {
-            color: $primary-color;
-        }
+  p {
+    margin-bottom:16px;
+    line-height: 1.6;
+  }
+
+  .link-attribution {
+    display: none;
+    position: relative;
+    color: $secondary-color;
+    text-decoration: none;
+
+    &:hover {
+      color:$secondary-color;
+
+      &:before {
+        visibility: visible;
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1);
+      }
     }
 
-    p {
-        margin-bottom:16px;
-        line-height: 1.6;
+    &:before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 1px;
+      bottom: 0;
+      left: 0;
+      background-color: $secondary-color;
+      visibility: hidden;
+      -webkit-transform: scaleX(0);
+      transform: scaleX(0);
+      -webkit-transition: all 0.3s ease-in-out 0s;
+      transition: all 0.3s ease-in-out 0s;
     }
-
-    .link-attribution {
-        display: none;
-        position: relative;
-        color: $secondary-color;
-        text-decoration: none;
-
-        &:hover {
-            color:$secondary-color;
-
-            &:before {
-                visibility: visible;
-                -webkit-transform: scaleX(1);
-                transform: scaleX(1);
-            }
-        }
-
-        &:before {
-            content: "";
-            position: absolute;
-            width: 100%;
-            height: 1px;
-            bottom: 0;
-            left: 0;
-            background-color: $secondary-color;
-            visibility: hidden;
-            -webkit-transform: scaleX(0);
-            transform: scaleX(0);
-            -webkit-transition: all 0.3s ease-in-out 0s;
-            transition: all 0.3s ease-in-out 0s;
-        }
-    }
+  }
 }
 
 .projects {
-    @extend .content;
-    margin-top: 50px;
-    margin-bottom: 50px;
-//    margin-bottom: 10%;
-    width: 720px;
-    min-height: 320px;
-    display: block;
-    text-align: center;
-    opacity: 0;
+  @extend .content;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  //    margin-bottom: 10%;
+  width: 720px;
+  min-height: 320px;
+  display: block;
+  text-align: center;
+  opacity: 0;
 
-    animation:fadeIn ease-in-out 1;
-	/* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
-	animation-fill-mode:forwards;
-	animation-duration:.6s;
-    animation-delay: 0.2s;
+  animation:fadeIn ease-in-out 1;
+  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  animation-fill-mode:forwards;
+  animation-duration:.6s;
+  animation-delay: 0.2s;
 
-    .project {
-        margin: auto;
-        display: inline-block;
-        vertical-align: top;
+  .project {
+    margin: auto;
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  .project-details {
+    height: 160px;
+  }
+
+  .project-box {
+    border-top: 5px solid transparent;
+    //        border-radius: 4px;
+    text-align: left;
+    height: 220px;
+    width: 220px;
+    padding: 16px;
+    margin: 7px;
+    background: white;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    @include transition(all, 0.2s, ease-out, 0s);
+
+    h2 {
+      font-size: 1.5em;
+      font-weight: 300;
+      margin-bottom: 16px;
     }
 
-    .project-details {
-        height: 160px;
+    .tasks {
+      display: block;
+      margin-bottom: 32px;
     }
 
-    .project-box {
-        border-top: 5px solid transparent;
-//        border-radius: 4px;
-        text-align: left;
-        height: 220px;
-        width: 220px;
-        padding: 16px;
-        margin: 7px;
-        background: white;
-        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-        @include transition(all, 0.2s, ease-out, 0s);
-
-        h2 {
-            font-size: 1.5em;
-            font-weight: 300;
-            margin-bottom: 16px;
-        }
-
-        .tasks {
-            display: block;
-            margin-bottom: 32px;
-        }
-
-        .view {
-            width: 100%;
-            display: inline;
-            bottom: 10px;
-            right: 2px;
-            text-align: right;
-            font-size: 0.8em;
-            margin-bottom: 3px;
-            border-bottom: 1px dotted $primary-color;
-
-        }
-    }
-
-    .remembrall {
-        border-top: 5px solid $remembrall-light;
+    .view {
+      width: 100%;
+      display: inline;
+      bottom: 10px;
+      right: 2px;
+      text-align: right;
+      font-size: 0.8em;
+      margin-bottom: 3px;
+      border-bottom: 1px dotted $primary-color;
 
     }
+  }
 
-    .dribbbleiOS7 {
-        border-top: 5px solid $dribbble-ios7;
+  .remembrall {
+    border-top: 5px solid $remembrall-light;
+
+  }
+
+  .dribbbleiOS7 {
+    border-top: 5px solid $dribbble-ios7;
+  }
+
+  .flexregistry {
+    border-top: 5px solid $flexregistry;
+  }
+
+  a {
+
+    &:hover {
+      .view {
+        border-bottom: 1px dotted #fff;
+      }
+      .remembrall {
+        background: $remembrall-light;
+        color: #fff;
+      }
+
+      .dribbbleiOS7 {
+        background: $dribbble-ios7;
+        color: #fff;
+      }
+
+      .flexregistry {
+        background:  $flexregistry;
+        color: #fff;
+      }
     }
-
-    .flexregistry {
-        border-top: 5px solid $flexregistry;
-    }
-
-    a {
-
-        &:hover {
-            .view {
-                border-bottom: 1px dotted #fff;
-            }
-            .remembrall {
-                background: $remembrall-light;
-                color: #fff;
-                }
-
-            .dribbbleiOS7 {
-                background: $dribbble-ios7;
-                color: #fff;
-            }
-
-            .flexregistry {
-                background:  $flexregistry;
-                color: #fff;
-            }
-        }
-    }
+  }
 }
 
 // Responsive!
 
 @media (max-width: 720px) {
-    .frame {
-        padding:30px;
+  .frame {
+    padding:30px;
+  }
+
+  .header {
+    margin: 0px auto 0px auto;
+    width: 100%;
+  }
+
+  .content {
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .social {
+    margin: 20px auto;
+    width: 100%;
+
+    .link-social {
+      min-width: 70px;
+      margin: 10px 16px;
+
+      .text-label {
+        margin-top: 20px;
+      }
     }
 
-    .header {
-        margin: 0px auto 0px auto;
-        width: 100%;
+  }
+
+  .projects {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 100%;
+    min-height: 300px;
+    display: block;
+    text-align: center;
+    .project {
+      margin: auto;
+      display: block;
     }
 
-    .content {
-        margin: 0 auto;
-        width: 100%;
+    .project-details {
+      height: 120px;
     }
 
-    .social {
-        margin: 20px auto;
-        width: 100%;
-
-        .link-social {
-            min-width: 70px;
-            margin: 10px 16px;
-
-            .text-label {
-                margin-top: 20px;
-            }
-        }
+    .project-box {
+      height: 180px;
+      width: 90%;
+      padding: 16px;
+      margin: 20px auto;
 
     }
-
-    .projects {
-        margin-top: 50px;
-        margin-bottom: 50px;
-        width: 100%;
-        min-height: 300px;
-        display: block;
-        text-align: center;
-        .project {
-            margin: auto;
-            display: block;
-        }
-
-        .project-details {
-            height: 120px;
-        }
-
-        .project-box {
-            height: 180px;
-            width: 90%;
-            padding: 16px;
-            margin: 20px auto;
-
-        }
-    }
+  }
 }
 
 @keyframes fadeIn {
-    from {
-        opacity:0; transform: translateY(10px)
-    }
-    to {
-        opacity:1; transform: translateY(0)
-    }
+  from {
+    opacity:0; transform: translateY(10px)
+  }
+  to {
+    opacity:1; transform: translateY(0)
+  }
 }
 
 .fade-in {
-	opacity:0;  /* make things invisible upon start */
-	/* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
-	animation:fadeIn ease-in-out 1;
-	/* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
-	animation-fill-mode:forwards;
-	animation-duration:.85s;
-    animation-delay: 0.2s;
+  opacity:0;  /* make things invisible upon start */
+  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+  animation:fadeIn ease-in-out 1;
+  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  animation-fill-mode:forwards;
+  animation-duration:.85s;
+  animation-delay: 0.2s;
 }
 
 .posts {

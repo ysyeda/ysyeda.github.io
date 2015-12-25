@@ -1,0 +1,14 @@
+name: "Moaaz Sidat"
+description: "Moaaz's Blog"
+gems:
+  - jekyll-paginate
+paginate: 5
+paginate_path: "blog/page:num/"
+baseurl: "/writings" # the subpath of your site, e.g. /blog
+url: "http://moaazsidat.com/"
+
+# Build settings
+# markdown: kramdown
+markdown: rdiscount
+permalink: pretty
+highlighter: pygments

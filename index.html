@@ -2,22 +2,23 @@
 layout: default
 ---
 
-<div class="home">
+<div class="photo"></div>
+<div class="about">
+  <p>Hello! I’m Moaaz Sidat, a designer & developer living in Waterloo, ON. I’m currently studying computer science at the <a href="http://uwaterloo.ca/" target="_blank" class="link-text">University of Waterloo</a> with a heightened interest towards Human Computer Interaction.</p><br>
 
-  <h1 class="page-heading">Posts</h1>
+  <p>I've most recently worked as a Software Engineer at <a href="http://hootsuite.com" target="_blank" class="link-text">Hootsuite</a> and previously as a Product Designer at <a href="http://mappedin.com" target="_blank" class="link-text">MappedIn</a>.</p><br>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+  <p>I love obsessing over typographic details, enjoy talking and thinking about product design, front-end engineering & prototyping. I enjoy building products and crafting experiences surrounding them.</p><br>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+  <p>I spend some of my time trying to learn something new. These days my focus lies mostly towards <a class="link-text" href="https://developer.apple.com/library/mac/navigation/" target="_blank">OSX Development</a> and <a href="https://www.youtube.com/user/mtmograph/videos" target="_blank" class="link-text">Motion Design</a>. I’m a cat-lover and an occasional photographer. I enjoy hand-lettering & illustrations, and will sometimes explore those two worlds of design purely for fun.</p><br>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+  <!--
+  <p>I’m currently looking for small scale front-end development or interface design projects.
+  <a class="link-text" href="mailto:moaazsidat@gmail..com?Subject=Hello!">Let’s chat if you have something in mind.</a></p>
+-->
+
+<p>I’m currently looking for engineering & design roles for Summer 2016.<br>
+  <a class="link-text" href="mailto:moaazsidat@gmail..com?Subject=Hello!">Let’s chat if you have something in mind.</a></p>
+  <br>
 
 </div>

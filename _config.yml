@@ -1,0 +1,8 @@
+name: "Moaaz Sidat"
+description: "Moaaz's Website"
+title: Moaaz Sidat
+url: "http://moaazsidat.com"
+
+markdown: rdiscount
+permalink: pretty
+highlighter: pygments

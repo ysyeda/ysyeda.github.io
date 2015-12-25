@@ -7,9 +7,16 @@
     <div class="frame">
       {% include header.html %}
 
-      <div class="content">
-        {{ content }}
-      </div>
+      {% if page.permalink == '/projects/' %}
+        <section class="projects">
+          {{ content }}
+        </section>
+      {% else %}
+        <section class="content">
+          {{ content }}
+        </section>
+      {% endif %}
+
 
       {% include social.html %}
       {% include footer.html %}

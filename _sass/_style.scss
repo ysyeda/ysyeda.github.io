@@ -441,26 +441,9 @@ body {
     width: 100%;
   }
 
-  a.logo.large {
-    display: block;
-    text-align: center;
-  }
-
   .logo-img.large {
     width: 42px;
     height: 42px;
-  }
-
-  .navigation {
-    margin-top: 16px;
-    float: none;
-    width: 100%;
-    text-align: center;
-
-    .nav-link {
-      display: block;
-      margin-bottom: 4px
-    }
   }
 
   .content {
@@ -505,6 +488,30 @@ body {
       padding: 16px;
       margin: 20px auto;
 
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  a.logo.large {
+    display: block;
+    text-align: center;
+  }
+
+  .navigation {
+    margin-top: 16px;
+    float: none;
+    width: 100%;
+    text-align: center;
+
+    .nav-link {
+      display: block;
+      margin-bottom: 4px;
+
+
+      &:before {
+        display: none;
+      }
     }
   }
 }

@@ -64,7 +64,7 @@ body {
   }
 }
 
-nav {
+.navigation {
   float: right;
   display: inline-block;
   ul {
@@ -84,7 +84,7 @@ nav {
       font-weight: 600;
     }
 
-    .nav-link {
+    ..navigation-link {
       position: relative;
       color: #000;
       text-decoration: none;
@@ -441,17 +441,17 @@ nav {
     width: 100%;
   }
 
-  a.logo {
+  a.logo.large {
     display: block;
     text-align: center;
   }
 
-  .logo-img {
+  .logo-img.large {
     width: 42px;
     height: 42px;
   }
 
-  nav {
+  ..navigationigation {
     margin-top: 16px;
     float: none;
     width: 100%;

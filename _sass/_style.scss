@@ -550,6 +550,16 @@ body {
 
 .posts {
   margin: 50px 0 80px 0;
+  opacity: 0;
+  animation:fadeIn ease-in-out 1;
+  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  animation-fill-mode:forwards;
+  animation-duration:.6s;
+  animation-delay: 0.2s;
+
+  @include media-query(480px) {
+    margin-top: 0 ;
+  }
 
   h1 {
     font-weight: 600;

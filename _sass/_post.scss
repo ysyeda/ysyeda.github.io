@@ -25,6 +25,10 @@ img {
 .post {
   margin: 40px 0 60px 0;
 
+  @include media-query(480px) {
+    margin-top: 0;
+  }
+
   ul {
     margin-left: 20px;
   }
@@ -73,4 +77,8 @@ h6 {
   font-size: 0.9em;
   color: $text-color-metadata;
   text-align: center;
+}
+
+@media (max-width: 480px) {
+
 }

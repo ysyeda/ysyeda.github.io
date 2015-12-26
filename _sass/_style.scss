@@ -456,6 +456,11 @@ body {
     float: none;
     width: 100%;
     text-align: center;
+
+    .nav-link {
+      display: block;
+      margin-bottom: 4px
+    }
   }
 
   .content {

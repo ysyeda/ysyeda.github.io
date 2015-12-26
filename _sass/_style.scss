@@ -560,14 +560,14 @@ body {
   h2 {
     font-weight: 600;
     transition: all 0.16s ease-in-out;
-    font-size: 1em;
+    font-size: 1.4em;
   }
 
   p {
     font-family: $font-stack-serif;
     color: $text-color;
     line-height: 1.6;
-    font-size: 0.8em;
+    font-size: 1em;
   }
 
   .post {
@@ -575,8 +575,8 @@ body {
   }
 
   .date {
-    margin: 4px 0 16px 0;
-    font-size: 0.7em;
+    margin: 8px 0 16px 0;
+    font-size: 0.96em;
     color: $text-color-metadata;
   }
 

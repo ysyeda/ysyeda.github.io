@@ -23,7 +23,11 @@ img {
 }
 
 .post {
-  margin: 40px 0;
+  margin: 40px 0 60px 0;
+
+  ul {
+    margin-left: 20px;
+  }
 }
 
 .post-metadata {
@@ -58,4 +62,15 @@ h6 {
   font-family: $font-stack-serif;
   font-size: 1.1em;
   line-height: 2;
+}
+
+.note {
+  font-style: italic;
+}
+
+.endnote {
+  font-style: italic;
+  font-size: 0.9em;
+  color: $text-color-metadata;
+  text-align: center;
 }

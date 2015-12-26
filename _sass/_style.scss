@@ -493,20 +493,33 @@ body {
 }
 
 @media (max-width: 480px) {
-  a.logo.large {
-    display: block;
-    text-align: center;
+  .header {
+      display: block;
+      height: 110px;
+  }
+  // a.logo.large {
+  //   // display: block;
+  //   // text-align: center;
+  // }
+
+  .photo {
+    margin-top: 20px;
+  }
+
+  .projects {
+    margin-top: 30px;
   }
 
   .navigation {
-    margin-top: 16px;
-    float: none;
-    width: 100%;
-    text-align: center;
+    margin-top: 0px;
+    // float: none;
+    // width: 100%;
+    // text-align: center;
 
     .nav-link {
       display: block;
       margin-bottom: 4px;
+      text-align: right;
 
 
       &:before {

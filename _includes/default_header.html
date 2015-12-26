@@ -20,9 +20,9 @@
       {% for my_page in site.pages %}
         {% if my_page.title %}
           {% if my_page.url == page.url %}
-            <a href="{{ my_page.url | prepend: site.baseurl }}"><li class="nav-link active">{{ my_page.title }}</li></a>
+            <a href="{{ my_page.url | prepend: site.baseurl }}"><li class="nav-link active">{{ my_page.title | downcase }}</li></a>
           {% else %}
-            <a href="{{ my_page.url | prepend: site.baseurl }}"><li class="nav-link">{{ my_page.title }}</li></a>
+            <a href="{{ my_page.url | prepend: site.baseurl }}"><li class="nav-link">{{ my_page.title | downcase }}</li></a>
           {% endif %}
         {% endif %}
       {% endfor %}

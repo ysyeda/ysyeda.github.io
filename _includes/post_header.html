@@ -4,7 +4,11 @@
   </a>
   <nav class="navigation-writing">
     <ul>
-      <a href="http://moaazsidat.github.io/writings"><li class="nav-link">← Back to Writings</li></a>
+      {% if page.categories contains 'writings' %}
+        <a href="http://moaazsidat.github.io/writings"><li class="nav-link">← Back to Writings</li></a>
+      {% elsif page.categories contains 'dac309' %}
+        <a href="http://moaazsidat.github.io/dac309"><li class="nav-link">← Back to DAC 309</li></a>
+      {% endif %}
     </ul>
   </nav>
 </header>

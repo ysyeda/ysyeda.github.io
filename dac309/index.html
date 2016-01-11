@@ -1,12 +1,10 @@
 ---
-layout: page
-title: Writings
-permalink: /writings/
+layout: default
 ---
-
+<h1 class="title">DAC 309</h1>
 <div class="posts">
   {% for post in site.posts %}
-    {% if post.categories contains 'writings' %}
+    {% if post.categories contains 'dac309' %}
       <div class="post">
         <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
           <h2>{{ post.title }}</h2>

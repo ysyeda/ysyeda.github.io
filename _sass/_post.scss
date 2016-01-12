@@ -7,7 +7,7 @@
 $paragraph-height: 28px;
 
 p {
-  margin: $paragraph-height auto;
+  margin: 0 auto $paragraph-height auto;
 }
 
 a {
@@ -20,6 +20,7 @@ a {
 
 img {
   width: 100%;
+  margin-top: $paragraph-height/2;
 }
 
 .post {
@@ -34,6 +35,10 @@ img {
   }
 }
 
+.post-header {
+  margin-bottom: 30px;
+}
+
 .post-metadata {
   margin-top: 8px;
   color: $text-color-metadata
@@ -46,7 +51,7 @@ h1 {
 }
 
 h3 {
-  margin-top: 50px;
+  margin: 50px 0 12px 0;
   font-family: $font-stack-sans;
   color: $primary-color;
   font-weight: 600;
@@ -60,7 +65,7 @@ h6 {
   font-size: 0.8em;
   text-align: center;
   font-weight: 300;
-  margin-top: -$paragraph-height;
+  margin: -($paragraph-height/2) 0 $paragraph-height 0;
 }
 
 .post-content {

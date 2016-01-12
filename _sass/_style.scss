@@ -500,14 +500,14 @@ body {
 }
 
 @media (max-width: 480px) {
+  .frame {
+    padding:24px;
+  }
+
   .header {
       display: block;
       height: 110px;
   }
-  // a.logo.large {
-  //   // display: block;
-  //   // text-align: center;
-  // }
 
   .photo {
     margin-top: 20px;

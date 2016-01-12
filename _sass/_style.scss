@@ -600,7 +600,7 @@ body {
   }
 
   .date {
-    margin: 8px 0 16px 0;
+    margin: 0 0 16px 0;
     font-size: 0.96em;
     color: $text-color-metadata;
   }
@@ -613,9 +613,9 @@ body {
     &:hover {
       border-color: $special-color;
     }
+  }
 
-    // &:hover > h2 {
-    //   color: $text-color;
-    // }
+  .post-content {
+    font-family: $font-stack-serif;
   }
 }

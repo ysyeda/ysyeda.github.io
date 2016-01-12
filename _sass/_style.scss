@@ -64,9 +64,10 @@ body {
   }
 }
 
-.navigation, .navigation-writing {
+.navigation {
   float: right;
   display: inline-block;
+
   ul {
     padding-top: 10px;
     li {
@@ -116,7 +117,10 @@ body {
     }
 
   }
+}
 
+.navigation-back {
+  margin-top: 10px;
 }
 
 .title {
@@ -533,6 +537,10 @@ body {
         display: none;
       }
     }
+  }
+
+  .navigation-back {
+    margin-top: 10px;
   }
 }
 

@@ -119,10 +119,6 @@ body {
   }
 }
 
-.navigation-back {
-  margin-top: 10px;
-}
-
 .title {
   font-size: 2em;
   color: $text-color;
@@ -513,6 +509,10 @@ body {
       height: 110px;
   }
 
+  .header-post {
+    height: 90px;
+  }
+
   .title {
     margin-top: 10px;
     font-size: 1.8em;
@@ -542,10 +542,6 @@ body {
         display: none;
       }
     }
-  }
-
-  .navigation-back {
-    margin-top: 10px;
   }
 }
 

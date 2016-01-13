@@ -505,12 +505,17 @@ body {
 
 @media (max-width: 480px) {
   .frame {
-    padding:24px;
+    padding:20px;
   }
 
   .header {
       display: block;
       height: 110px;
+  }
+
+  .title {
+    margin-top: 10px;
+    font-size: 1.8em;
   }
 
   .photo {

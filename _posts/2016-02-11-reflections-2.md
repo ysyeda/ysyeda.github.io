@@ -6,7 +6,7 @@ categories: dac309
 ---
 
 ### Situation
-Over the last week, I used my teamwork skills to complete some of the essential coursework for a group project for the User Experience Design course that I’m taking this term. We were required to compile our findings after conducting several user interviews and reflecting back on them to analyze what had worked well and what had not, and was due the following Tuesday. Being the busiest time of the term, with co-op interviews, midterms and assignments, the time that each member had to spend on the project, was limited.
+Over the last week, I used my **teamwork** skills to complete some of the essential coursework for a group project for the User Experience Design course that I’m taking this term. We were required to compile our findings after conducting several user interviews and reflect back on them to analyze what had worked well and what had not, and was due the following Tuesday. Being the busiest time of the term, with co-op interviews, midterms and assignments, the time that each member had to spend on the project, was limited.
 
 ### Action
 My first action was to **reach out to the members** and let them know that I would be available online to meet on Monday, and that I would have some time over the weekend to get a head start. This allowed us to book a time slot for late Monday evening to complete all the work as a group.

@@ -13,7 +13,7 @@ In our last session, we set out to gather the information we had collected from 
 ![Stickies]({{ site.baseurl }}/assets/dac309/sticky01.jpg "Stickies")
 <div class="caption">Observations about our users' daily patterns</div>
 
-![Stickies]({{ site.baseurl }}/assets/dac309/sticky02.JPG "Stickies")
+![Stickies]({{ site.baseurl }}/assets/dac309/sticky02.jpg "Stickies")
 <div class="caption">The expectations our users have of university</div>
 
 ![Stickies]({{ site.baseurl }}/assets/dac309/sticky03.JPG "Stickies")

@@ -11,7 +11,7 @@ For those who are new to React, it is a JavaScript library for building user int
 Flux is an architectural pattern that complements React by utilizing a uni-directional data flow. When a user interacts with a React view, the View fires an Action that goes through a Dispatcher to update a Store that holds the application’s data and state, which in turn updates the Views. Uni-directional data flow ensures that a change in application’s state is updated wherever the state is used without forcing the developer to update the code everywhere the state is used.
 
 ![Flux Architecture]({{ site.baseurl }}/assets/react-immutable/flux.png "Flux Architecture")
-###### Source: Flux Overview (https://facebook.github.io/flux/docs/overview.html)
+<div class="caption">Source: Flux Overview (https://facebook.github.io/flux/docs/overview.html)</div>
 
 
 You can learn more about React and Flux by reading this [in-depth post](http://code.hootsuite.com/hootsuite-react-and-flux/) written by my teammate, [Catherine](https://twitter.com/catherinettt).
@@ -32,6 +32,7 @@ shouldComponentUpdate: function(newProps, newState) {
   return this.props.text !== newProps.text;
 }
 {% endhighlight %}
+
 
 However, with large and complex data structures this becomes an issue because we’re passing around pieces of the the application’s state as Objects and an identity (triple equal) comparison fails for Object in Javascript, even if the values are the same across both:
 

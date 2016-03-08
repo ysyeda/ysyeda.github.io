@@ -6,7 +6,7 @@
 
 $paragraph-height: 28px;
 
-p {
+p, .highlight {
   margin: 0 auto $paragraph-height auto;
 }
 
@@ -63,7 +63,7 @@ h4 {
   font-weight: 700;
 }
 
-h6 {
+.caption {
   font-style: italic;
   color: $text-color-metadata;
   font-size: 0.8em;

@@ -3,6 +3,6 @@ description: "Moaaz's Website"
 title: Moaaz Sidat
 url: "http://moaazsidat.com"
 
-markdown: rdiscount
+markdown: kramdown
 permalink: pretty
 highlighter: rouge

@@ -5,4 +5,4 @@ url: "http://moaazsidat.com"
 
 markdown: rdiscount
 permalink: pretty
-highlighter: pygments
+highlighter: rouge

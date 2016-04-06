@@ -5,7 +5,6 @@ date:   2016-04-02 16:21:00 -0800
 categories: dac309
 ---
 
-
 #### Prototype 1
 Here is the first prototype of the Instagram campaign that we built.
 

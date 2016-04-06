@@ -436,6 +436,14 @@ body {
   }
 }
 
+.video-container {
+  text-align: center;
+}
+.video-iphone {
+  width: 400px;
+  margin: auto;
+}
+
 // Responsive!
 
 @media (max-width: 720px) {
@@ -542,6 +550,11 @@ body {
         display: none;
       }
     }
+  }
+
+  .video-iphone {
+    width: 360px;
+    margin: auto;
   }
 }
 

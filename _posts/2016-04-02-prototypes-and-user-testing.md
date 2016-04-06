@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Prototypes and User Testing"
-date:   2016-04-02 16:21:00 -0800
+date:   2016-04-02 17:21:00 -0800
 categories: dac309
 ---
 

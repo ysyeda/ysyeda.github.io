@@ -5,7 +5,10 @@ date:   2016-04-02 17:21:00 -0800
 categories: dac309
 ---
 
-#### Prototype 1
+### Overview
+This post highlights the work done to design and build the prototypes for the Instagram campaign, based on the persona created. This post also contains the reports from the user test sessions in which we gained valuable feedback from the users about the prototypes we had built.
+
+### Prototype 1
 Here is the first prototype of the Instagram campaign that we built.
 
 #### Static Content
@@ -24,7 +27,7 @@ We prototyped a 'carousel' of images using Instagram video. We added a link in t
 </div>
 
 
-#### User Test 1 Report
+### User Test 1 Report
 Here is the full user report for the first user test:  
 [Click to view User Test 1 Report]({{ site.baseurl }}/assets/dac309/UserTest1Report.pdf "User Test 1 Report")
 
@@ -49,11 +52,11 @@ We prototyped a 'carousel' of images using Instagram video. We added a link to t
 </div>
 
 
-#### User Test 2 Report
+### User Test 2 Report
 Here is the full user report for the second user test:  
 [Click to view User Test 2 Report]({{ site.baseurl }}/assets/dac309/UserTest2Report.pdf "User Test 2 Report")
 
 
-#### Final Presentation
+### Final Presentation
 Here is the final presentation presented to the stakeholders of the project. It summarizes the findings of our user tests from the reports, and presents recommendations to some of the problems we uncovered during the process of designing the user experience for the Instagram Campaign.  
 [Click to view the Final Presentation]({{ site.baseurl }}/assets/dac309/FinalPresentation.pdf "Final Presentation")

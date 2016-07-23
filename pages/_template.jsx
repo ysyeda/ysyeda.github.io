@@ -6,6 +6,8 @@ import Headroom from 'react-headroom'
 
 import { rhythm } from 'utils/typography'
 
+import { styles } from 'css/styles'
+
 module.exports = React.createClass({
   propTypes () {
     return {
@@ -14,43 +16,49 @@ module.exports = React.createClass({
   },
   render () {
     return (
-      <div>
-        <Headroom
-          wrapperStyle={{
-            marginBottom: rhythm(1),
-          }}
-          style={{
-            background: 'lightgray',
-          }}
-        >
-          <Container
-            style={{
-              maxWidth: 960,
-              paddingTop: 0,
-              padding: `${rhythm(1)} ${rhythm(3/4)}`,
-            }}
-          >
-            <Link
-              to={prefixLink('/')}
-              style={{
-                color: 'black',
-                textDecoration: 'none',
-              }}
-            >
-              Gatsby!!!
-            </Link>
-          </Container>
-        </Headroom>
-        <Container
-          style={{
-            maxWidth: 960,
-            padding: `${rhythm(1)} ${rhythm(3/4)}`,
-            paddingTop: 0,
-          }}
-        >
-          {this.props.children}
-        </Container>
+      <div className='Container pd-64'>
+        {this.props.children}
       </div>
-    )
+    );
   },
 })
+
+// return (
+//   <div>
+//     <Headroom
+//       wrapperStyle={{
+//         marginBottom: rhythm(1),
+//       }}
+//       style={{
+//         background: 'lightgray',
+//       }}
+//     >
+//       <Container
+//         style={{
+//           maxWidth: 960,
+//           paddingTop: 0,
+//           padding: `${rhythm(1)} ${rhythm(3/4)}`,
+//         }}
+//       >
+//         <Link
+//           to={prefixLink('/')}
+//           style={{
+//             color: 'black',
+//             textDecoration: 'none',
+//           }}
+//         >
+//           Gatsby!!!
+//         </Link>
+//       </Container>
+//     </Headroom>
+//     <Container
+//       style={{
+//         maxWidth: 960,
+//         padding: `${rhythm(1)} ${rhythm(3/4)}`,
+//         paddingTop: 0,
+//       }}
+//     >
+//       {this.props.children}
+//     </Container>
+//   </div>
+// )

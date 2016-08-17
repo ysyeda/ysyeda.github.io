@@ -1,0 +1,305 @@
+$primary-color-dark:   #252729;
+$primary-color:        #494E52;
+$primary-color-light:  #8A9199;
+$primary-blue:         #ADC3D9;
+$primary-blue-light:   #D3DFEB;
+$primary-blue-lighter: #DFEBF7;
+$primary-link-color:   #0073E6;
+$b97:                  #F7F7F7;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  color: $primary-color;
+}
+
+p {
+  a, a:visited {
+    color: $primary-link-color;
+  }
+}
+
+img {
+  margin-bottom: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.pd-64 {
+  padding: 64px;
+}
+
+.serif {
+  font-family: Georgia, serif;
+}
+
+.sans {
+  font-family: 'BlinkMacSystemFont', "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.fw-normal {
+  font-weight: 400;
+}
+
+.lh-1_4 {
+  line-height: 1.4;
+}
+
+.lh-1_62 {
+  line-height: 1.62;
+}
+
+.fs-16 {
+  font-size: 16px;
+}
+
+.fs-18 {
+  font-size: 18px;
+}
+
+.fs-20 {
+  font-size: 20px;
+}
+
+.fs-21 {
+  font-size: 21px;
+}
+
+.fs-32 {
+  font-size: 32px;
+}
+
+.fs-42 {
+  font-size: 42px;
+}
+
+.mw720 {
+  width: 100%;
+  max-width: 720px;
+}
+
+.mb-16 {
+  margin-bottom: 16px;
+}
+
+.mt-8 {
+  margin-top: 8px;
+}
+
+.mt-16 {
+  margin-top: 16px;
+}
+
+.mb-32 {
+  margin-bottom: 32px;
+}
+
+.mb-48 {
+  margin-bottom: 48px;
+}
+
+.mb-64 {
+  margin-bottom: 64px;
+}
+
+.ttu {
+  text-transform: uppercase;
+}
+
+.ttc {
+  text-transform: capitalize;
+}
+
+.w-100p {
+  width: 100%;
+}
+
+.w-40 {
+  width: 40px;
+}
+
+.h-4 {
+  height: 4px;
+}
+
+.bgc-p {
+  background-color: $primary-color;
+}
+
+.fw-600 {
+  font-weight: 600;
+}
+
+.fw-700 {
+  font-weight: 700;
+}
+
+.mr-16 {
+  margin-right: 16px;
+}
+
+.ls-1 {
+  letter-spacing: 1px;
+}
+
+.ls-2 {
+  letter-spacing: 2px;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.c-p {
+  color: $primary-color;
+}
+
+.c-pd {
+  color: $primary-color-dark;
+}
+
+.c-pl {
+  color: $primary-color-light;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.Card {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  background: #FFFFFF;
+  // box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.20);
+  box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.20);
+  border-radius: 4px;
+  padding: 8px 16px;
+  max-width: 320px;
+  width: 100%;
+  height: 80px;
+  margin-right: 32px;
+  margin-bottom: 32px;
+  transition: all 0.16s ease-in-out;
+
+  &:hover {
+    // box-shadow: 0px 4px 12px 0px rgba(0,0,0,0.30);
+    box-shadow: 0px 4px 16px 0px rgba(0,0,0,0.30);
+  }
+}
+
+.CardProject {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: space-between;
+  border-top: 5px solid transparent;
+  background: #FFFFFF;
+  // box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.20);
+  box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.20);
+  border-radius: 4px;
+  max-width: 320px;
+  width: 100%;
+  height: 196px;
+  margin-right: 32px;
+  margin-bottom: 32px;
+  transition: all 0.16s ease-in-out;
+
+  &:hover {
+    // box-shadow: 0px 4px 12px 0px rgba(0,0,0,0.30);
+    box-shadow: 0px 4px 16px 0px rgba(0,0,0,0.30);
+  }
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+  height: 40px;
+}
+
+.info {
+  padding: 24px 16px;
+}
+
+.br-r {
+  border-right: 1px solid $primary-blue-light;
+}
+
+.link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  color: $primary-color;
+  font-size: 14px;
+  font-weight: 600;
+  border-top: 1px solid $primary-blue-light;
+
+  &:hover {
+    background-color: $b97;
+  }
+}
+
+.CardWriting {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: space-between;
+  border-bottom: 1px solid $primary-blue-lighter;
+  background: #FFFFFF;
+  // box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.20);
+  // box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.20);
+  // border-radius: 4px;
+  max-width: calc(640px + 24px);
+  width: 100%;
+  padding: 24px 48px 24px 0;
+  // height: 196px;
+  // margin-right: 32px;
+  // margin-bottom: 32px;
+  transition: all 0.16s ease-in-out;
+
+  &:hover {
+    background-color: $b97;
+    padding: 24px;
+    // box-shadow: 0px 4px 12px 0px rgba(0,0,0,0.30);
+    // box-shadow: 0px 4px 16px 0px rgba(0,0,0,0.30);
+  }
+}
+
+.markdown {
+  max-width: 700px;
+  margin: auto;
+
+  h1 {
+    font-family: 'BlinkMacSystemFont', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 700;
+  }
+
+  h2 {
+    font-family: 'BlinkMacSystemFont', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    font-size: 1.4em;
+    margin-bottom: 0.4em;
+    margin-top: 1.2em;
+  }
+
+  hr {
+    margin: 2em auto;
+    width: 200px;
+  }
+
+  p {
+    font-family: Georgia, serif;
+    font-size: 21px;
+    line-height: 1.6;
+  }
+}

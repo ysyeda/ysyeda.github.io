@@ -160,7 +160,7 @@ body {
   font-size: 1.125em;
   // line-height: 1.75;
   //    font-size: 1.18em;
-  line-height: 1.8;
+  line-height: 1.6;
   color: $primary-color;
   opacity:0;  /* make things invisible upon start */
   /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
@@ -534,7 +534,7 @@ body {
 
 @media (max-width: 480px) {
   .frame {
-    padding:20px;
+    padding: 32px;
   }
 
   .header {

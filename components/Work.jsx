@@ -7,14 +7,14 @@ import SectionHeader from 'components/SectionHeader';
 const Card = (props) => {
   const filename = (props.title.toLowerCase().replace(/\s+/g, ''));
   const filepath = `/assets/${filename}.svg`;
-  
+
   return (
     <a href={props.link} className='Card'>
       <div className='mr-16'>
         <img width={props.imageWidth ? props.imageWidth : '32'} src={filepath} />
       </div>
       <div className='sans'>
-        <div className='title fw-600 fs-20 ls-1 c-p'>{props.title}</div>
+        <div className='title fw-600 fs-20 ls-0_4 c-p'>{props.title}</div>
         <div className='subtext fs-16 c-pl'>{props.subtext}</div>
       </div>
     </a>

@@ -7,6 +7,9 @@ $primary-blue-lighter: #DFEBF7;
 $primary-link-color:   #0073E6;
 $b97:                  #F7F7F7;
 
+
+$sans-serif: -apple-system, BlinkMacSystemFont, "Roboto", "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -40,7 +43,7 @@ a {
 }
 
 .sans {
-  font-family: 'BlinkMacSystemFont', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: $sans-serif;
 }
 
 .fw-normal {
@@ -148,6 +151,10 @@ a {
   letter-spacing: 1px;
 }
 
+.ls-0_4 {
+  letter-spacing: 0.4px;
+}
+
 .ls-2 {
   letter-spacing: 2px;
 }
@@ -172,6 +179,7 @@ a {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  width: 100%;
 }
 
 .Card {
@@ -185,6 +193,7 @@ a {
   border-radius: 4px;
   padding: 8px 16px;
   max-width: 320px;
+  flex: 0 0 320px;
   width: 100%;
   height: 80px;
   margin-right: 32px;
@@ -280,12 +289,12 @@ a {
   margin: auto;
 
   h1 {
-    font-family: 'BlinkMacSystemFont', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: $sans-serif;
     font-weight: 700;
   }
 
   h2 {
-    font-family: 'BlinkMacSystemFont', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: $sans-serif;
     font-weight: 700;
     font-size: 1.4em;
     margin-bottom: 0.4em;

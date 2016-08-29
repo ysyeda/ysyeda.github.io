@@ -344,7 +344,7 @@ body {
   width: 720px;
   min-height: 320px;
   display: block;
-  text-align: center;
+  text-align: left;
   opacity: 0;
 
   animation:fadeIn ease-in-out 1;
@@ -365,7 +365,6 @@ body {
 
   .project-box {
     border-top: 5px solid transparent;
-    //        border-radius: 4px;
     text-align: left;
     height: 220px;
     width: 220px;
@@ -376,9 +375,10 @@ body {
     @include transition(all, 0.2s, ease-out, 0s);
 
     h2 {
-      font-size: 1.5em;
-      font-weight: 300;
+      font-size: 1.2em;
       margin-bottom: 16px;
+      letter-spacing: 0;
+      font-weight: 600;
     }
 
     .tasks {
@@ -399,9 +399,16 @@ body {
     }
   }
 
+  .rn-qrcode-scanner {
+    border-top: 5px solid $rn-qrcode-scanner;
+  }
+
+  .clearskies {
+    border-top: 5px solid $clearskies;
+  }
+
   .remembrall {
     border-top: 5px solid $remembrall-light;
-
   }
 
   .dribbbleiOS7 {
@@ -418,6 +425,17 @@ body {
       .view {
         border-bottom: 1px dotted #fff;
       }
+
+      .rn-qrcode-scanner {
+        background: $rn-qrcode-scanner;
+        color: #fff;
+      }
+
+      .clearskies {
+        background: $clearskies;
+        color: #fff;
+      }
+
       .remembrall {
         background: $remembrall-light;
         color: #fff;
@@ -487,7 +505,7 @@ body {
     width: 100%;
     min-height: 300px;
     display: block;
-    text-align: center;
+    text-align: left;
     .project {
       margin: auto;
       display: block;

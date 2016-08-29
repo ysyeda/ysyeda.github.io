@@ -55,7 +55,7 @@ body {
 }
 
 .logo-img {
-  width: 57px;
+  width: 48px;
   height: 52px;
 
   &.small {
@@ -257,6 +257,13 @@ body {
     color: $instagram;
     &:hover {
       color: darken($instagram, 10%);
+    }
+  }
+
+  .link-medium {
+    color: $medium;
+    &:hover {
+      color: darken($medium, 10%);
     }
   }
 

@@ -1,5 +1,7 @@
 _site
 .sass-cache
 .jekyll-metadata
+node_modules
+.gatsby-context.js
 resume-dev
 resume_dev

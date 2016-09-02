@@ -657,4 +657,8 @@ body {
   .post-content {
     font-family: $font-stack-serif;
   }
+
+  .post-content hr {
+    width: 200px;
+  }
 }

@@ -17,7 +17,26 @@
   </a>
   <nav class="navigation">
     <ul>
-      {% for my_page in site.pages %}
+      {{site.baseurl}}
+      {% if page.url == '/work/' %}
+        <a href="{{site.baseurl}}/work/"><li class="nav-link active">work</li></a>
+      {% else %}
+        <a href="{{site.baseurl}}/work/"><li class="nav-link ">work</li></a>
+      {% endif %}
+
+      {% if page.url == '/projects/' %}
+        <a href="{{site.baseurl}}/projects/"><li class="nav-link active">projects</li></a>
+      {% else %}
+        <a href="{{site.baseurl}}/projects/"><li class="nav-link ">projects</li></a>
+      {% endif %}
+
+      {% if page.url == '/writings/' %}
+        <a href="{{site.baseurl}}/writings/"><li class="nav-link active">writings</li></a>
+      {% else %}
+        <a href="{{site.baseurl}}/writings/"><li class="nav-link ">writings</li></a>
+      {% endif %}
+
+      <!-- {% for my_page in site.pages %}
         {% if my_page.title %}
           {% if my_page.url == page.url %}
             <a href="{{ my_page.url | prepend: site.baseurl }}"><li class="nav-link active">{{ my_page.title | downcase }}</li></a>
@@ -25,7 +44,7 @@
             <a href="{{ my_page.url | prepend: site.baseurl }}"><li class="nav-link">{{ my_page.title | downcase }}</li></a>
           {% endif %}
         {% endif %}
-      {% endfor %}
+      {% endfor %} -->
     </ul>
   </nav>
 </header>

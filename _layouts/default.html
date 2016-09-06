@@ -7,7 +7,7 @@
     <div class="frame">
       {% include header.html %}
 
-      {% if page.permalink == '/projects/' %}
+      {% if page.permalink == '/projects/' or page.permalink == '/work/' %}
         <section class="projects">
           {{ content }}
         </section>

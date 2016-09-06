@@ -6,3 +6,4 @@ url: "http://moaazsidat.com"
 markdown: kramdown
 permalink: pretty
 highlighter: rouge
+exclude: [node_modules/]

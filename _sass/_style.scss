@@ -426,11 +426,38 @@ body {
     border-top: 5px solid $flexregistry;
   }
 
+  .mappedin {
+    border-top: 5px solid $mappedin;
+  }
+
+  .hootsuite {
+    border-top: 5px solid $hootsuite;
+  }
+
+  .freshbooks {
+    border-top: 5px solid $freshbooks;
+  }
+
   a {
 
     &:hover {
       .view {
         border-bottom: 1px dotted #fff;
+      }
+
+      .freshbooks {
+        background: $freshbooks;
+        color: #fff;
+      }
+
+      .hootsuite {
+        background: $hootsuite;
+        color: #fff;
+      }
+
+      .mappedin {
+        background: $mappedin;
+        color: #fff;
       }
 
       .rn-qrcode-scanner {

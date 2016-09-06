@@ -561,7 +561,7 @@ body {
 
 @media (max-width: 480px) {
   .frame {
-    padding: 32px;
+    padding: 20px;
   }
 
   .header {
@@ -576,6 +576,16 @@ body {
   .title {
     margin-top: 10px;
     font-size: 1.8em;
+  }
+
+  .content {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .about {
+
+    margin-top: 32px;
   }
 
   .photo {

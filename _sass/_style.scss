@@ -36,7 +36,7 @@ body {
 }
 
 .header {
-  margin: 50px auto 0px auto;
+  margin: 48px auto 32px auto;
   width: $width;
   font-family: $font-stack-sans;
 }
@@ -153,15 +153,7 @@ body {
   font-family: $font-stack-sans;
 }
 
-.about {
-  margin-top: 50px;
-  //    font-size: 1.25em;
-  //    line-height: 1.5;
-  font-size: 1em;
-  // line-height: 1.75;
-  //    font-size: 1.18em;
-  line-height: 1.6;
-  color: $primary-color;
+.animated-content {
   opacity:0;  /* make things invisible upon start */
   /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
   animation:fadeIn ease-in-out 1;
@@ -171,18 +163,31 @@ body {
   animation-delay: 0.36s;
 }
 
+.about {
+  margin-top: 50px;
+  //    font-size: 1.25em;
+  //    line-height: 1.5;
+  font-size: 1em;
+  // line-height: 1.75;
+  //    font-size: 1.18em;
+  line-height: 1.6;
+  color: $primary-color;
+}
+
 .link-text {
   position: relative;
   // font-weight: 600;
   color: $special-color;
   text-decoration: none;
-  transition: all 0.16s ease-in-out 0s;
-  padding-bottom: 3px;
-  border-bottom: 1px solid $special-color;
+  transition: color 0.16s ease-in-out 0s;
+  // padding-bottom: 3px;
+  // border-bottom: 1px solid $special-color;
 
   &:hover {
-    color:$special-color-dark;
-    border-color: $special-color-dark;
+    color: $special-color-dark;
+    // border-color: $special-color-dark;
+    // padding-bottom: 0px;
+    border-bottom: 1px dotted $special-color-dark;
   }
 }
 
@@ -290,7 +295,7 @@ body {
 }
 
 .footer {
-  margin: 0 auto 50px auto;
+  margin: 48px auto 48px auto;
   padding-bottom: 20px;
   font-family: $font-stack-sans;
   font-size:0.8em;
@@ -500,17 +505,22 @@ body {
 
 @media (max-width: 720px) {
   .frame {
-    padding:30px;
+    padding: 32px;
   }
 
   .header {
-    margin: 0px auto 0px auto;
+    margin: 0px auto 32px auto;
     width: 100%;
   }
 
   .logo-img.large {
     width: 42px;
     height: 42px;
+  }
+
+  .logo-img.small {
+    width: 32px;
+    height: 32px;
   }
 
   .content {
@@ -561,12 +571,11 @@ body {
 
 @media (max-width: 480px) {
   .frame {
-    padding: 20px;
+    padding: 16px;
   }
 
   .header {
       display: block;
-      height: 110px;
   }
 
   .header-post {
@@ -578,14 +587,8 @@ body {
     font-size: 1.8em;
   }
 
-  .content {
-    padding-left: 12px;
-    padding-right: 12px;
-  }
-
   .about {
-
-    margin-top: 32px;
+      margin-top: 32px;
   }
 
   .photo {
@@ -702,4 +705,32 @@ body {
   .post-content hr {
     width: 200px;
   }
+}
+
+.mt-16px {
+  margin-top: 16px;
+}
+
+.mt-32px {
+  margin-top: 32px;
+}
+
+.heading-separator {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  height: 2px;
+  width: 24px;
+  background-color: $primary-color;
+}
+
+.homepage-list {
+  list-style-type: none;
+
+  li {
+    margin-top: 8px;
+  }
+}
+
+h4 {
+  color: $primary-color
 }

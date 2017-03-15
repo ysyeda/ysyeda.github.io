@@ -2,23 +2,80 @@
 layout: default
 ---
 
-<div class="photo"></div>
-<div class="about">
-  <p>Hello! I’m Moaaz Sidat, a designer & developer living in Waterloo, Canada. I’m currently studying computer science at the <a href="http://uwaterloo.ca/" target="_blank" class="link-text">University of Waterloo</a> with a focus towards human computer interaction.</p><br/>
+<!-- <div class="photo"></div> -->
+<div class="me-photo">
+  <img src="/img/me.jpg"/>
+</div>
+<section class="about animated-content">
+  <p>Hello! I’m Moaaz Sidat, a designer & developer living in Waterloo, Canada. I’m studying computer science at the <a href="https://uwaterloo.ca/" target="_blank" class="link-text">University of Waterloo</a> with a focus towards machine intelligence & human computer interaction.</p><br/>
 
-  <p>I enjoy building products that solve meaningful problems for people through design and engineering. I’m passionate about product design, front-end engineering and prototyping.<p><br/>
+  <p>I enjoy working on software & products that solve meaningful problems for people through design and engineering. I’m currently a software engineering intern at <a class="link-text" href="https://coursera.org" target="_blank" rel=noopener>Coursera</a>. I also help build <a class="link-text" href="https://hackthenorth.com" target="_blank" rel=noopener>Hack the North</a> – Canada's largest hackathon.<p><br/>
 
 
-  <p>I’m currently helping build <a class="link-text" href="https://hackthenorth.com" target="_blank" rel=noopener>Hack the North</a> – one of the world's largest hackathons, where over a thousand students experiment, meet people in tech, and solve problems. My previous work includes engineering at <a class="link-text" href="http://freshbooks.com" target="_blank" rel=noopener>FreshBooks</a> and <a href="http://hootsuite.com" target="_blank" rel=noopener class="link-text">Hootsuite</a>, and design at <a href="http://mappedin.com" target="_blank" rel=noopener class="link-text">MappedIn</a>.</p><br/>
+  <p>My previous work includes engineering at <a class="link-text" href="http://freshbooks.com" target="_blank" rel=noopener>FreshBooks</a> and <a href="http://hootsuite.com" target="_blank" rel=noopener class="link-text">Hootsuite</a>, and design at <a href="http://mappedin.com" target="_blank" rel=noopener class="link-text">Mappedin</a>.</p><br/>
 
-  <p>I spend some of my time trying to learn something new. These days I’m learning more about <a class="link-text" href="https://www.coursera.org/learn/machine-learning/" target="_blank" rel=noopener>machine learning</a> and <a href="https://facebook.github.io/react-native/" target="_blank" rel=noopener class="link-text">React Native</a>. I also enjoy <a href="https://instagram.com/moaazsidat" class="link-text" target="_blank" rel=noopener>photography</a>, and occasionally explore hand-lettering & illustrations.</p><br/>
+  <p>I spend some of my time trying to learn something new. These days I’m learning more about <a class="link-text" href="http://course.fast.ai/" target="_blank" rel=noopener>deep learning</a>. I also enjoy <a href="https://instagram.com/moaazsidat" class="link-text" target="_blank" rel=noopener>photography</a>, and occasionally explore hand-lettering & illustrations.</p><br/>
 
 <!--<p>I’m currently looking for small scale front-end development or interface design projects.
 <a class="link-text" href="mailto:moaazsidat@gmail..com?Subject=Hello!">Let’s chat if you have something in mind.</a></p>-->
 
-<p>I’m currently looking for software engineering & design roles for Winter 2017.<br/>
-<a class="link-text" href="mailto:moaazsidat@gmail..com?Subject=Hello!">Let’s chat if you have something in mind.</a></p>
+<p>I’m looking to take on some <a class="link-text" href="https://facebook.github.io/react-native/" target="_blank" rel=noopener>React Native</a> projects starting May 2017. Let’s <a class="link-text" href="mailto:moaazsidat@gmail..com?Subject=Hello!">chat</a> if you have something in mind.</p>
 
 <br>
 
-</div>
+</section>
+
+<section id="writings" class="writings mt-16px animated-content">
+  <h4>Writings</h4>
+  <div class="heading-separator"></div>
+  <ul class="homepage-list">
+    {% for post in site.posts %}
+      {% if post.categories contains 'writings' %}
+        <li>
+          <a class="link-text" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+</section>
+
+<section class="projectshome mt-32px animated-content">
+  <h4>Projects</h4>
+  <div class="heading-separator"></div>
+  <ul class="homepage-list">
+    <li>
+      <a class="link-text" href="https://github.com/moaazsidat/react-native-qrcode-scanner" target="_blank" rel=noopener>React Native QR Code Scanner</a> – Module for scanning QR codes on React Native
+    </li>
+    <li>
+      <a class="link-text" href="https://github.com/moaazsidat/clearskies-server" target="_blank" rel=noopener>ClearSkies</a> – An API for an app that tells you if it's safe to fly your drone
+    </li>
+    <li>
+      <a class="link-text" href="http://moaazsidat.com/gips" target="_blank" rel=noopener>Gips</a> – Mac app for simple image processing tasks (in beta)
+    </li>
+    <li>
+      <a class="link-text" href="http://devpost.com/software/rememberalll" target="_blank" rel=noopener>RememberAll</a> – Video journaling with search based on audible & visual content
+    </li>
+  </ul>
+</section>
+
+<section class="social-home mt-32px animated-content">
+  <h4>Social</h4>
+  <div class="heading-separator"></div>
+  <ul class="homepage-list">
+    <li>
+      <a class="link-text" href="http://twitter.com/moaazsidat" target="_blank" rel=noopener>Twitter</a>
+    </li>
+    <li>
+      <a class="link-text" href="http://github.com/moaazsidat" target="_blank" rel=noopener>Github</a>
+    </li>
+    <li>
+      <a class="link-text" href="http://instagram.com/moaazsidat" target="_blank" rel=noopener>Instagram</a>
+    </li>
+    <li>
+      <a class="link-text" href="http://medium.com/@moaazsidat" target="_blank" rel=noopener>Medium</a>
+    </li>
+    <li>
+      <a class="link-text" href="http://linkedin.com/in/moaazsidat" target="_blank" rel=noopener>Linkedin</a>
+    </li>
+  </ul>
+</section>

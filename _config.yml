@@ -1,9 +1,0 @@
-name: "Moaaz Sidat"
-description: "Moaaz's Website"
-title: Moaaz Sidat
-url: "https://moaazsidat.com"
-
-markdown: kramdown
-permalink: pretty
-highlighter: rouge
-exclude: [node_modules/]

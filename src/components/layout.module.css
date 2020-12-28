@@ -1,5 +1,10 @@
+.outerContainer {
+  width: 100%;
+  border-top: 5px solid rgb(51, 51, 51);
+}
+
 .container {
-  max-width: 36rem;
+  max-width: 40rem;
   padding: 0 1rem;
   margin: 3rem auto 6rem;
 }

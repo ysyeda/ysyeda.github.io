@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Layout, { siteTitle } from '../components/layout';
 import utilStyles from '../styles/utils.module.css';
+import pagesStyles from '../styles/pages.module.css';
 import { getSortedPostsData } from '../lib/posts';
 import Link from 'next/link';
 import Date from '../components/date';
@@ -11,7 +12,13 @@ export default function Home({ allPostsData }) {
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <section className={utilStyles.headingMd}>
+      <div className={pagesStyles.logo}>
+        <img src="/images/logo.svg" alt="Moaaz Sidat Logo"></img>
+      </div>
+      <div className={pagesStyles.photo}>
+        <img src="/images/me.jpg" alt="Moaaz Sidat Photo"></img>
+      </div>
+      <section className={utilStyles.paragraph}>
         <p>
           Hi! I’m Moaaz, a software engineer & designer who enjoys building
           products that solve meaningful problems for people. I live in Toronto,

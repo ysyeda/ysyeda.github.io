@@ -2,7 +2,13 @@ Personal website using Next.js based on the starter [here](https://github.com/ve
 
 ## Getting started
 
+The code to build the website as a Next.js app lives under the `src` directory.
+
 ### Develop locally
+
+```
+cd src
+```
 
 ```
 npm install
@@ -12,7 +18,11 @@ npm install
 npm run dev
 ```
 
-### Deploy
+### Deploy to Github Pages
+
+```
+cd src
+```
 
 ```
 npm run export

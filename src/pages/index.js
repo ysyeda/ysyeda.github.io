@@ -197,7 +197,7 @@ export default function Home({ allPostsData }) {
               rel="noopener"
             >
               RememberAll
-            </a>
+            </a>{' '}
             – Video journaling with search based on audible & visual content
           </li>
         </ul>

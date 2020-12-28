@@ -187,7 +187,7 @@ export default function Home({ allPostsData }) {
             >
               Gips
             </a>{' '}
-            – Mac app for simple image processing tasks (in beta)
+            – Mac app for simple image processing tasks
           </li>
           <li>
             <a

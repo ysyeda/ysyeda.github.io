@@ -12,6 +12,10 @@ export default function Layout({ children, home }) {
       <div className={styles.container}>
         <Head>
           <link rel="icon" href="/favicon.ico" />
+          <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/default.min.css"
+          />
           <meta
             name="description"
             content="Learn how to build a personal website using Next.js"
@@ -29,7 +33,7 @@ export default function Layout({ children, home }) {
         {!home && (
           <div className={styles.backToHome}>
             <Link href="/">
-              <a>← Back to home</a>
+              <a>← Home</a>
             </Link>
           </div>
         )}

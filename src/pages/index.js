@@ -152,6 +152,20 @@ export default function Home({ allPostsData }) {
           to say hi! 👋
         </p>
       </section>
+
+      <section className={`${utilStyles.paragraph} ${pagesStyles.animated}`}>
+        <h4>Writings</h4>
+        <div className={pagesStyles.separator}></div>
+        <ul className={pagesStyles.list}>
+          {allPostsData.map(({ id, date, title }) => (
+            <li key={id}>
+              <Link href={`/writings/${id}`}>
+                <a className={pagesStyles.link}>{title}</a>
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </section>
       <section className={`${utilStyles.paragraph} ${pagesStyles.animated}`}>
         <h4>Projects</h4>
         <div className={pagesStyles.separator}></div>

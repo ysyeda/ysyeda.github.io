@@ -27,6 +27,20 @@ img {
   display: block;
 }
 
+h3 {
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+hr {
+  margin-top: 2rem;
+}
+
+ul {
+  list-style-position: inside;
+  padding-left: 0;
+}
+
 /* highlighting overrides*/
 .hljs {
   border-radius: 2px;

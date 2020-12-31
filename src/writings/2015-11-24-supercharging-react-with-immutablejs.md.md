@@ -101,7 +101,7 @@ My heartiest thanks to [Alexandrine](https://twitter.com/theasta) and [Noel](htt
 
 - David Nolen – [Immutability, interactivity & Javascript (FutureJS 2014)](https://www.youtube.com/watch?v=mS264h8KGwk)
 - Lee Byron – [Immutable Data and React (React.js Conf 2015)](https://www.youtube.com/watch?v=I7IdS-PbEgI)
-- Jean Niklas L’Orange – [Understanding Clojure’s Persistent Vectors (Part 1 of 4)](http://hypirion.com/musings/understanding-persistent-vector-pt-1)
+- Jean Niklas L’Orange – [Understanding Clojure’s Persistent Vectors (Part 1)](http://hypirion.com/musings/understanding-persistent-vector-pt-1)
 - Phil Bagwell – [Ideal Hash Trees](http://infoscience.epfl.ch/record/64398/files/idealhashtrees.pdf)
 
 <span class="note">The resources above were essential towards helping me understand immutable collections and their implementation details described in the GIF illustrations above. The illustrations of the tree structures were drawn in Sketch and then converted to a GIF using Photoshop.</span>

@@ -2,7 +2,7 @@ Personal website using Next.js based on the starter [here](https://github.com/ve
 
 ## Getting started
 
-The code to build the website as a Next.js app lives under the `src` directory.
+The code to build the website as a Next.js app lives under the `src` directory. The output is a result of exporting the Next.js app that the  lives at the root level. 
 
 ### Develop locally
 

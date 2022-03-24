@@ -18,7 +18,7 @@ export default function Home({ allPostsData }) {
         </a>
       </div>
       <div className={`${pagesStyles.photo} ${pagesStyles.animated}`}>
-        <img src="/images/me.jpg" alt="Moaaz Sidat Photo"></img>
+        <img src="/images/full.jpeg" alt="Moaaz Sidat Photo"></img>
       </div>
       <section className={`${utilStyles.paragraph} ${pagesStyles.animated}`}>
         <p>
@@ -28,7 +28,20 @@ export default function Home({ allPostsData }) {
         </p>
 
         <p>
-          I currently work as a software engineer at{' '}
+          I currently lead engineering at{' '}
+          <a
+            className={pagesStyles.link}
+            href="https://ethglobal.com"
+            target="_blank"
+            rel="noopener"
+          >
+            ETHGlobal
+          </a>
+          , onboarding developers to building with decentralized technologies.
+        </p>
+
+        <p>
+          Before that, I was a staff software engineer at{' '}
           <a
             className={pagesStyles.link}
             href="https://dialogue.co"
@@ -37,22 +50,7 @@ export default function Home({ allPostsData }) {
           >
             Dialogue
           </a>
-          , where I mostly focus on distributed systems to scale virtual
-          healthcare.
-        </p>
-
-        <p>
-          I'm also building{' '}
-          <a
-            className={pagesStyles.link}
-            href="https://gettutr.com"
-            target="_blank"
-            rel="noopener"
-          >
-            Tutr
-          </a>
-          , creating tools for students & teachers making the shift to online
-          live classes.
+          , building distributed systems to scale virtual healthcare to 2M+ Canadians.
         </p>
 
         <p>
@@ -70,7 +68,14 @@ export default function Home({ allPostsData }) {
         </p>
 
         <p>
-          My past work includes engineering at{' '}
+          My past work includes building {' '}
+          <a
+            className={pagesStyles.link}
+            href="https://gettutr.com"
+            target="_blank"
+            rel="noopener"
+          >Tutr – tools for students & teachers making the shift to online
+          live classes</a>, and engineering at{' '}
           <a
             className={pagesStyles.link}
             href="https://coursera.org"

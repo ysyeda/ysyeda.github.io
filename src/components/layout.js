@@ -6,6 +6,9 @@ import Link from 'next/link';
 const name = 'Moaaz Sidat';
 export const siteTitle = 'Moaaz Sidat';
 
+
+
+
 export default function Layout({ children, home }) {
   return (
     <div className={styles.outerContainer}>

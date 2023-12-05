@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity:0; transform: translateY(10px)
+  }
+  to {
+    opacity:1; transform: translateY(0)
+  }
+}
+
+.animated {
+  opacity: 0;
+  animation: fadeIn ease-in-out 1;
+  animation-fill-mode: forwards;
+  animation-duration: .6s;
+  animation-delay: 0.36s;
+}
+
+
+.writing-content p {
+  margin-bottom: 1rem;
+}
+.writing-content hr {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.writing-content h3 {
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
